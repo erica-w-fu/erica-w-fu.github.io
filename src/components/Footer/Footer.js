@@ -15,7 +15,7 @@ function Footer() {
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
-                        <Link to='/' className="social-logo" onClick={scrollToTop}>
+                        <Link to='/erica-w-fu' className="social-logo" onClick={scrollToTop}>
                             <img src={logo} className='navbar-logo-img'></img>
                         </Link>
                     </div>

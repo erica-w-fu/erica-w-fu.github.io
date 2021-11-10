@@ -26,7 +26,7 @@ function Navbar() {
   	return (
     <>
       <nav className="navbar">
-		<NavLink to='/' className='navbar-logo'>
+		<NavLink to='/erica-w-fu' className='navbar-logo'>
 			<h3 style={{ margin:'0 0 25px 0' }}>Erica Fu</h3>
 		</NavLink>
 		<div className="navbar-container">
@@ -35,7 +35,7 @@ function Navbar() {
 			</div>
 			<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 				<li className='nav-item'>
-					<NavLink exact to='/' activeClassName="active" className='nav-links' onClick={scrollToTop}>
+					<NavLink exact to='/erica-w-fu' activeClassName="active" className='nav-links' onClick={scrollToTop}>
 						Home
 					</NavLink>
 				</li>

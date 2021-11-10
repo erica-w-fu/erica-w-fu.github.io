@@ -16,7 +16,7 @@ function App() {
         <div className="page-wrapper">
           <Navbar />
           <Switch>
-            <Route path = '/' exact component={Home}/>
+            <Route path = '/erica-w-fu' exact component={Home}/>
             <Route path = '/Projects' component={Projects}/>
             <Route path = '/Resume' component={Resume}/>
           </Switch>
