@@ -1,0 +1,48 @@
+.page-content {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+/* project aligned sections */
+
+.aligned-sec {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-sec {
+    max-width: 200px;
+    text-align: left;
+    position: fixed;
+}
+.right-sec {
+    text-align: left;
+    padding-left: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-sec-section {
+    margin: 25px 0;
+}
+
+.active-category {
+    /* background-image: linear-gradient(to left, var(--white), var(--accent-light)); */
+}
+
+/* project sections */
+.category {
+    color: var(--gray);
+    font-weight: light;
+}
+
+.left-sec > p {
+    padding: 2px 0px;
+}
+
+.project-section {
+    max-width: 800px;
+    float: right;
+}
