@@ -10,9 +10,15 @@ function Resume() {
       style="name"
     >
         <div>
-          <p>efu@andrew.cmu.com</p>
+          <p>ericafu.me</p>
+          <p>efu@andrew.cmu.edu</p>
+          <p>
+            <a target='_blank'
+                href='https://www.linkedin.com/in/erica-fu-15b3a61b9/'>
+                linkedin.com/in/ericawfu/
+            </a>
+          </p>
           <p>+1 (650) 392-9822</p>
-          <p>Pittsburgh, PA</p>
         </div>
     </Section>
 
