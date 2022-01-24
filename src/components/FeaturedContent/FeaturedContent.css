@@ -1,0 +1,36 @@
+.featured-content-container {
+    display: flex;
+    margin: 50px 0;
+}
+
+.featured-right {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.featured-right > h6 {
+    font-size: 16px;
+}
+
+.featured-right > p {
+    font-size: 12px;
+}
+
+.featured-left {
+    min-width: 100px;
+    max-width: 100px;
+}
+
+.featured-col-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.featured-col {
+    min-width: 200px;
+}
+
+.featured-content-media {
+    width: 100%;
+}

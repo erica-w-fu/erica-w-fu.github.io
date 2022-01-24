@@ -38,7 +38,7 @@
   color: var(--accent);
 }
 .social-icon-link:hover {
-  color: var(--gray);
+  color: var(--hover);
 }
 
 .social-logo {

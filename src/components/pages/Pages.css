@@ -46,3 +46,23 @@
     max-width: 800px;
     float: right;
 }
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 80px;
+    /* align-self: flex-start; */
+}
+
+.featured-container-big {
+    display: flex;
+}
+
+.project-container {
+    margin-left: 40px;
+}
+
+.unbolded {
+    font-weight: normal;
+    display: inline;
+}

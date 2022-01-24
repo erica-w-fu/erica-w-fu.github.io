@@ -9,16 +9,16 @@ function Resume() {
       title="Erica Fu"
       style="name"
     >
-        <div>
-          <p>ericafu.me</p>
-          <p>efu@andrew.cmu.edu</p>
-          <p>
+        <div className="contact">
+          <div>ericafu.me</div>
+          <div>efu@andrew.cmu.edu</div>
+          <div>
             <a target='_blank'
                 href='https://www.linkedin.com/in/erica-fu-15b3a61b9/'>
                 linkedin.com/in/ericawfu/
             </a>
-          </p>
-          <p>+1 (650) 392-9822</p>
+          </div>
+          <div>+1 (650) 392-9822</div>
         </div>
     </Section>
 
@@ -33,7 +33,7 @@ function Resume() {
     >
       <h3 class="bolded-title same-line">Carnegie Mellon University  </h3><h4 class="faded-title same-line"> B.S. in Information Systems</h4>
       <ul>
-        <li>GPA: 3.9/4.0, Dean's List 2 semesters</li>
+        <li>GPA: 3.9/4.0, Dean's List 3 semesters</li>
         <li>Data Structures and Algorithms</li>
         <li>Introduction to Computer Systems</li>
         <li>Introduction to Information Systems</li>

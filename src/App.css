@@ -9,9 +9,11 @@
   /* define variables */
   --accent: #7e71d3; /* #c51d2e or #ea9554 */
   --accent-light: #7e71d36c;
+  --accent-lighter: #7e6bfa2f;
   --white: #f8f8f8;
   --black: #242424;
   --gray: #959595;
+  --hover: #C4C4C4;
   --title: "Inter";
   --title-fallback: sans-serif;
   --title-resume: "Helvetica";
@@ -26,7 +28,7 @@
 .page-wrapper {
   padding: 0px 50px;
   background-color: var(--white);
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -39,7 +41,7 @@ h1 {
 
 h2 {
   font-family: var(--title), var(--title-fallback);
-  font-size: 48px;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -59,17 +61,33 @@ h4 {
 h5 {
   font-family: var(--title), var(--title-fallback);
   font-weight: lighter;
-  font-size: 16px;
+  font-size: 14px;
   color: var(--gray);
 }
 
-p {
+h6 {
+  font-family: var(--title), var(--title-fallback);
+  font-weight: bold;
+  font-size: 14px;
+}
+
+h7 {
+  font-family: var(--title), var(--title-fallback);
+  font-style: italic;
+  font-size: 14px;
+}
+
+p, li {
+  font-family: var(--title), var(--title-fallback);
+  font-size: 12px;
+}
+
+small {
   font-family: var(--body), var(--body-fallback);
-  font-size: 11px;
 }
 
 a:hover {
-  color: var(--gray);
+  color: var(--hover);
 }
 
 a:active {
@@ -83,6 +101,10 @@ a:active {
 html {
   scroll-behavior: auto;
   scroll-padding-top: 124px;
+}
+
+.divider {
+  padding: 3px;
 }
 
 .divider-big {

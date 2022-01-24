@@ -1,0 +1,23 @@
+.project-nav-container {
+    display: flex;
+    flex-direction: column;
+    /* position: relative;
+    display: inline-block; */
+}
+
+.social-icons-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0 10px 0;
+    width: 115px;
+}
+
+.project-tab {
+    background-image: linear-gradient(to right, var(--white), var(--gray));
+    border-radius: 0px 100px 100px 0px;
+    height: 150px;
+    min-width: 200px;
+    max-width: 300px;
+    margin: 10px 0;
+}

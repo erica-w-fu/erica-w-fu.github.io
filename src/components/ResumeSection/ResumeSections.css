@@ -4,14 +4,12 @@
 /* font style for Erica Fu */
 .name {
     font-family: var(--title-resume), var(--title-fallback);
-    font-size: 33px;
     font-weight: bold;
 }
 
 /* font style for capitalized titles on the left */
 .capitalized {
     font-family: var(--title-resume), var(--title-fallback);
-    font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -19,7 +17,6 @@
 /* bolded title text */
 .bolded-title {
     font-family: var(--title-resume), var(--title-fallback);
-    font-size: 21px;
     font-weight: bold;
     padding-left: 0px;
 }
@@ -32,15 +29,12 @@
 .faded-title, th {
     font-family: var(--title-resume), var(--title-fallback);
     font-weight: normal;
-    font-size: 21px;
     color: gray;
 }
 
 /* for dates, content, and location text */
-p, td, .dates {
+.dates, .contact, td{
     font-family: var(--title-resume), var(--body-fallback);
-    font-size: 18px;
-    /* line-height: 1.2; */
 }
 
 a {
@@ -52,10 +46,6 @@ a {
     /* background-image: linear-gradient(to right, var(--white), var(--accent-light)); */
 }
 
-/* .dates {
-    line-height: 2vw;
-} */
-
 .same-line {
     display: inline;
     overflow: auto;
@@ -64,18 +54,14 @@ a {
 .location {
     float: right;
     font-family: var(--title-resume), var(--body-fallback);
-    font-size: 18px;
-    /* line-height: 1.75vw; */
 }
 
 ul {
     list-style-position: outside;
     margin-left: 20px;
 }
-li {
+.right-section li {
     font-family: var(--title-resume), var(--body-fallback);
-    font-size: 18px;
-    /* line-height: 1.2; */
 }
 
 table {
@@ -109,8 +95,8 @@ td, th {
         font-size: 14px;
     }
 
-    /* for dates, content, and location text */
-    p, td, .dates {
+    /* for dates, contact, and location text */
+    p, td, .dates, .contact{
         font-size: 12px;
     }
 
@@ -124,7 +110,6 @@ td, th {
 
     /* section formatting */
     .aligned-section {
-        background-color: var(--white);
         padding: 10px 0px;
     }
 
@@ -140,35 +125,27 @@ td, th {
 @media screen and (min-width: 700px) {
     /* font style for Erica Fu */
     .name {
-        font-size:33px;
+        font-size:28px;
     }
 
     /* font style for capitalized titles on the left */
     .capitalized {
-        font-size: 24px;
+        font-size: 20px;
     }
 
     /* bolded title text */
     .bolded-title {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     /* faded title text */
     .faded-title, th {
-        font-size: 21px;
+        font-size: 18px;
     }
 
     /* for dates, content, and location text */
-    p, td, .dates {
-        font-size: 18px;
-    }
-
-    .location {
-        font-size: 18px;
-    }
-
-    li {
-        font-size: 18px;
+    p, td, .dates, .location, li, .contact {
+        font-size: 14px;
     }
     
     /* formatting for sections */
