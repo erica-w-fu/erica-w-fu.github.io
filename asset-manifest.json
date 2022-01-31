@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.a9eb0dc7.chunk.css",
-    "main.js": "/static/js/main.c54228d0.chunk.js",
-    "main.js.map": "/static/js/main.c54228d0.chunk.js.map",
+    "main.css": "/static/css/main.f8bb7049.chunk.css",
+    "main.js": "/static/js/main.99037f10.chunk.js",
+    "main.js.map": "/static/js/main.99037f10.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ab7af748.js",
     "runtime-main.js.map": "/static/js/runtime-main.ab7af748.js.map",
     "static/js/2.d30f2613.chunk.js": "/static/js/2.d30f2613.chunk.js",
     "static/js/2.d30f2613.chunk.js.map": "/static/js/2.d30f2613.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.a9eb0dc7.chunk.css.map": "/static/css/main.a9eb0dc7.chunk.css.map",
+    "static/css/main.f8bb7049.chunk.css.map": "/static/css/main.f8bb7049.chunk.css.map",
     "static/js/2.d30f2613.chunk.js.LICENSE.txt": "/static/js/2.d30f2613.chunk.js.LICENSE.txt",
     "static/media/24-demo.95b58025.mp4": "/static/media/24-demo.95b58025.mp4",
     "static/media/24-v1-demo.f0ece313.mov": "/static/media/24-v1-demo.f0ece313.mov",
@@ -20,7 +20,7 @@
     "static/media/CCC-3D.26d15e62.png": "/static/media/CCC-3D.26d15e62.png",
     "static/media/CCC-digital.73f77ff7.mp4": "/static/media/CCC-digital.73f77ff7.mp4",
     "static/media/CCC-final.6beb3061.jpeg": "/static/media/CCC-final.6beb3061.jpeg",
-    "static/media/CCC-finalDemo.9e0d3037.mov": "/static/media/CCC-finalDemo.9e0d3037.mov",
+    "static/media/CCC-finalDemo.e00f627b.mp4": "/static/media/CCC-finalDemo.e00f627b.mp4",
     "static/media/CCC-physical.73e55305.mp4": "/static/media/CCC-physical.73e55305.mp4",
     "static/media/CCCIntro.11d21098.png": "/static/media/CCCIntro.11d21098.png",
     "static/media/ThirtyDay-demo.2258c1f4.mov": "/static/media/ThirtyDay-demo.2258c1f4.mov",
@@ -47,6 +47,7 @@
     "static/media/myFace.3198247d.jpg": "/static/media/myFace.3198247d.jpg",
     "static/media/peelingAway.b7adb890.jpg": "/static/media/peelingAway.b7adb890.jpg",
     "static/media/protected.b8855daa.jpg": "/static/media/protected.b8855daa.jpg",
+    "static/media/resume.7d14011c.pdf": "/static/media/resume.7d14011c.pdf",
     "static/media/sentence-mosaics.c64232b0.png": "/static/media/sentence-mosaics.c64232b0.png",
     "static/media/sesame-hat.38fb8e58.jpeg": "/static/media/sesame-hat.38fb8e58.jpeg",
     "static/media/stationary-mockup.9d8a6582.png": "/static/media/stationary-mockup.9d8a6582.png",
@@ -59,7 +60,7 @@
   "entrypoints": [
     "static/js/runtime-main.ab7af748.js",
     "static/js/2.d30f2613.chunk.js",
-    "static/css/main.a9eb0dc7.chunk.css",
-    "static/js/main.c54228d0.chunk.js"
+    "static/css/main.f8bb7049.chunk.css",
+    "static/js/main.99037f10.chunk.js"
   ]
 }
