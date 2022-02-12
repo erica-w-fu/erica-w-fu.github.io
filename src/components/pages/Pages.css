@@ -47,22 +47,34 @@
     float: right;
 }
 
+.featured-container-big {
+    /* display: flex; */
+    display: inline-block;
+    width: 100%;
+}
+
 .sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 80px;
-    /* align-self: flex-start; */
-}
-
-.featured-container-big {
-    display: flex;
+    top: 75px;
+    width: 200px;
+    float: left
 }
 
 .project-container {
-    margin-left: 40px;
+    margin-left: 240px;
 }
 
 .unbolded {
     font-weight: normal;
     display: inline;
+}
+
+/* resume page styling */
+.right-align {
+    float: right;
+} 
+
+.clear-float {
+    clear: both;
 }

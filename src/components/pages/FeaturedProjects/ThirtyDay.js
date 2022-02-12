@@ -18,7 +18,7 @@ function ThirtyDay() {
                 summary="Developed an adulting challenge iOS application that uses embedded design and social influence principles to effectively teach and encourage cybersecurity habits.\n\n 
                 Working as a research assistant for the CoEx lab at CMU."
                 responsibilities="Mobile App Development, UI/UX, Research"
-                tools="xCode\nFirebase\nFigma"
+                tools="Xcode\nFirebase\nFigma"
                 img="thirty_day_adulting"
                 imgType="featured-img-cropped"
                 link=""
@@ -35,7 +35,7 @@ function ThirtyDay() {
             <Section 
                 title="Generative Research Insights"
             >
-                <h7>Based on user speed-dating sessions we gained feedback on our social proof features.</h7>
+                <p>Based on user speed-dating sessions we gained feedback on our social proof features.</p>
                 <br></br>
                 <br></br>
                 <h6>Accountability buddies</h6>
@@ -61,7 +61,7 @@ function ThirtyDay() {
             <Section 
                 title="Initial Prototypes"
             >
-                <h7>With those insights, we decided to keep three pages: a task page, a profile page, and a messaging page.</h7>
+                <p>With those insights, we decided to keep three pages: a task page, a profile page, and a messaging page.</p>
                 <br></br>
                 <br></br>
                 <h6>Task page</h6>
@@ -89,7 +89,8 @@ function ThirtyDay() {
             <Section 
                 title="Development"
             >
-                <h7>In addition to prototyping, I develop the ideas we have on xCode. Here is the latest video demo.</h7>
+                <p>In addition to prototyping, I develop the ideas we have on Xcode. Here is the latest video demo.</p>
+                <br></br>
                 <video width="30%" controls >
                     <source src={demo} type="video/mp4"/>
                 </video>
@@ -97,7 +98,7 @@ function ThirtyDay() {
             <Section 
                 title="Next Steps"
             >
-                <h7>After the designer completes the wireframes, I will implement the UI on xCode and continue to develop the interactions.</h7>
+                <p>After the designer completes the wireframes, I will implement the UI on Xcode and continue to develop the interactions.</p>
             </Section>
         </>
     )

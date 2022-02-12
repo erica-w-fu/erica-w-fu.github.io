@@ -4,8 +4,6 @@ import FeaturedProjectSection from '../../FeaturedProjectSection/FeaturedProject
 function ProjectOverview() {
     return (
         <>
-            {/* <div className="divider-big"></div> */}
-            <div className="divider"></div>
             <div className="divider"></div>
             <div className="divider"></div>
             <FeaturedProjectSection
@@ -13,13 +11,13 @@ function ProjectOverview() {
                 title="30 Day Adulting"
                 summary="Developed an adulting challenge iOS application that uses embedded design and social influence principles to effectively teach and encourage cybersecurity habits.\n\n 
                 Working as a research assistant for the CoEx lab at CMU."
-                tags="Research,Figma,XCode • Swift,Firebase,Mobile App"
+                tags="Research,Figma,Xcode • Swift,Firebase,Mobile App"
             />
             <FeaturedProjectSection
                 key="twenty_four"
                 title="24"
                 summary="Created a mobile version of my brother’s favorite card game, 24, first evaluating what features made the physical card game fun and incorporating them into the digital version."
-                tags="Passion Project, UI/UX Design, XCode • Swift, Mobile App"
+                tags="Passion Project, UI/UX Design, Xcode • Swift, Mobile App"
             />
             <FeaturedProjectSection
                 key="ccc"

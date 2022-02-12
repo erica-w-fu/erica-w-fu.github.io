@@ -26,7 +26,7 @@ function Navbar() {
   	return (
     <>
       <nav className="navbar">
-		<NavLink to='/erica-w-fu' className='navbar-logo'>
+		<NavLink to='/' className='navbar-logo'>
 			<h3 style={{ margin:'0 0 25px 0' }}>Erica Fu</h3>
 		</NavLink>
 		<div className="navbar-container">
@@ -35,17 +35,17 @@ function Navbar() {
 			</div>
 			<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 				<li className='nav-item'>
-					<NavLink exact to='/erica-w-fu' activeClassName="active" className='nav-links' onClick={scrollToTop}>
+					<NavLink exact to='/' className={(navData) => (navData.isActive ? "active" : 'nav-links')} onClick={scrollToTop}>
 						Home
 					</NavLink>
 				</li>
-				<li className='nav-item'>
+				{/* <li className='nav-item'>
 					<NavLink to='/Projects' activeClassName="active" className='nav-links' onClick={scrollToTop}>
 						Projects
 					</NavLink>
-				</li>
+				</li> */}
 				<li className='nav-item'>
-					<NavLink to='/Resume' activeClassName="active" className='nav-links' onClick={scrollToTop}>
+					<NavLink to='/Resume' className={(navData) => (navData.isActive ? "active" : 'nav-links')} onClick={scrollToTop}>
 						Resume
 					</NavLink>
 				</li>

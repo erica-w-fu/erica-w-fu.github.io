@@ -1,10 +1,20 @@
 import React from 'react';
 import Section from '../ResumeSection/ResumeSections.js';
 import '../ResumeSection/ResumeSections.css';
+import resume from'./resume.pdf'
+
+import Footer from '../Footer/Footer.js'
 
 function Resume() {
   return (
     <>
+    <div className="right-align">
+      <a href={ resume } target="_blank">
+          <h6 className="featured-link">View Current Resume</h6>
+      </a> 
+    </div>
+    <div className="clear-float"></div>
+
     <Section
       title="Erica Fu"
       style="name"
@@ -52,15 +62,13 @@ function Resume() {
       style="dates"
     >
       <div className="link">
-        <a href="Projects/#SwiftXCode">
-          <h3 class="bolded-title same-line" target='_blank'>HCI Research Assistant  </h3><h4 class="faded-title same-line"> CoEx Lab</h4><div class="location same-line"> Pittsburgh, PA</div>
-          <ul>
-            <li>Redesigned and programmed an iOS app with Xcode and Swift</li>
-            <li>Researched how social influence could encourage better cybersecurity behaviors</li>
-            <li>Wrote and proofread adulting and cybersecurity tasks and study surveys</li>
-            <li>Conducted and evaluated the results of a pilot study where users participated in a 30-day adulting challenge to be implemented in the app</li>
-          </ul>
-        </a>
+        <h3 class="bolded-title same-line" target='_blank'>HCI Research Assistant  </h3><h4 class="faded-title same-line"> CoEx Lab</h4><div class="location same-line"> Pittsburgh, PA</div>
+        <ul>
+          <li>Redesigned and programmed an iOS app with Xcode and Swift</li>
+          <li>Researched how social influence could encourage better cybersecurity behaviors</li>
+          <li>Wrote and proofread adulting and cybersecurity tasks and study surveys</li>
+          <li>Conducted and evaluated the results of a pilot study where users participated in a 30-day adulting challenge to be implemented in the app</li>
+        </ul>
       </div>
     </Section>
     <Section
@@ -68,14 +76,12 @@ function Resume() {
       style="dates"
     >
       <div className="link">
-        <a href="Projects/#PhysicalComputing" target='_blank'>
-          <h3 class="bolded-title same-line">Independent Research  </h3><h4 class="faded-title same-line"> SURG</h4><div class="location same-line"> Pittsburgh, PA</div>
-          <ul>
-            <li>Designed and engineered an interactive LED display that mirrored a matching display across the country; to be displayed at CMU Silicon Valley</li>
-            <li>Investigated how playful, tactile interactions would enhance remote communication</li>
-            <li>Used Arduinos, Raspberry Pis, and Fusion 360 to construct and connect the physical installations and Unity and Illustrator to digitally model the interaction</li>
-          </ul>
-        </a>
+        <h3 class="bolded-title same-line">Independent Research  </h3><h4 class="faded-title same-line"> SURG</h4><div class="location same-line"> Pittsburgh, PA</div>
+        <ul>
+          <li>Designed and engineered an interactive LED display that mirrored a matching display across the country; to be displayed at CMU Silicon Valley</li>
+          <li>Investigated how playful, tactile interactions would enhance remote communication</li>
+          <li>Used Arduinos, Raspberry Pis, and Fusion 360 to construct and connect the physical installations and Unity and Illustrator to digitally model the interaction</li>
+        </ul>
       </div>
     </Section>
     <Section
@@ -207,6 +213,7 @@ function Resume() {
     >
       <h3 class="bolded-title same-line">HackCMU  </h3><h4 class="faded-title same-line"> EchoAR Category Award</h4>
     </Section>
+    <Footer />
   </>
   );
 }

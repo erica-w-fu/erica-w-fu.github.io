@@ -14,14 +14,14 @@ function TwentyFour() {
                 date="June 2019 - January 2021"
                 summary="Created a mobile version of my brother’s favorite card game, 24, first evaluating what features made the physical card game fun and incorporating them into the digital version."
                 responsibilities="Wireframing, Research, Mobile App Development "
-                tools="xCode\nSwift"
+                tools="Xcode\nSwift"
                 img="twenty_four"
                 imgType="featured-img-uncropped"
                 link=""
             />
             <div className="divider"></div>
             <div className="divider"></div>
-            <h7>Used the human-centered design process taught by Design For America to develop this project.</h7>
+            <p>Used the human-centered design process taught by Design For America to develop this project.</p>
             <Section 
                 title="Identify"
             >
@@ -62,7 +62,9 @@ function TwentyFour() {
             <Section 
                 title="Ideate"
             >
-                <h7>Created wireframes to map out user interactions with the interface and with other players</h7>
+                <p>Created wireframes to map out user interactions with the interface and with other players</p>
+                <br></br>
+                <br></br>
                 <img src={ wireframe } className="featured-content-media"></img>
             </Section>
             <Section 

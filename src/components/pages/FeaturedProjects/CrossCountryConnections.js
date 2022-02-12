@@ -6,7 +6,7 @@ import physical from './media/CCC-physical.mp4';
 import digital from './media/CCC-digital.mp4';
 import threeDee from './media/CCC-3D.png';
 import final from './media/CCC-final.jpeg';
-import finalDemo from './media/CCC-finalDemo.mov?';
+import finalDemo from './media/CCC-finalDemo.mp4';
 
 function CrossCountryConnections() {
     return(
@@ -28,11 +28,11 @@ function CrossCountryConnections() {
                 link="https://crosscountryconnections.github.io/index.html"
             />
             <div className="divider"></div>
-            <h7>Made physical and digital prototypes with different materials and methods to test out ideas before building the final installation.</h7>
+            <p>Made physical and digital prototypes with different materials and methods to test out ideas before building the final installation.</p>
             <Section 
                 title="Physical Protoype"
             >
-                <h7>Synchronized two physical prototypes</h7>
+                <p>Synchronized two physical prototypes</p>
                 <br></br>
                 <br></br>
                 <div className="featured-col-container">
@@ -67,7 +67,7 @@ function CrossCountryConnections() {
             <Section 
                 title="Digital Protoype"
             >
-                <h7>Synchronized the physical prototype with a digital prototype</h7>
+                <p>Synchronized the physical prototype with a digital prototype</p>
                 <br></br>
                 <br></br>
                 <div className="featured-col-container">
@@ -95,7 +95,7 @@ function CrossCountryConnections() {
             <Section 
                 title="3D Protoype"
             >
-                <h7>Planned for the final build</h7>
+                <p>Planned for the final build</p>
                 <br></br>
                 <br></br>
                 <div className="featured-col-container">
@@ -117,9 +117,9 @@ function CrossCountryConnections() {
                 <img src={ threeDee } className="featured-content-media"></img>
             </Section>
             <Section 
-                title="3D Protoype"
+                title="Final Installation"
             >
-                <h7>Final Installation</h7>
+                <p>Used findings from all the previous prototypes to create a final installation</p>
                 <br></br>
                 <br></br>
                 <div className="featured-col-container">
@@ -151,7 +151,7 @@ function CrossCountryConnections() {
                 </div>
                 <br></br>
                 <video width="100%" controls>
-                    <source src={finalDemo} type="video/mp4"/>
+                    <source src={finalDemo} type="video/mp4" />
                 </video>
                 <img src={ final } className="featured-content-media"></img>
             </Section>

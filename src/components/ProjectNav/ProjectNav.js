@@ -1,23 +1,39 @@
 import React from 'react'
-import { Link, useRouteMatch, useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './ProjectNav.css';
+
+import twentyFour from './24Navbar.png'
+import adulting from './AdultingNavbar.png'
+import ccc from './CCCNavbar.png'
 
 function ProjectNav() {
 
+    const scrollToTop = () => {
+		window.scrollTo({top: 155});
+	};
+
+
     return (
         <>
-            <Link to='/erica-w-fu'>
+            <NavLink to='/'>
                 <h4><b>Featured Projects</b></h4>
-            </Link>
-            <div className="divider"></div>
+            </NavLink>
             <div className='project-nav-container'>
-                <Link to='/erica-w-fu/ThirtyDayAdulting' className='project-tab'>
-                </Link>
-                <Link to='/erica-w-fu/TwentyFour' className='project-tab'>
-                </Link>
-                <Link to='/erica-w-fu/CrossCountryConnections' className='project-tab'>
-                </Link>
+                <NavLink to='/ThirtyDayAdulting' className={(navData) => (navData.isActive ? "active-project" : 'project-tab')} onClick={scrollToTop}>
+                    <img src={adulting} className='tab-img'></img>
+                </NavLink>
+                <NavLink to='/TwentyFour' className={(navData) => (navData.isActive ? "active-project" : 'project-tab')} onClick={scrollToTop}>
+                    <img src={twentyFour} className='tab-img'></img>
+                </NavLink>
+                <NavLink to='/CrossCountryConnections' className={(navData) => (navData.isActive ? "active-project" : 'project-tab')} onClick={scrollToTop}>
+                    <img src={ccc} className='tab-img'></img>
+                </NavLink>
             </div>
+            <NavLink to='/Projects' target="none">
+                <div className="more-projects">
+                    <p><b>See all projects</b></p>
+                </div>
+            </NavLink>
             <div className="social-icons-home">
                   <a 
                       className="social-icon-link linkedIn"

@@ -9,6 +9,10 @@
     border: 1px solid var(--accent);
 }
 
+.featured-link:hover {
+    background-color: var(--accent);
+}
+
 .featured-intro-text {
     max-width: 450px;
 }

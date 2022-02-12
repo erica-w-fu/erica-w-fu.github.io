@@ -24,11 +24,11 @@ function Home() {
           <div className="sticky">
               <ProjectNav/>
           </div>
-
           <div className="project-container">
             <Outlet/>
           </div>
         </div>
+        <div className="divider"></div>
       </>
   );
 }

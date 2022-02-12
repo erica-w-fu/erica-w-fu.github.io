@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './Pages.css';
 import Section from '../ProjectSection/ProjectSections.js';
+import Footer from '../Footer/Footer.js'
 
 function Projects() {
 
@@ -116,6 +117,7 @@ function Projects() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   )
 }

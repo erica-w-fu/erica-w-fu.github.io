@@ -71,12 +71,6 @@ h6 {
   font-size: 14px;
 }
 
-h7 {
-  font-family: var(--title), var(--title-fallback);
-  font-style: italic;
-  font-size: 14px;
-}
-
 p, li {
   font-family: var(--title), var(--title-fallback);
   font-size: 12px;

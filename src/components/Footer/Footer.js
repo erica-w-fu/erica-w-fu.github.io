@@ -15,11 +15,11 @@ function Footer() {
             <section className="social-media">
                 <div className="social-media-wrap">
                     <div className="footer-logo">
-                        <Link to='/erica-w-fu' className="social-logo" onClick={scrollToTop}>
+                        <Link to='/' className="social-logo" onClick={scrollToTop}>
                             <img src={logo} className='navbar-logo-img'></img>
                         </Link>
                     </div>
-                    <small className="website-rights">Created with React, 2021</small>
+                    <small className="website-rights">Made with React, 2021</small>
                     <div className="social-icons">
                         <a 
                             className="social-icon-link linkedIn"
