@@ -2,23 +2,13 @@
     height: 160px;
     max-width: 600px;
     margin-bottom: 10px;
+    color: black;
 }
 
 .featured-text {
     font-size: 12px;
 }
 
-.featured-header {
-
-}
-
-.featured-tag {
-    background: var(--accent-lighter);
-    padding: 5px 10px;
-    border-radius: 5px;
-    max-width: max-content;
-    margin: 10px 15px 15px 0;
-    display: inline-block;
-    font-family: var(--body), var(--body-fallback);
-    font-size: 10px;
+.featured-header:hover {
+    color: var(--hover);
 }

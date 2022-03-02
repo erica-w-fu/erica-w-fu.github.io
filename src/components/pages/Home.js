@@ -5,10 +5,6 @@ import '../../App.css';
 import './Pages.css';
 import ProjectNav from '../ProjectNav/ProjectNav.js'
 
-// import FeaturedComponent from './FeaturedProjects/FeaturedComponent.js'
-import ProjectOverview from'./FeaturedProjects/ProjectOverview.js'
-import ThirtyDay from'./FeaturedProjects/ThirtyDay.js'
-
 function Home() {
 
   return (

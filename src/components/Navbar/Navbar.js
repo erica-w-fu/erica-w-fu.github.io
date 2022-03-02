@@ -35,17 +35,22 @@ function Navbar() {
 			</div>
 			<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 				<li className='nav-item'>
-					<NavLink exact to='/' className={(navData) => (navData.isActive ? "active" : 'nav-links')} onClick={scrollToTop}>
+					<NavLink exact to='/' className={(navData) => (navData.isActive ? "nav-links active" : 'nav-links')} onClick={scrollToTop}>
 						Home
 					</NavLink>
 				</li>
-				{/* <li className='nav-item'>
+				<li className='nav-item'>
 					<NavLink to='/Projects' activeClassName="active" className='nav-links' onClick={scrollToTop}>
 						Projects
 					</NavLink>
-				</li> */}
+				</li>
 				<li className='nav-item'>
-					<NavLink to='/Resume' className={(navData) => (navData.isActive ? "active" : 'nav-links')} onClick={scrollToTop}>
+					<NavLink to='/About' activeClassName="active" className='nav-links' onClick={scrollToTop}>
+						About
+					</NavLink>
+				</li>
+				<li className='nav-item'>
+					<NavLink to='/Resume' className={(navData) => (navData.isActive ? "nav-links active" : 'nav-links')} onClick={scrollToTop}>
 						Resume
 					</NavLink>
 				</li>

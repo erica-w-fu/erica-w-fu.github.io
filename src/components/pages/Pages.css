@@ -1,10 +1,46 @@
-.page-content {
+/* .page-content {
     padding-left: 4rem;
     padding-right: 4rem;
+} */
+
+/* three column gallery in about and project page */
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.gallery {
+    min-width: 200px;
+    width: 32%;
+    margin: 5px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.gallery-container-two {
+    /* column-count: 2;
+    column-gap: 20px;
+    column-width: 50%;
+    column-fill: auto;
+    justify-content: space-between; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-two {
+    margin: 0px 0 40px 0;
+    width: 48%;
+}
+
+.gallery > .about-media {
+    width: 100%;
+    object-fit: fill;
 }
 
 /* project aligned sections */
-
 .aligned-sec {
     display: flex;
     justify-content: space-between;
@@ -47,6 +83,7 @@
     float: right;
 }
 
+/* home page styling */
 .featured-container-big {
     /* display: flex; */
     display: inline-block;
@@ -56,7 +93,7 @@
 .sticky {
     position: -webkit-sticky;
     position: sticky;
-    top: 75px;
+    top: 70px;
     width: 200px;
     float: left
 }
@@ -77,4 +114,59 @@
 
 .clear-float {
     clear: both;
+}
+
+/* about paage styling */
+.about-container {
+    display: flex;
+}
+
+.left-about{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-media {
+    width: 100%;
+}
+
+.about-media-small {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.about-media-medium {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding: 10px 0;
+}
+
+.hovertext {
+    position: relative;
+}
+
+.hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    background-image: linear-gradient(to top, var(--white), var(--white), rgba(0, 0, 0, 0));
+    padding: 30px 15px 15px 15px;
+    box-sizing: border-box;
+    transition: opacity 1s ease-in-out;
+    width: 100%;
+
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    font-family: var(--title), var(--title-fallback);
+}
+
+.hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
 }

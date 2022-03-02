@@ -14,6 +14,7 @@
   --black: #242424;
   --gray: #959595;
   --hover: #C4C4C4;
+  --pop-up: #83838380;
   --title: "Inter";
   --title-fallback: sans-serif;
   --title-resume: "Helvetica";
@@ -78,14 +79,16 @@ p, li {
 
 small {
   font-family: var(--body), var(--body-fallback);
+  font-size: 12px;
 }
 
 a:hover {
   color: var(--hover);
 }
 
-a:active {
+a {
   color: var(--accent);
+  text-decoration: none;
 }
 
 .underline:hover {
@@ -98,7 +101,7 @@ html {
 }
 
 .divider {
-  padding: 3px;
+  padding: 10px;
 }
 
 .divider-big {

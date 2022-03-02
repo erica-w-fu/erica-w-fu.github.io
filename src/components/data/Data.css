@@ -1,0 +1,14 @@
+.purple-tag {
+    background: var(--accent-lighter);
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: max-content;
+    margin: 0px 15px 10px 0;
+    display: inline-block;
+    font-family: var(--body), var(--body-fallback);
+    font-size: 10px;
+}
+
+.featured-tags {
+    margin-top: 10px;
+}

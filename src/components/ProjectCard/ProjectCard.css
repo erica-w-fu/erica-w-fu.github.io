@@ -1,0 +1,39 @@
+.project-card-container {
+    color: black;
+    /* height: 300px; */
+    box-shadow: 0px 0px 5px 1px var(--gray);
+    cursor: pointer;
+}
+
+.project-card-container:hover {
+    color: black;
+    /* height: 300px; */
+    box-shadow: 0px 0px 5px 5px var(--accent-light);
+}
+
+.project-card-container > .cropped {
+    max-height: 200px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.project-card-container > .uncropped {
+    max-height: 180px;
+    width: 100%;
+    max-width: 100%;
+    padding-top: 20px;
+    object-fit: contain;
+}
+
+.project-card-container > .top {
+    max-height: 200px;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.card-text { 
+    padding: 0px 15px 20px 15px;
+}

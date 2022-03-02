@@ -9,10 +9,12 @@ import final from './media/CCC-final.jpeg';
 import finalDemo from './media/CCC-finalDemo.mp4';
 
 function CrossCountryConnections() {
+
     return(
         <>
             <FeaturedIntro
                 key="ccc"
+                component="ccc"
                 title="Cross Country Connections"
                 date="May 2021 - present"
                 summary="Constructed installations to explore unique remote communication methods through tactile interactions with a large canvas.\n\n 
@@ -22,13 +24,17 @@ function CrossCountryConnections() {
                 Raspberry Pi\n
                 Unity\n
                 Fusion 360\n
-                Python\n"
-                img="ccc"
-                imgType="featured-img-uncropped"
+                Python"
+                imgType="uncropped"
                 link="https://crosscountryconnections.github.io/index.html"
+                linkTitle="Visit Website"
+                team="Michelle Dang, Jennifer Zhang, Robert Zacharias"
             />
             <div className="divider"></div>
-            <p>Made physical and digital prototypes with different materials and methods to test out ideas before building the final installation.</p>
+            <p>After taking Physical Computing and unlocking the powers of microprocessors, my friend and I decided to create an installation with our newfound skills. We knew that we both wanted to make something big and interactive, but we quickly realized that she would be staying at Pittsburgh while I would go hope to the Bay Area over the summer. 
+                However, we decided to take advantage of our different locations, eventually choosing to create two large canvases that would sync across the country, giving us the ability to communicate through LEDs.</p>
+            <br></br>
+            <p>Our team made various physical and digital prototypes with different materials and methods to test out ideas before building the final installation.</p>
             <Section 
                 title="Physical Protoype"
             >

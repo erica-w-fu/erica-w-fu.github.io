@@ -21,10 +21,6 @@
     padding-left: 0px;
 }
 
-.bolded-title{
-    color: var(--accent-color);
-}
-
 /* faded title text */
 .faded-title, th {
     font-family: var(--title-resume), var(--title-fallback);
@@ -37,7 +33,7 @@
     font-family: var(--title-resume), var(--body-fallback);
 }
 
-a {
+.right-section>a {
     text-decoration: none;
     color: var(--black);
 }

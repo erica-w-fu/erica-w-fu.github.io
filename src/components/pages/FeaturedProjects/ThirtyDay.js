@@ -13,15 +13,16 @@ function ThirtyDay() {
         <>
             <FeaturedIntro
                 key="thirty_day_adulting"
+                component="thirty_day_adulting"
                 title="30 Day Adulting"
                 date="May 2021 - present"
                 summary="Developed an adulting challenge iOS application that uses embedded design and social influence principles to effectively teach and encourage cybersecurity habits.\n\n 
                 Working as a research assistant for the CoEx lab at CMU."
                 responsibilities="Mobile App Development, UI/UX, Research"
                 tools="Xcode\nFirebase\nFigma"
-                img="thirty_day_adulting"
-                imgType="featured-img-cropped"
+                imgType="cropped"
                 link=""
+                team="Isadora Krsek, Nellie Tonev, Sherry Chen"
             />
             <Section 
                 title="Problem Space"
@@ -36,7 +37,6 @@ function ThirtyDay() {
                 title="Generative Research Insights"
             >
                 <p>Based on user speed-dating sessions we gained feedback on our social proof features.</p>
-                <br></br>
                 <br></br>
                 <h6>Accountability buddies</h6>
                 <p>

@@ -20,15 +20,22 @@
 .featured-img-container {
     width: 100%;
     max-height: 450px;
+    padding-left: 10px;
 }
-.featured-img-cropped {
+.featured-img-container>.cropped {
     height: 100%;
     width: 100%;
     max-width: 100%;
     object-fit: cover;
 }
 
-.featured-img-uncropped {
+.featured-img-container>.uncropped {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.featured-img-container>.top {
     height: 100%;
     width: 100%;
     object-fit: contain;

@@ -62,7 +62,7 @@ function Resume() {
       style="dates"
     >
       <div className="link">
-        <h3 class="bolded-title same-line" target='_blank'>HCI Research Assistant  </h3><h4 class="faded-title same-line"> CoEx Lab</h4><div class="location same-line"> Pittsburgh, PA</div>
+        <h3 class="bolded-title same-line" target='_blank'>HCI Research Assistant  </h3><h4 class="faded-title same-line"><a href="https://socialcybersecurity.org/" target='_blank'> CoEx Lab</a></h4><div class="location same-line"> Pittsburgh, PA</div>
         <ul>
           <li>Redesigned and programmed an iOS app with Xcode and Swift</li>
           <li>Researched how social influence could encourage better cybersecurity behaviors</li>
@@ -116,15 +116,13 @@ function Resume() {
       style="dates"
     >
       <div className="link">
-        <a href="https://www.dfaxcmu.org/" target='_blank'>
-          <h3 class="bolded-title same-line">President  </h3><h4 class="faded-title same-line"> Design For America</h4><div class="location same-line"> Pittsburgh, PA</div>
+          <h3 class="bolded-title same-line">President  </h3><h4 class="faded-title same-line"><a href="https://www.dfaxcmu.org/" target='_blank'> Design For America </a></h4><div class="location same-line"> Pittsburgh, PA</div>
           <ul>
             <li>Organized and directed studio and executive meetings</li>
             <li>Presented to 40 members the impact and process of human-centered design</li>
             <li>Collaborated with professors and local community partners to identify challenging social issues and advise members as they develop solutions</li>
             <li>Coordinated with National DFA to share successful practices and challenges</li>
           </ul>
-        </a>
       </div>
     </Section>
     <Section
@@ -172,20 +170,20 @@ function Resume() {
           <th>Website</th>
         </tr>
         <tr>
-          <td><a className="underline" href="Projects/#SwiftXCode" target="_blank">Swift • Xcode</a></td>
-          <td><a className="underline" href="Projects/#AdobeIllustrator" target="_blank">Adobe Illustrator</a></td>
+          <td>Swift • Xcode</td>
+          <td>Adobe Illustrator</td>
           <td>Java • C</td>
-          <td><a className="underline" href="Projects/#JavascriptCSSHTML" target="_blank">JavaScript</a></td>
+          <td>JavaScript</td>
         </tr>
         <tr>
-          <td><a className="underline" href="Projects/#React" target="_blank">React</a></td>
-          <td><a className="underline" href="Projects/#Figma" target="_blank">Figma</a></td>
-          <td><a className="underline" href="https://github.com/erica-w-fu" target="_blank">Unix • Git</a></td>
-          <td><a className="underline" href="Projects/#JavascriptCSSHTML" target="_blank">CSS • HTML</a></td>
+          <td>React</td>
+          <td>Figma</td>
+          <td>Unix • Git</td>
+          <td>CSS • HTML</td>
         </tr>
         <tr>
-          <td><a className="underline" href="Projects/#C#Unity" target="_blank">C# • Unity</a></td>
-          <td><a className="underline" href="Projects/#AdobePhotoshop" target="_blank">Adobe Photoshop</a></td>
+          <td>C# • Unity</td>
+          <td>Adobe Photoshop</td>
           <td>SQL</td>
           <td>Wordpress</td>
         </tr>
@@ -201,11 +199,8 @@ function Resume() {
       title="Nov 2020"
       style="dates"
     >
-      <div className="link">
-        <a className="underline" href="https://www.heinz.cmu.edu/current-students/keith-block-entrepreneurship-competition" target="_blank">
-          <h3 class="bolded-title same-line">Keith Block Entrepreneur Competition  </h3><h4 class="faded-title same-line"> Second Place</h4>
-        </a>
-      </div>
+        <h3 class="bolded-title same-line">Keith Block Entrepreneur Competition  </h3>
+        <h4 class="faded-title same-line"> Second Place</h4>
     </Section>
     <Section
       title="Sep 2020"

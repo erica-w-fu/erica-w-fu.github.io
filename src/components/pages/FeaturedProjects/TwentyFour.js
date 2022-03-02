@@ -9,15 +9,16 @@ function TwentyFour() {
     return(
         <>
             <FeaturedIntro
-                key="twenty_four"
+                key="twentyfour"
+                component="twentyfour"
                 title="24"
                 date="June 2019 - January 2021"
                 summary="Created a mobile version of my brother’s favorite card game, 24, first evaluating what features made the physical card game fun and incorporating them into the digital version."
                 responsibilities="Wireframing, Research, Mobile App Development "
                 tools="Xcode\nSwift"
-                img="twenty_four"
-                imgType="featured-img-uncropped"
+                imgType="uncropped"
                 link=""
+                team=""
             />
             <div className="divider"></div>
             <div className="divider"></div>
@@ -26,17 +27,17 @@ function TwentyFour() {
                 title="Identify"
             >
                 <h6>How can I convert the physical card game, 24, into a digital form for my family?</h6>
-                <p>
+                <small>
                     To play 24, players take four cards from the deck and use simple arithmetic to get a solution of 24. This game is commonly played and enjoyed by my family.
-                </p>
+                </small>
             </Section>
             <Section 
                 title="Immerse"
             >
                 <h6>Interviews</h6>
-                <p>
-                    intereviewed my family to gain insights on what the digital game should include
-                </p>
+                <small>
+                    interviewed my family to gain insights on what the digital game should include
+                </small>
                 <ul>
                     <li>competitiveness makes the game fun</li>
                     <li>physical game includes slapping and pointing to declare the answer</li>
@@ -44,9 +45,9 @@ function TwentyFour() {
                 </ul>
                 <br></br>
                 <h6>Competitive analysis</h6>
-                <p>
+                <small>
                     tested other 24 apps on the app store to understand what people have already made
-                </p>
+                </small>
                 <ul>
                     <li>apps all use the same mechanism to solve the numbers</li>
                     <li>apps do not include any multiplayer functions</li>
@@ -79,18 +80,18 @@ function TwentyFour() {
                 title="Test"
             >
                 <h6>User testing</h6>
-                <p>
+                <small>
                     conducted user tests with my family
-                </p>
+                </small>
                 <ul>
                     <li>found that buttons were intuitive and understandable</li>
                     <li>family really appreciated the algorithm that displayed potential solutions</li>
                 </ul>
                 <br></br>
                 <h6>Next steps</h6>
-                <p>
+                <small>
                     how I hope to expand this project
-                </p>
+                </small>
                 <ul>
                     <li>implement full multiplayer functionalities</li>
                     <li>deploy on the app store for anyone to play</li>

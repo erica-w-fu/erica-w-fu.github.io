@@ -39,9 +39,9 @@ function ProjectSections(props) {
     );
 }
 
-function importAll(r) {
-    return r.keys().map(r);
-}
+// function importAll(r) {
+//     return r.keys().map(r);
+// }
 
 const Project = ({ id }) => {
     switch (id) {
