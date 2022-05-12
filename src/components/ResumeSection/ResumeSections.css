@@ -118,7 +118,7 @@ td, th {
 }
 
 /* laptop version: */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 688px) {
     /* font style for Erica Fu */
     .name {
         font-size:28px;

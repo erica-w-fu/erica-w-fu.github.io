@@ -54,4 +54,5 @@
 
 .more-projects:hover {
     background-color: var(--accent);
+    color: white;
 }

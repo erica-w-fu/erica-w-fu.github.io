@@ -17,27 +17,25 @@ function App() {
   return (
     <>
       <Router baseline="/">
-        <div className="background">
-          <div className="page-wrapper">
-            <Navbar />
-            <Routes>
-              <Route path = '/' element={<Home/>}>
-                <Route path = '/' element={<ProjectOverview/>}/>
-                <Route path = '/ThirtyDayAdulting' element={<ThirtyDay/>}/>
-                <Route path = '/TwentyFour' element={<TwentyFour/>}/>
-                <Route path = '/CrossCountryConnections' element={<CrossCountryConnections/>}/>
-              </Route>
-              <Route path = '/Projects' element={<Projects/>}/>
-              {/* <Route path = '/Projects/thirty_day_adulting' element={<ThirtyDay/>}/>
-              <Route path = '/Projects/twentyfour' element={<TwentyFour/>}/>
-              <Route path = '/Projects/ccc' element={<CrossCountryConnections/>}/>
-              <Route path = '/Projects/sentence_mosaics' element={<SentenceMosaics/>}/> */}
+        <Navbar />
+          <div className='mobile-body'>
+          <Routes>
+            <Route path = '/' element={<Home/>}>
+              <Route path = '/' element={<ProjectOverview/>}/>
+              <Route path = '/ThirtyDayAdulting' element={<ThirtyDay/>}/>
+              <Route path = '/TwentyFour' element={<TwentyFour/>}/>
+              <Route path = '/CrossCountryConnections' element={<CrossCountryConnections/>}/>
+            </Route>
+            <Route path = '/Projects' element={<Projects/>}/>
+            {/* <Route path = '/Projects/thirty_day_adulting' element={<ThirtyDay/>}/>
+            <Route path = '/Projects/twentyfour' element={<TwentyFour/>}/>
+            <Route path = '/Projects/ccc' element={<CrossCountryConnections/>}/>
+            <Route path = '/Projects/sentence_mosaics' element={<SentenceMosaics/>}/> */}
 
-              <Route path = '/About' element={<About/>}/>
-              <Route path = '/Resume' element={<Resume/>}/>
-            </Routes>
+            <Route path = '/About' element={<About/>}/>
+            <Route path = '/Resume' element={<Resume/>}/>
+          </Routes>
           </div>
-        </div>
 			</Router>  
     </>
   );

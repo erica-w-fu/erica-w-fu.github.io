@@ -21,6 +21,7 @@ import {formatText, projectImg} from '../data/Data.js'
 function FeaturedIntro(props) {
 
     const projectId = props.component.toString().trim();
+    console.log(props.summary);
 
     return(
         <>

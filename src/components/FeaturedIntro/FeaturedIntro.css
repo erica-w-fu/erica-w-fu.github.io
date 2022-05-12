@@ -2,17 +2,6 @@
     display: flex;
 }
 
-.featured-link {
-    padding: 5px 10px;
-    border-radius: 30px;
-    max-width: max-content;
-    border: 1px solid var(--accent);
-}
-
-.featured-link:hover {
-    background-color: var(--accent);
-}
-
 .featured-intro-text {
     max-width: 450px;
 }

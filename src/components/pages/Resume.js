@@ -10,7 +10,7 @@ function Resume() {
     <>
     <div className="right-align">
       <a href={ resume } target="_blank">
-          <h6 className="featured-link">View Current Resume</h6>
+          <h6 className="featured-link">Download PDF Version</h6>
       </a> 
     </div>
     <div className="clear-float"></div>

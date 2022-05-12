@@ -12,20 +12,19 @@ function ProjectNav() {
 		window.scrollTo({top: 160});
 	};
 
-
     return (
         <>
             <NavLink to='/'>
                 <h4><b>Featured Projects</b></h4>
             </NavLink>
             <div className='project-nav-container'>
-                <NavLink to={(useLocation().pathname == '/ThirtyDayAdulting') ? '/' : '/ThirtyDayAdulting'}  className={(navData) => (navData.isActive ? "active-project" : 'project-tab')} onClick={scrollToTop}>
+                <NavLink to={(useLocation().pathname == '/ThirtyDayAdulting') ? '/' : '/ThirtyDayAdulting'}  className={(useLocation().pathname == '/ThirtyDayAdulting') ? "active-project" : 'project-tab'} onClick={scrollToTop}>
                     <img src={adulting} className='tab-img'></img>
                 </NavLink>
-                <NavLink to={(useLocation().pathname == '/TwentyFour') ? '/' : '/TwentyFour'} className={(navData) => (navData.isActive ? "active-project" : 'project-tab')} onClick={scrollToTop}>
+                <NavLink to={(useLocation().pathname == '/TwentyFour') ? '/' : '/TwentyFour'} className={(useLocation().pathname == '/TwentyFour') ? "active-project" : 'project-tab'} onClick={scrollToTop}>
                     <img src={twentyFour} className='tab-img'></img>
                 </NavLink>
-                <NavLink to={(useLocation().pathname == '/CrossCountryConnections') ? '/' : '/CrossCountryConnections'} className={(navData) => (navData.isActive ? "active-project" : 'project-tab')} onClick={scrollToTop}>
+                <NavLink to={(useLocation().pathname == '/CrossCountryConnections') ? '/' : '/CrossCountryConnections'} className={(useLocation().pathname == '/CrossCountryConnections') ? "active-project" : 'project-tab'} onClick={scrollToTop}>
                     <img src={ccc} className='tab-img'></img>
                 </NavLink>
             </div>

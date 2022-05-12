@@ -35,7 +35,7 @@ function About() {
                     <img src={hello} className="about-media-small"></img>
                     <div className="divider"></div>
                     <p>
-                        Erica Fu is a UI/UX designer, webapp developer, and <a href="https://www.dfaxcmu.org/" target='_blank'>student club leader</a> at Carnegie Mellon University. 
+                        Erica Fu is a UI/UX designer, webapp developer, and <a href="https://www.dfaxcmu.org/" target='_blank'>Design for America student club leader</a> at Carnegie Mellon University. 
                     </p>
                     <br></br>
                     <p>
