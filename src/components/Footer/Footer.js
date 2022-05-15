@@ -1,8 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './Footer.css'
 
-import logo from '../data/efuLogo.png'
+import Socials from '../Socials/Socials.js'
+// import UXProjects from '../UXProjects/UXProjects.js'
 
 function Footer() {
 
@@ -10,48 +11,38 @@ function Footer() {
 		window.scrollTo({top: 0, behavior: 'smooth'});
 	};
 
+    const scrollToUX = () => {
+        window.scrollTo({top: 550, behavior: 'smooth'});
+    };
+
     return (
-        <div className='footer-container'>
-            <section className="social-media">
-                <div className="social-media-wrap">
-                    <div className="footer-logo">
-                        <Link to='/' className="social-logo" onClick={scrollToTop}>
-                            <img src={logo} className='navbar-logo-img'></img>
-                        </Link>
-                    </div>
-                    <small className="website-rights">Made with React, 2021</small>
-                    <div className="social-icons">
-                        <a 
-                            className="social-icon-link linkedIn"
-                            target='_blank'
-                            href='https://www.linkedin.com/in/erica-fu-15b3a61b9/'
+        <div className='footer-background'>
+            <div className='footer-container body'>
+                <div className='footer-left'>
+                    <p>Interested in seeing more?</p>
+                    <br></br>
+                    <p>
+                        Check out my&nbsp; 
+                        <NavLink to='/' 
+                            onClick={scrollToUX}
                         >
-                            <i className="fab fa-linkedin"></i>
-                        </a>
-                        <a 
-                            className="social-icon-link github"
-                            target='_blank'
-                            href='https://github.com/erica-w-fu'
+                            UX design projects.
+                        </NavLink>
+                    </p>
+                    <p>
+                        Check out my&nbsp; 
+                        <NavLink to='/Developer' 
+                            onClick={scrollToTop}
                         >
-                            <i className="fab fa-github"></i>
-                        </a>
-                        <a 
-                            className="social-icon-link instagram"
-                            target='_blank'
-                            href='https://www.instagram.com/ericacreatesss/'
-                        >
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        {/* <a 
-                            className="social-icon-link facebook"
-                            target='_blank'
-                            href='https://www.facebook.com/erica.fu.524'
-                        >
-                            <i className="fab fa-facebook"></i>
-                        </a> */}
-                    </div>
+                            front-end/full stack development projects.
+                        </NavLink>
+                    </p>
                 </div>
-            </section>
+                <div className='footer-right'>
+                    <p>Made with React, 2021</p>
+                    <Socials/>
+                </div>
+            </div>
         </div>
     )
 }

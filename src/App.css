@@ -1,20 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;500;700&family=Inter:wght@400;500;700&display=swap');
+
 * {
   box-sizing: content-box;
   margin: 0px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
-
 :root {
   /* define variables */
-  --accent: #7e71d3; /* #c51d2e or #ea9554 */
-  --accent-light: #7e71d36c;
-  --accent-lighter: #7e6bfa2f;
-  --white: #f8f8f8;
-  --black: #242424;
+  --accent-light: #CBC6ED; /* #c51d2e or #ea9554 */
+  --accent-dark: #612fcc;
+  --white: #FFFEFE;
+  --white-dark: #F8F8F8;
   --gray: #959595;
-  --hover: #C4C4C4;
-  --pop-up: #83838380;
+  --black: #221D30;
   --title: "Inter";
   --title-fallback: sans-serif;
   --title-resume: "Helvetica";
@@ -22,82 +20,86 @@
   --body-fallback: serif;
 }
 
-.background {
+body {
   background-color: var(--white);
+  max-width: 1500px;
+  margin: auto;
+  /* padding: 0px 75px; */
 }
 
-.page-wrapper {
-  padding: 0px 50px;
-  background-color: var(--white);
-  max-width: 1100px;
-  margin: auto;
+/* add side margins with this div */
+.body {
+  margin: 0px 75px;
 }
 
 /* customize appearance of text */
 h1 {
   font-family: var(--title), var(--title-fallback);
-  font-size: 72px;
-  font-weight: bolder;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 h2 {
   font-family: var(--title), var(--title-fallback);
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 h3 {
   font-family: var(--title), var(--title-fallback);
-  font-size: 24px;
+  font-size: 18px;
   font-weight: bold;
-  padding-left: 0px;
 }
 
 h4 {
   font-family: var(--title), var(--title-fallback);
-  font-weight: normal;
-  font-size: 20px;
+  font-size: 16px;
+  padding-left: 0px;
+  color: var(--gray);
+  font-weight: 400;
 }
 
 h5 {
   font-family: var(--title), var(--title-fallback);
-  font-weight: lighter;
-  font-size: 14px;
-  color: var(--gray);
+  font-size: 16px;
+  font-weight: 400;
 }
 
-h6 {
-  font-family: var(--title), var(--title-fallback);
-  font-weight: bold;
-  font-size: 14px;
-}
-
-p, li {
+p {
   font-family: var(--title), var(--title-fallback);
   font-size: 12px;
-}
-
-small {
-  font-family: var(--body), var(--body-fallback);
-  font-size: 12px;
-}
-
-a:hover {
-  color: var(--hover);
 }
 
 a {
-  color: var(--accent);
-  text-decoration: none;
+  color: var(--black);
 }
 
-.underline:hover {
-  text-decoration: underline;
+a:hover {
+  color: var(--accent-dark);
 }
 
-html {
-  scroll-behavior: auto;
-  scroll-padding-top: 124px;
+.tag, button {
+  font-family: var(--title), var(--title-fallback);
+  font-size: 12px;
+  color: var(--black);
+  background-color: var(--accent-light);
+  padding: 10px;
+}
+
+.tag {
+  border-radius: 5px;
+  max-width: max-content;
+  display: inline-block;
+}
+
+button {
+  border-radius: 20px;
+  border: none;
+}
+
+button:hover {
+  background-color: var(--accent-dark);
+  color: var(--white);
 }
 
 .divider {
@@ -108,29 +110,71 @@ html {
   padding: 40px;
 }
 
-/* .home,
-.about {
+.unbold {
+  font-weight: 400;
+  display: inline-block;
+}
+
+/* two column structure */
+.row {
   display: flex;
-  height: 90vh;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
   align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+  gap: 10px 50px;
+  justify-content: space-between;
 }
 
-.fun {
+.column {
   display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 400px;
 }
 
-.fun-main {
-  display: block;
-  font-size: 3rem;
+.column > img {
+  width: 100%; 
+  min-width: 400px;
+  height: auto; 
+  background-color: var(--white-dark);
+  border-radius: 5px;
 }
 
-.fun-small {
-  display: block;
-  font-size: 1rem;
-} */
+.column > * {
+  margin: 10px 0;
+}
+
+/* image above text when wrapped */
+.reverse {
+  flex-wrap: wrap-reverse;
+}
+
+
+@media screen and (max-width: 688px) {
+
+  .body {
+    margin: 0px 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+  
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  h4, h5 {
+    font-size: 14px;
+  }
+
+  p, .tag {
+    font-size: 10px;
+  }
+}

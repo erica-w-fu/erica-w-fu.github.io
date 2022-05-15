@@ -1,0 +1,20 @@
+/* Social Icons */
+.social-icon-link {
+    color:var(--black);
+    font-size: 32px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 688px) {
+
+    .social-media {
+        width: 130px;
+    }
+}

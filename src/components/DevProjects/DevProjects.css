@@ -1,0 +1,12 @@
+#dev-body {
+    background-color: var(--black);
+    color: var(--white);
+    margin: -20px 0;
+    padding: 20px 0;
+    z-index: -1;
+}
+
+#dev-body .tag {
+    background-color: var(--accent-dark);
+    color: var(--white);
+}

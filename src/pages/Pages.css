@@ -1,0 +1,38 @@
+/* home styling */
+#home-background {
+    width: 100%;
+    background-color: var(--accent-light);
+    border-radius: 0 0 20px 20px;
+    position: relative; 
+    top: -75px;
+}
+
+.home-gif {
+    top: 75px;
+    max-width: 300px;
+    height: auto;
+    position: absolute;
+}
+
+.page-body {
+    padding: 50px 0;
+    padding-top: 75px;
+}
+
+/* resume page styling */
+.right-align {
+    float: right;
+    z-index: 1;
+} 
+
+.clear-float {
+    clear: both;
+}
+
+/* about paage styling */
+.about-doodle {
+    background-color: var(--white) !important;
+    min-width: 70% !important;
+    max-width: 150px;
+    margin: auto;
+}

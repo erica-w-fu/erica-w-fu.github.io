@@ -1,0 +1,16 @@
+.section-container {
+    display: flex;
+    margin: 50px 0;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+}
+
+.section-right {
+    flex: 5;
+    min-width: 500px;
+}
+
+.section-left {
+    min-width: 100px;
+    flex: 1;
+}

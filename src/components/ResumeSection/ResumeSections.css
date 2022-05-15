@@ -38,10 +38,6 @@
     color: var(--black);
 }
 
-.link:hover {
-    /* background-image: linear-gradient(to right, var(--white), var(--accent-light)); */
-}
-
 .same-line {
     display: inline;
     overflow: auto;
@@ -65,6 +61,7 @@ table {
 }
 td, th {
     text-align: left;
+    vertical-align: top;
 }
 
 /* mobile version: */

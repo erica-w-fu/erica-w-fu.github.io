@@ -1,43 +1,35 @@
 import React from 'react'
 import Navbar from './components/Navbar/Navbar.js';
+import Footer from './components/Footer/Footer.js';
 import './App.css';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Projects from './components/pages/Projects';
-import Home from './components/pages/Home';
-import Resume from './components/pages/Resume';
-import About from './components/pages/About'
-import ProjectOverview from'./components/pages/FeaturedProjects/ProjectOverview.js'
-import ThirtyDay from'./components/pages/FeaturedProjects/ThirtyDay.js'
-import TwentyFour from'./components/pages/FeaturedProjects/TwentyFour.js'
-import CrossCountryConnections from'./components/pages/FeaturedProjects/CrossCountryConnections.js'
+import DevProjects from './components/DevProjects/DevProjects.js';
+import Home from './pages/Home';
+import Resume from './pages/Resume';
+import About from './pages/About'
+import ThirtyDay from './pages/ThirtyDay';
+import TripPic from './pages/TripPic';
+import ReducingSingleUse from './pages/ReducingSingleUse';
+import SustainCMU from './pages/SustainCMU';
 
 
 function App() {
   return (
     <>
       <Router baseline="/">
-        <div className="background">
-          <div className="page-wrapper">
-            <Navbar />
-            <Routes>
-              <Route path = '/' element={<Home/>}>
-                <Route path = '/' element={<ProjectOverview/>}/>
-                <Route path = '/ThirtyDayAdulting' element={<ThirtyDay/>}/>
-                <Route path = '/TwentyFour' element={<TwentyFour/>}/>
-                <Route path = '/CrossCountryConnections' element={<CrossCountryConnections/>}/>
-              </Route>
-              <Route path = '/Projects' element={<Projects/>}/>
-              {/* <Route path = '/Projects/thirty_day_adulting' element={<ThirtyDay/>}/>
-              <Route path = '/Projects/twentyfour' element={<TwentyFour/>}/>
-              <Route path = '/Projects/ccc' element={<CrossCountryConnections/>}/>
-              <Route path = '/Projects/sentence_mosaics' element={<SentenceMosaics/>}/> */}
-
-              <Route path = '/About' element={<About/>}/>
-              <Route path = '/Resume' element={<Resume/>}/>
-            </Routes>
-          </div>
-        </div>
+        <Navbar />
+        <Routes>
+          <Route path = '/' element={<Home/>}/>
+          <Route path = '/Developer' element={<DevProjects/>}/>
+          <Route path = '/About' element={<About/>}/>
+          <Route path = '/Resume' element={<Resume/>}/>
+          <Route path = '/ThirtyDayAdulting' element={<ThirtyDay/>}/>
+          <Route path = '/TripPic' element={<TripPic/>}/>
+          <Route path = '/ReducingSingleUse' element={<ReducingSingleUse/>}/>
+          <Route path = '/SustainCMU' element={<SustainCMU/>}/>
+        </Routes>
+        <Footer />
 			</Router>  
     </>
   );

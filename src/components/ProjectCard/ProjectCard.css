@@ -1,39 +1,58 @@
-.project-card-container {
-    color: black;
-    /* height: 300px; */
-    box-shadow: 0px 0px 5px 1px var(--gray);
-    cursor: pointer;
+.card-container {
+    padding: 25px;
+    position: relative;
 }
 
-.project-card-container:hover {
-    color: black;
-    /* height: 300px; */
-    box-shadow: 0px 0px 5px 5px var(--accent-light);
+.card-container-2 {
+    padding: 15px;
 }
 
-.project-card-container > .cropped {
-    max-height: 200px;
-    width: 100%;
-    max-width: 100%;
-    object-fit: cover;
+.card-container:hover {
+    color: var(--black);
+    background-color: var(--accent-light);
+    border-radius: 0 10px 10px 0;
+    box-shadow: -150px 0 var(--accent-light);
+    transition: box-shadow 750ms, background-color 750ms;
 }
 
-.project-card-container > .uncropped {
-    max-height: 180px;
-    width: 100%;
-    max-width: 100%;
-    padding-top: 20px;
-    object-fit: contain;
+.card-container:hover .tag {
+    color: var(--black);
+    background-color: var(--white);
 }
 
-.project-card-container > .top {
-    max-height: 200px;
-    width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    object-position: 100% 0;
+.card-link {
+    text-decoration: none;
+    color: var(--black);
 }
 
-.card-text { 
-    padding: 0px 15px 20px 15px;
+/* surprise gif */
+.card-gif {
+    display: none;
+}
+
+.card-container:hover .card-gif {
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    max-width: 200px;
+    height: auto;
+}
+
+.featured-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1050px) {
+    /* align text to the right when image is on the right */
+    .align-right {
+        margin-left: auto; 
+        margin-right: 0;
+        text-align: right;
+    }
+    .align-right > .featured-tags {
+        justify-content: flex-end;
+    }
 }

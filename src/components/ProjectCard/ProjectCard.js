@@ -1,37 +1,90 @@
 import React, {useState} from 'react';
 import '../../App.css';
 import './ProjectCard.css';
-import { makeTags, projectImg } from '../data/Data.js'
-import PopUp from '../PopUp/PopUp.js'
-import FeaturedIntro from '../FeaturedIntro/FeaturedIntro.js'
+import { makeTags, projectImg, projectDemo } from '../data/Data.js'
+import { NavLink } from 'react-router-dom';
+
+import PopUp from '../PopUp/PopUp'
+
+import gif from '../../media/peek.gif'
 
 function ProjectCard(props) {
 
+    const scrollToTop = () => {
+		window.scrollTo({top: 0});
+	};
+
     const [buttonPopUp, setButtonPopUp] = useState(false); 
+
+    console.log(props.link);
     return (
-        <>
-            <div className="project-card-container" onClick={()=>setButtonPopUp(true)}>
-                <img src={projectImg(props.component)} className={props.imgType} alt="#{props.title} card"></img>
-                <div className="card-text">
-                    <div className="featured-tags">{ makeTags(props.tags) }</div>
-                    <h3>{ props.title }</h3>
+        <>  
+        { props.card===undefined ? 
+            // UX project cards
+            <NavLink to={"/" + props.component} className="card-link" onClick={scrollToTop}>
+            <div className="card-container">
+                { props.index%2 === 1 ? 
+                    <div className="row">
+                        <div className="column">
+                            <img src={projectImg(props.component)} className={props.imgType} alt="#{props.title} card"></img>
+                        </div>
+                        <div className="column">
+                            <p>{ props.title }</p>
+                            <h1>{ props.highlight }</h1>
+                            <div className="featured-tags">{ makeTags(props.tags) }</div>
+                        </div>
+                    </div> 
+                : 
+                    <div className="row reverse">
+                        <div className="column align-right">
+                            <p>{ props.title }</p>
+                            <h1>{ props.highlight }</h1>
+                            <div className="featured-tags">{ makeTags(props.tags) }</div>
+                        </div>
+                        <div className="column">
+                            <img src={projectImg(props.component)} className={props.imgType} alt="#{props.title} card"></img>
+                        </div>
+                    </div>
+                }
+                <div className="card-gif">
+                    <img src={gif} className="card-gif" alt="loading..." />
                 </div>
             </div>
-            <PopUp trigger={buttonPopUp} setTrigger={setButtonPopUp}>
-                <FeaturedIntro
-                    key={ props.key }
-                    component={ props.component }
-                    title={ props.title }
-                    date={ props.dates }
-                    summary={ props.summary }
-                    link={ props.link }
-                    linkTitle={ props.linkTitle }
-                    responsibilities={ props.responsibilities }
-                    tools={ props.tools }
-                    team={ props.team }
-                    imgType={ props.imgType }
-                />
-            </PopUp>
+            </NavLink>
+            :
+            // Development project cards
+            <div className="card-container-2">
+                <div className="row reverse">
+                    <div className="column">
+                        <p>{ props.title }</p>
+                        <h2 className="unbold"><b>{ props.highlightbold }</b> { props.highlight }</h2>
+                        <div className="row">
+                            <div className="featured-tags">{ makeTags(props.tags) }</div>
+                            { props.linkTitle === '' ? 
+                                <></>
+                                :
+                                (props.link === '' ?
+                                <>
+                                    <button onClick={()=>setButtonPopUp(true)}>{props.linkTitle}</button>
+                                    <PopUp trigger={buttonPopUp} setTrigger={setButtonPopUp}>
+                                        <video controls autoPlay>
+                                            <source style={{height:"100%"}} src={projectDemo(props.component)} type="video/mp4"/>
+                                        </video>
+                                    </PopUp>
+                                </>
+                                :
+                                <a href={ props.link } target="_blank">
+                                    <button>{props.linkTitle}</button>
+                                </a>)
+                            }   
+                        </div>
+                    </div>
+                    <div className="column">
+                        <img src={projectImg(props.component)} className={props.imgType} alt="#{props.title} card"></img>
+                    </div>
+                </div>
+            </div>
+        }
         </>
     );
 }
