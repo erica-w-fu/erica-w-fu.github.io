@@ -5,7 +5,6 @@ import Sub from '../components/SubSection/SubSection.js';
 
 import { projectProps } from '../components/data/Data.js';
 
-import JournalResults from '../media/ReducingSingleUse/JournalResults.png';
 import PainPoints from '../media/SustainCMUMedia/PainPoints.png';
 import Poster from '../media/SustainCMUMedia/Poster.png';
 import Prototype1 from '../media/SustainCMUMedia/Prototype1.png';

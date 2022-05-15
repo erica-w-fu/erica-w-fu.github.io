@@ -56,3 +56,10 @@
         justify-content: flex-end;
     }
 }
+
+@media screen and (max-width: 688px) {
+    .card-container {
+        padding: 10px 0px;
+        position: relative;
+    }
+}

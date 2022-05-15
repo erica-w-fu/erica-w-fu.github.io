@@ -146,6 +146,15 @@ button:hover {
   margin: 10px 0;
 }
 
+.col-big {
+  flex: 2;
+  min-width: 400px;
+}
+
+.col-small {
+  min-width: 300px;
+}
+
 /* image above text when wrapped */
 .reverse {
   flex-wrap: wrap-reverse;
@@ -176,5 +185,10 @@ button:hover {
 
   p, .tag {
     font-size: 10px;
+  }
+
+  .column, .column > img {
+    min-width: 100%;
+    max-width: 100%;
   }
 }

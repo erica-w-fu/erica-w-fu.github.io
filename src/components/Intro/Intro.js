@@ -9,10 +9,9 @@ function Intro(props) {
 
     return(
         <>
-        <div className="intro-container">
-            <div className="intro-text">
+        <div className="row">
+            <div className="column col-small">
                 <h1>{ props.title }</h1>
-                <div className="divider"></div>
                 {
                     props.link === '' 
                     ? <></>
@@ -20,20 +19,19 @@ function Intro(props) {
                             <a href={ props.link } target="_blank">
                                 <button>{props.linkTitle}</button>
                             </a> 
-                            <div className="divider"></div>
                         </div>
                         
                 }
                 <h4>{ props.dates }</h4>
-                <div className="divider"></div>
                 <h5>{ formatText(props.summary) }</h5>
-                <div className="divider"></div>
-                <h4>Responsibilities:</h4>
-                <h5>{ props.responsibilities }</h5>
-                <div className="divider"></div>
-                <h4>Tools:</h4>
-                <h5>{ formatText(props.tools) }</h5>
-                <div className="divider"></div>
+                <div>
+                    <h4>Responsibilities:</h4>
+                    <h5>{ props.responsibilities }</h5>
+                </div>
+                <div>
+                    <h4>Tools:</h4>
+                    <h5>{ formatText(props.tools) }</h5>
+                </div>
                 {
                     props.team === '' 
                     ? <></>
@@ -43,7 +41,7 @@ function Intro(props) {
                         </div>
                 }
             </div>
-            <div className="featured-img-container">
+            <div className="column col-big">
                 <img src={ projectImg(projectId) } className="intro-img"></img>
             </div>
         </div>
