@@ -8,7 +8,7 @@ import profile from '../media/About/profile.png'
 function About() {
     return (
         <div className="body page-body" id="about-container">
-            <div className="row">
+            <div className="row reverse">
                 <div className="column">
                     <img src={hello} className="about-doodle"></img>
                     <div className="divider"></div>
@@ -19,7 +19,7 @@ function About() {
                         She hopes to use her skills to design and create digital products or services that help others.
                     </p>
                     <p>
-                        Throughout her work and play, Erica loves to create. She has made <a href="https://www.instagram.com/ericacreatesss/" target='_blank'>a variety of things</a> through different mediums such as baking, painting, textiles, scrap materials, and more. She also loves to listen to music and plays the piano and guitar.
+                        Throughout her work and play, Erica loves to create. She has made <a href="https://www.instagram.com/ericacreatesss/" target='_blank'>a variety of things</a> through different mediums such as baking, painting, textiles, scrap materials, and more. She also loves to listen to music, play guitar and piano, her cat Sesame, and anything Sanrio or Ghibli.
                     </p>
                     <img src={doodles} className="about-doodle"></img>
                 </div>

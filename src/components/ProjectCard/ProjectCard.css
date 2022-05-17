@@ -28,16 +28,31 @@
 /* surprise gif */
 .card-gif {
     display: none;
-}
-
-.card-container:hover .card-gif {
-    display: block;
     position: absolute;
     right: 10px;
     bottom: 0;
     max-width: 200px;
     height: auto;
 }
+
+.card-container:hover .card-gif {
+   display: block;
+}
+
+/* .card-gif {
+    z-index: 9999;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    width: 200px;
+    height: 75px;
+    background-image: url(../../media/About/doodles.png);
+    background-size: cover;
+}
+
+.card-container:hover .card-gif {
+   background-image: url(../../media/peek.gif);
+} */
 
 .featured-tags {
     display: flex;

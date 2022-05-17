@@ -2,6 +2,7 @@ import React from "react";
 import Intro from "../components/Intro/Intro.js";
 import Section from '../components/Section/Section.js';
 import Sub from '../components/SubSection/SubSection.js';
+import { NavLink } from 'react-router-dom';
 
 import { projectProps } from '../components/data/Data.js';
 
@@ -16,6 +17,11 @@ import Prototype3 from '../media/SustainCMUMedia/Prototype3.png';
 function SustainCMU() {
 
     const item = projectProps('SustainCMU');
+
+	const scrollToTop = () => {
+		window.scrollTo({top: 0, behavior: 'smooth'});
+	};
+
 
     return (
         <div className="body page-body">
@@ -113,6 +119,11 @@ function SustainCMU() {
                     body="We will collaborate with CMU staff to look through the trash to calculate contaimination levels at each dining location and evaluate the effectiveness of our signage."
                 />
             </Section>
+
+            <hr></hr>
+            <h2>Learn more <NavLink to="/About" onClick={scrollToTop}>about me</NavLink> :&#41;
+            </h2>
+            <br></br>
         </div>
     )
 }

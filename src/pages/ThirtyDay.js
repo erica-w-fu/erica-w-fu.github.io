@@ -2,6 +2,7 @@ import React from "react";
 import Intro from "../components/Intro/Intro.js";
 import Section from '../components/Section/Section.js';
 import Sub from '../components/SubSection/SubSection.js';
+import Card from '../components/ProjectCard/ProjectCard.js';
 
 import { projectProps } from '../components/data/Data.js'
 
@@ -19,6 +20,7 @@ import SurveyInsights from '../media/ThirtyDayMedia/SurveyInsights.png';
 function ThirtyDay() {
 
     const item = projectProps('ThirtyDayAdulting');
+    const next = projectProps('TripPic');
 
     return (
         <div className="body page-body">
@@ -125,6 +127,17 @@ function ThirtyDay() {
                     <source src={demo} type="video/mp4"/>
                 </video>
             </Section>
+            
+            <hr></hr>
+            <h2>View another project</h2>
+            <br></br>
+            <Card 
+                key={ next.Component }
+                component={ next.Component }
+                title={ next.Title }
+                highlight={ next.Highlight }
+                tags={ next.Tags }
+            />
         </div>
     )
 }

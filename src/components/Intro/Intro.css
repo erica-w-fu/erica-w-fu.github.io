@@ -7,10 +7,8 @@
     border-radius: 5px;
 }
 
-hr {
-    margin-top: 50px;
-    border: 1px solid var(--accent-light);
+.intro-btn {
     top: 20px;
-    /* position: -webkit-sticky;
-    position: sticky; */
+    position: -webkit-sticky;
+    position: sticky;
 }

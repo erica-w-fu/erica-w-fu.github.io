@@ -24,7 +24,7 @@ function Resume() {
     <div className="page-body body">
     <div className="right-align">
       <a href={ resume } target="_blank">
-        <button>View Current Resume</button>
+        <button>View as PDF</button>
       </a> 
     </div>
     <div className="clear-float"></div>
@@ -34,11 +34,16 @@ function Resume() {
     >
         <div className="contact">
           <div>ericafu.me</div>
-          <div>efu@andrew.cmu.edu</div>
           <div>
             <a target='_blank'
                 href='https://www.linkedin.com/in/erica-fu-15b3a61b9/'>
                 linkedin.com/in/ericawfu/
+            </a>
+          </div>
+          <div>
+            <a target='_blank'
+                href='mailto:efu@andrew.cmu.edu'>
+                efu@andrew.cmu.edu
             </a>
           </div>
           <div>+1 (650) 392-9822</div>
@@ -50,12 +55,12 @@ function Resume() {
     >
     </Section>
     <Section
-      title="May 2024"
+      title="Aug 2020 - May 2024"
       style="dates"
     >
       {Heading("Carnegie Mellon University", "B.S. in Information Systems")}
       <ul>
-        <li>Minor in HCI, CS, and Design</li>
+        <li>Minor in Human-Computer Interaction, Computer Science, and Design</li>
         <li>GPA: 3.8/4.0, Dean's List 3 semesters</li>
       </ul>
     </Section>
@@ -110,7 +115,7 @@ function Resume() {
         <ul>
           <li>Redesigned and programmed an iOS app with Xcode and Swift</li>
           <li>Researched how social influence could encourage better cybersecurity behaviors</li>
-          <li>Wrote and proofread adulting and cybersecurity tasks and study surveys</li>
+          <li>Researched different cybersecurity recommendations to write accurate and helpful tasks</li>
           <li>Conducted and evaluated the results of a pilot study where users participated in a 30-day adulting challenge to be implemented in the app</li>
         </ul>
       </div>
@@ -124,7 +129,8 @@ function Resume() {
         <ul>
           <li>Designed and engineered an interactive LED display that mirrored a matching display across the country; to be displayed at CMU Silicon Valley</li>
           <li>Investigated how playful, tactile interactions would enhance remote communication</li>
-          <li>Used Arduinos, Raspberry Pis, and Fusion 360 to construct and connect the physical installations and Unity and Illustrator to digitally model the interaction</li>
+          <li>Constructed and connected the physical installations across the country with Arduinos and Raspberry Pis</li>
+          <li>Digitally modeled the intended interactions with Fusion 360, Unity, and Illustrator</li>
         </ul>
       </div>
     </Section>
@@ -183,7 +189,7 @@ function Resume() {
     >
       {Heading("Volunteer", "Artism", "", "San Jose, CA")}
       <ul>
-        <li>Built strong personal connections with students with Autism by introducing a new medium for expression and helping them communicate ideas through visual art</li>
+        <li>Built strong personal connections with students with autism by introducing a new medium for expression and helping them communicate ideas through visual art</li>
         <li>Taught a new art project using color pencil every week</li>
       </ul>
     </Section>
@@ -201,19 +207,19 @@ function Resume() {
         </tr>
         <tr>
           <td>Swift • Xcode</td>
-          <td>Adobe Illustrator</td>
+          <td>Figma</td>
           <td>Java • C</td>
           <td>JavaScript</td>
         </tr>
         <tr>
           <td>React</td>
-          <td>Figma</td>
+          <td>Adobe Illustrator</td>
           <td>Unix • Git</td>
           <td>CSS • HTML</td>
         </tr>
         <tr>
           <td>Ruby</td>
-          <td>Adobe Photoshop</td>
+          <td>Adobe InDesign</td>
           <td>SQL</td>
           <td>Wordpress</td>
         </tr>

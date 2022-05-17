@@ -24,21 +24,7 @@
     max-height: 100%;
 }
 
-.close-btn {
-    position: absolute;
-    width: 32px;
-    height: 32px;
-    border: 1px solid var(--accent-dark);
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    color: var(--black);
+.popup-button {
     top: 16px;
     right: 16px;
-    z-index: 9999;
-}
-
-.close-btn:hover {
-    background-color: var(--accent-dark);
-    color: var(--white);
 }

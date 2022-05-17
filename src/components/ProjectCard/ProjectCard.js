@@ -16,7 +16,6 @@ function ProjectCard(props) {
 
     const [buttonPopUp, setButtonPopUp] = useState(false); 
 
-    console.log(props.link);
     return (
         <>  
         { props.card===undefined ? 
@@ -46,9 +45,7 @@ function ProjectCard(props) {
                         </div>
                     </div>
                 }
-                <div className="card-gif">
-                    <img src={gif} className="card-gif" alt="loading..." />
-                </div>
+                <img src={gif} className="card-gif" alt="surprise" />
             </div>
             </NavLink>
             :

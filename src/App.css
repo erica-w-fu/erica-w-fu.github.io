@@ -22,9 +22,7 @@
 
 body {
   background-color: var(--white);
-  max-width: 1500px;
   margin: auto;
-  /* padding: 0px 75px; */
 }
 
 /* add side margins with this div */
@@ -102,6 +100,17 @@ button:hover {
   color: var(--white);
 }
 
+.small-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 9999;
+  font-size: 18px;
+}
+
 .divider {
   padding: 10px;
 }
@@ -109,6 +118,13 @@ button:hover {
 .divider-big {
   padding: 40px;
 }
+
+hr {
+  margin: 50px 0;
+  border: 1px solid var(--accent-light);
+  top: 20px;
+}
+
 
 .unbold {
   font-weight: 400;
@@ -159,6 +175,7 @@ button:hover {
 .reverse {
   flex-wrap: wrap-reverse;
 }
+
 
 
 @media screen and (max-width: 688px) {

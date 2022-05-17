@@ -2,6 +2,7 @@ import React from "react";
 import Intro from "../components/Intro/Intro.js";
 import Section from '../components/Section/Section.js';
 import Sub from '../components/SubSection/SubSection.js';
+import Card from '../components/ProjectCard/ProjectCard.js';
 
 import { projectProps } from '../components/data/Data.js';
 
@@ -20,6 +21,7 @@ import Poster from '../media/TripPicMedia/Poster.png'
 function TripPic() {
 
     const item = projectProps('TripPic');
+    const next = projectProps('ReducingSingleUse');
 
     return (
         <div className="body page-body">
@@ -128,6 +130,17 @@ function TripPic() {
                     img={ Wireframes }
                 />
             </Section>
+
+            <hr></hr>
+            <h2>View another project</h2>
+            <br></br>
+            <Card 
+                key={ next.Component }
+                component={ next.Component }
+                title={ next.Title }
+                highlight={ next.Highlight }
+                tags={ next.Tags }
+            />
         </div>
     )
 }
