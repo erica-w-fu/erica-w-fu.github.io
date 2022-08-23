@@ -23,9 +23,9 @@ function Navbar() {
 					<NavLink to='/Resume' className='nav-links' onClick={scrollToTop}>
 						<h2>Resume</h2>
 					</NavLink>
-					<NavLink to='/About' className='nav-links' onClick={scrollToTop}>
+					{/* <NavLink to='/About' className='nav-links' onClick={scrollToTop}>
 						<h2>About</h2>
-					</NavLink>
+					</NavLink> */}
 				</ul>
         	</div>
 		</div>

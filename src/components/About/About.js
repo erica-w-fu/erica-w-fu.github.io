@@ -1,9 +1,9 @@
 import React from 'react';
-import './Pages.css';
+import './About.css';
 
-import hello from '../media/About/hello.png'
-import doodles from '../media/About/doodles.png'
-import profile from '../media/About/profile.png'
+import hello from '../../media/About/hello.png'
+import doodles from '../../media/About/doodles.png'
+import profile from '../../media/About/profile.png'
 
 function About() {
     return (
@@ -24,7 +24,7 @@ function About() {
                     <img src={doodles} className="about-doodle"></img>
                 </div>
                 <div className="column">
-                    <img src={profile}></img>
+                    <img src={profile} className="about-profile"></img>
                 </div>
             </div>
         </div>

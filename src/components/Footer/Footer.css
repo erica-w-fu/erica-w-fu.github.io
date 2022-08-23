@@ -2,6 +2,8 @@
   width: 100%;
   background-color: var(--accent-light);
   border-radius: 20px 20px 0 0;
+  position: absolute;
+  bottom: 0;
 }
 
 .footer-container {

@@ -16,6 +16,7 @@ function Footer() {
     };
 
     return (
+        <div>
         <div className='footer-background'>
             <div className='footer-container body'>
                 <div className='footer-left'>
@@ -43,6 +44,7 @@ function Footer() {
                     <Socials/>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

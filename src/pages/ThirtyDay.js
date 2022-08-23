@@ -39,7 +39,7 @@ function ThirtyDay() {
                 team={ item.Team }
             />
             <Section 
-                title="Problem Space"
+                title="The Problem"
             >
                 <Sub 
                     header="How do we improve young adult’s adoption of cybersecurity tools?"
@@ -48,11 +48,11 @@ function ThirtyDay() {
                 />
             </Section>
             <Section
-                title="Solution"
+                title="Our Solution"
             >
                 <Sub 
                     header="30 Day Adulting app that embeds cybersecurity tasks with general adulting tasks"
-                    body="By using theory of planned behavior, embedded design, and social influence principles, we hope to alter young adult's conception of “adulting,” such that it includes taking care of cybsecurity"
+                    body="By using theory of planned behavior, embedded design, and social influence principles, we hope to alter young adult's conception of “adulting,” such that it includes taking care of cybersecurity"
                     img={ Solution }
                     imgType="wide"
                 />

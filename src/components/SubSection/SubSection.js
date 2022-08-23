@@ -11,6 +11,7 @@ function SubSection(props) {
     console.log(props.imgType);
     return (
         <div className="subsection">
+            <div className="subsection-body">
             {
                 props.header === undefined 
                 ?   <></>
@@ -27,6 +28,7 @@ function SubSection(props) {
                         <br></br>
                     </div>  
             }
+            </div>
             {
                 props.img === undefined 
                 ? <></>

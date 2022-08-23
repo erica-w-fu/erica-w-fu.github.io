@@ -12,7 +12,7 @@ function DevProjects() {
     return (
       <div id="dev-body">
       <div className="body page-body">
-        <h1>Front-end/full stack <div className="unbold">development projects</div></h1>
+        <h2><b>Front-end/full stack</b> <div className="unbold">development projects</div></h2>
         <div className="dev-projects">
         {
           data.map((item, index) => {

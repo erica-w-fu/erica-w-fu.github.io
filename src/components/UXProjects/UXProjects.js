@@ -11,7 +11,7 @@ function UXProjects() {
     
     return (
       <div className="page-body">
-        <h1>UX design <div className="unbold">projects</div></h1>
+        {/* <h2><b>UX design</b> <div className="unbold">projects</div></h2> */}
         <div className="ux-projects">
         {
           data.map((item, index) => {

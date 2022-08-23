@@ -17,9 +17,10 @@
 
 
 .nav-menu {
-  display: grid;
+  /* use if have more than one tab*/
+  /* display: grid;
   grid-template-columns: repeat(2, auto);
-  grid-gap: 30px;
+  grid-gap: 30px; */
 }
 
 .nav-links {

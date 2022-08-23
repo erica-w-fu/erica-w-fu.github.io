@@ -2,11 +2,16 @@
     margin-bottom: 20px;
 }
 
+.subsection-body {
+    max-width: 700px;
+    /* margin: auto; */
+}
+
 .subsection-img {
     max-width: 700px;
     border-radius: 10px;
     display: block;
-    margin: auto;
+    /* margin: auto; */
     margin-bottom: 20px;
 }
 

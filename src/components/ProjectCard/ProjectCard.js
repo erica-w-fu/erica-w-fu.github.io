@@ -25,7 +25,7 @@ function ProjectCard(props) {
                 { props.index%2 === 1 ? 
                     <div className="row">
                         <div className="column">
-                            <img src={projectImg(props.component)} className={props.imgType} alt="#{props.title} card"></img>
+                            <img src={ projectImg(props.component) } className="card-img" alt="#{props.title} card"></img>
                         </div>
                         <div className="column">
                             <p>{ props.title }</p>
@@ -41,11 +41,13 @@ function ProjectCard(props) {
                             <div className="featured-tags">{ makeTags(props.tags) }</div>
                         </div>
                         <div className="column">
-                            <img src={projectImg(props.component)} className={props.imgType} alt="#{props.title} card"></img>
+                            <img src={ projectImg(props.component) } className="card-img" alt="#{props.title} card"></img>
                         </div>
                     </div>
                 }
-                <img src={gif} className="card-gif" alt="surprise" />
+                <div className="gif-container">
+                    <img src={gif} className="card-gif" alt="surprise" />
+                </div>
             </div>
             </NavLink>
             :
@@ -77,7 +79,7 @@ function ProjectCard(props) {
                         </div>
                     </div>
                     <div className="column">
-                        <img src={projectImg(props.component)} className={props.imgType} alt="#{props.title} card"></img>
+                        <img src={projectImg(props.component)} className="card-img" alt="#{props.title} card"></img>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@
 }
 
 .home-gif {
-    top: 75px;
+    top: 40px;
     max-width: 300px;
     height: auto;
     position: absolute;
@@ -16,7 +16,41 @@
 
 .page-body {
     padding: 50px 0;
-    padding-top: 75px;
+    padding-top: 25px;
+}
+
+.lab-links a {
+    text-decoration: none;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.dev-link {
+    color: var(--white);
+    background-color: var(--black);
+    border-radius: 0 10px 10px 0;
+    box-shadow: -500px 0 var(--black);
+    padding: 75px 25px;
+    margin: 25px 0 75px 0;
+}
+
+.dev-link:hover {
+    color: var(--black);
+    background-color: var(--accent-light);
+    border-radius: 0 10px 10px 0;
+    box-shadow: -500px 0 var(--accent-light);
+    transition: box-shadow 750ms, background-color 750ms;
+}
+
+.dev-tags {
+    padding-top: 20px;
+}
+
+.dev-tags .tag {
+    background-color: var(--accent-dark);
+    color: var(--white);
 }
 
 /* resume page styling */
@@ -27,12 +61,4 @@
 
 .clear-float {
     clear: both;
-}
-
-/* about paage styling */
-.about-doodle {
-    background-color: var(--white) !important;
-    min-width: 70% !important;
-    max-width: 150px;
-    margin: auto;
 }
