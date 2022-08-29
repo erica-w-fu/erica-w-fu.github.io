@@ -7,7 +7,7 @@ import "./ResumeSections.css";
 
 function ResumeSections(props) {
     return (
-        <div className="aligned-section" id={ props.id }>
+        <div className="resume-section aligned-section" id={ props.id }>
             <div className="left-section">
                 <div className={props.style}>{ props.title }</div>
                 <h3>{ props.altTitle }</h3>

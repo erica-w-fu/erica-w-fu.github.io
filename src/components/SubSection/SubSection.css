@@ -1,5 +1,5 @@
 .subsection {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .subsection-body {
@@ -7,22 +7,90 @@
     /* margin: auto; */
 }
 
-.subsection-img {
+/* .subsection-img {
     max-width: 700px;
     border-radius: 10px;
     display: block;
-    /* margin: auto; */
     margin-bottom: 20px;
-}
+} */
 
-.wide {
+/* full width image */
+.subsection-img {
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 20px;
+}
+
+/* numbered list */
+.numbered-list li {
+    font-family: var(--body), var(--body-fallback);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+ol.numbered-list {
+    list-style-type: none;
+    margin: 0;
+    margin-left: 1em;
+    padding: 0;
+}
+
+ol.numbered-list li {
+    counter-increment: step-counter;
+    padding-left: 3em;
+    text-indent: 2em;
+}
+
+ol.numbered-list li:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+ol.numbered-list li:before {
+    content: counter(step-counter);
+    background-color: var(--accent-light);
+    font-weight: bold;
+    padding: 5px 12px;
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    margin-right: 1em;
+    margin-left: -5em;
+}
+
+/* quotes */
+.subsection-quotes p {
+    font-family: var(--body), var(--body-fallback);
+    font-size: 16px;
+    font-weight: 400;
+    background-color: var(--accent-light);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+/* videos within project detail page */
+.project-video {
+    max-width: 300px;
 }
 
 @media screen and (max-width: 688px) {
     .subsection-img {
         max-width: 100%;
+    }
+
+    .numbered-list li {
+        font-size: 12px;
+    }
+
+    ol.numbered-list li:before {
+        padding: 5px 9px;
+        height: 32px;
+        width: 32px;
+        border-radius: 100%;
+        margin-right: 1em;
+        margin-left: -5em;
+    }
+
+    .subsection-quotes p {
+        font-size: 12px;
     }
 }

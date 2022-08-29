@@ -1,6 +1,7 @@
 .card-container {
     padding: 25px;
     position: relative;
+    overflow: hidden;
 }
 
 .card-container-2 {
@@ -21,7 +22,7 @@
 }
 
 /* surprise gif */
-.card-gif {
+.card-cat {
     display: none;
     position: absolute;
     right: 10px;
@@ -30,10 +31,19 @@
     height: auto;
 }
 
-.card-container:hover .card-gif {
-   display: block;
+.card-container:hover .card-cat {
+    display: block;
+    animation-name : mymove;
+    animation-duration : 1s;
 }
 
+@keyframes mymove {
+    from {transform: translateY(50px);}
+    to {transform: translateY(0px);}
+}
+
+
+/* tag container */
 .featured-tags {
     display: flex;
     gap: 10px;
@@ -45,7 +55,7 @@
 }
 
 
-@media screen and (min-width: 1050px) {
+@media screen and (min-width: 870px) {
     /* align text to the right when image is on the right */
     .align-right {
         margin-left: auto; 

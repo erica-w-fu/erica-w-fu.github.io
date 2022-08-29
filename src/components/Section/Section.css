@@ -1,8 +1,11 @@
 .section-container {
-    display: flex;
+    gap: 20px;
+    padding: 50px 0;
+
+    /* display: flex;
     margin: 75px 0;
     flex-wrap: wrap;
-    gap: 20px 50px;
+    gap: 20px 50px; */
 }
 
 .section-right {

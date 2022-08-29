@@ -7,10 +7,7 @@ import { NavLink } from 'react-router-dom';
 import { projectProps } from '../components/data/Data.js';
 
 import PainPoints from '../media/SustainCMUMedia/PainPoints.png';
-import Poster from '../media/SustainCMUMedia/Poster.png';
 import Prototype1 from '../media/SustainCMUMedia/Prototype1.png';
-import Prototype1Insights from '../media/SustainCMUMedia/Prototype1Insights.png';
-import Prototype1Quotes from '../media/SustainCMUMedia/Prototype1Quotes.png';
 import Prototype2 from '../media/SustainCMUMedia/Prototype2.png';
 import Prototype3 from '../media/SustainCMUMedia/Prototype3.png';
 
@@ -18,8 +15,8 @@ function SustainCMU() {
 
     const item = projectProps('SustainCMU');
 
-	const scrollToTop = () => {
-		window.scrollTo({top: 0, behavior: 'smooth'});
+	const scrollToDev = () => {
+		window.scrollTo({top: 2000, behavior: 'smooth'});
 	};
 
 
@@ -38,15 +35,8 @@ function SustainCMU() {
                 responsibilities={ item.Responsibilities }
                 tools={ item.Tools }
                 team={ item.Team }
+                timeline={ item.Timeline }
             />
-            <Section
-                title="Project Overview"
-            >
-                <Sub 
-                    img={ Poster }
-                    imgType="wide"
-                />
-            </Section>
             <Section 
                 title="Problem Space"
             >
@@ -55,7 +45,7 @@ function SustainCMU() {
                     body="CMU is investing more and more into sustainable waste management, such as making their dining materials almost 100% compostable. However, recycling and compost bins at CMU see high levels of contamination, and we have found that many students are unsure about how to sort their waste."
                 />
                 <Sub 
-                    header="Pain Points"
+                    body="We interviewed Sustainable Earth (a sustainability student organization on campus), and the Green Practices manager, Deborah Steinberg. From those interviews, we deducted pain points and identified more specific How Can We's to focus on for the project."
                     img={ PainPoints }
                 />
             </Section>
@@ -64,7 +54,7 @@ function SustainCMU() {
             >
                 <Sub
                     header="Informational and attention-grabbing signage"
-                    body="We plan to put up two different types of posters: the usual informational posters that serve as a reference at the waste bins, as well as a set of “surprising facts” posters that target common misconceptions"
+                    body="Given that waste disposal is very dependent on environment, we decided to use signage to get students' attention at locations where students are thinking about waste disposal – such as dining halls and near trash bins, as well as locations where students might be more likely to read the information on posters – such as in elevators or bathrooms. We put up two different types of posters: the usual informational posters that serve as a reference at the waste bins, as well as a set of “surprising facts” posters that target common misconceptions that students may not be aware of."
                 />
             </Section>
             <Section 
@@ -76,13 +66,12 @@ function SustainCMU() {
                     img={ Prototype1 }
                 />
                 <Sub 
-                    header="Quotes"
-                    img={ Prototype1Quotes }
+                    body="Survey Quotes"
+                    quotes="In the bathroom I’m forced to read the poster, so that seems to be effective./Information where you dispose of waste — and having all types of collection bins near each other — is probably best!/Locate posters at points where trash is disposed of, and where people tend to congregate to study and exit the study locations./There should be a website that is clear about how to dispose of waste."
                 />
                 <Sub 
-                    header="Insights"
-                    body="With the survey results, we determined the most optimal location to place our two types of posters. We observed that there were two types of locations: ones that gained the most survey responses (since they were often at places where people had to stay and wait) and other ones where people were more willing to read information about waste disposal (often places where people expect to see that type of information)."
-                    img={ Prototype1Insights }
+                    body="We noticed that there was a big different between where students noticed the posters (where we got the highest volumne of responses, and where students would likely read information about waste disposal. Interestingly enough, locations where students were waiting (elevators, restrooms, and in line) were where we received the highest volume of responses, but locations near dining areas where were students reported that they would be interested in seeing waste disposal information."
+                    list="We planned to place surprising fact posters (prototype 2) in elevators and restroom stalls/We planned to place informational posters (prototype 3) on tables, waste bins, and in line at dining locations"
                 />
             </Section>
             <Section 
@@ -90,12 +79,12 @@ function SustainCMU() {
             >
                 <Sub 
                     header="How can we get people to notice the information?"
-                    body="We created various posters with surprising facts about waste disposal."
+                    body="We created various posters with surprising facts about waste disposal. To test our prototypes, we showed posters to people within the CMU chapter of Design for America."
                     img={ Prototype2 }
                 />
                 <Sub 
-                    header="Insights"
-                    body="We put up surprising fact posters in bathroom stalls and elevators and found that students liked and noticed posters that had jokes relevant to the school."
+                    body="Prototype 2 Insights"
+                    list="Students enjoyed posters that had jokes relevant to the school/A lot of the facts were quite surprising to students, accomplishing out goal of changing students' mental model that they knew how to dispose of their waste"
                 />
             </Section>
             <Section 
@@ -103,7 +92,7 @@ function SustainCMU() {
             >
                 <Sub 
                     header="How can get people to process and properly dispose waste?"
-                    body="We created different informational posters that organize and highlight different information about waste disposal. Given that there is some existing signage on campus, we evaluated what could be improved about the current signage. Given that the current signage only shows what should be in each bin, we hypothesized that people would ignore the signs since they assumes that they already knew how to dispose of waste. Furthermore, the posters would often ignore ambiguities (such as only cups at certain locations may be compostable). Thus, we decided to create one prototyped that organized the information by category to make the reader reflect on what object they have in hand, and another prototype that emphasized common misconceptions to call attention to any waste that the reader may be planning to incorrectly dispose of."
+                    body="We created different informational posters that organize and highlight different information about waste disposal. Observing the limited signage on campus, we noticed that posters only showed what should be in each bin. We hypothesized that people would ignore the signs since they assumed that they already knew how to dispose of waste. Furthermore, the posters would often ignore ambiguities (such as only cups at certain locations may be compostable). Thus, we created a prototype that emphasized common misconceptions to call attention to any waste that the reader may be planning to incorrectly dispose."
                     img={ Prototype3 }
                 />
             </Section>
@@ -120,10 +109,12 @@ function SustainCMU() {
                 />
             </Section>
 
-            <hr></hr>
-            <h2>Learn more <NavLink to="/About" onClick={scrollToTop}>about me</NavLink> :&#41;
-            </h2>
-            <br></br>
+            <div className="body-small">
+                <hr></hr>
+                <h2>Look at <NavLink to="/" onClick={scrollToDev}>more projects</NavLink>!
+                </h2>
+                <br></br>
+            </div>
         </div>
     )
 }

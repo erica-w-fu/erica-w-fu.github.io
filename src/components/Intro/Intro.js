@@ -14,48 +14,32 @@ function Intro(props) {
     };
 
     return(
-        <>
-        <NavLink to='/' onClick={scrollToUX}>
-            <button className="small-btn intro-btn">&lt;</button>
-        </NavLink>
-        <div className="row">
-            <div className="column col-small">
-                <h1>{ props.title }</h1>
-                {
-                    props.link === '' 
-                    ? <></>
-                    :   <div>
-                            <a href={ props.link } target="_blank">
-                                <button>{props.linkTitle}</button>
-                            </a> 
-                        </div>
-                        
-                }
-                <h4>{ props.dates }</h4>
+        <div>
+            <img src={ projectImg(projectId) } className="intro-img"></img>
+            <div className="intro-container row-2 body-small">
+                <h1>{props.title}</h1>
                 <h5>{ formatText(props.summary) }</h5>
-                <div>
-                    <h4>Responsibilities:</h4>
-                    <h5>{ props.responsibilities }</h5>
+                <div className="col">
+                    <p>Responsibilities</p>
+                    <h5>{ formatText(props.responsibilities) }</h5>
                 </div>
-                <div>
-                    <h4>Tools:</h4>
+                <div className="col">
+                    <p>Tools</p>
                     <h5>{ formatText(props.tools) }</h5>
                 </div>
-                {
-                    props.team === '' 
+                {props.team === '' 
                     ? <></>
-                    :   <div>
-                            <h4>Team:</h4>
-                            <h5>{ props.team }</h5>
+                    :   <div className="col">
+                            <p>Team</p>
+                            <h5>{ formatText(props.team) }</h5>
                         </div>
                 }
-            </div>
-            <div className="column col-big">
-                <img src={ projectImg(projectId) } className="intro-img"></img>
+                <div className="col">
+                    <p>Timeline</p>
+                    <h5>{ props.timeline }</h5>
+                </div>
             </div>
         </div>
-        <hr></hr>
-        </>
     )
 }
 

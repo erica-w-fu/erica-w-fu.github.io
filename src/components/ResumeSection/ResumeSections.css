@@ -5,6 +5,7 @@
 .name {
     font-family: var(--title-resume), var(--title-fallback);
     font-weight: bold;
+    font-size: 32px;
 }
 
 /* font style for capitalized titles on the left */
@@ -26,6 +27,10 @@
     font-family: var(--title-resume), var(--title-fallback);
     font-weight: normal;
     color: gray;
+}
+
+.faded-title { 
+    padding-left: 10px;
 }
 
 /* for dates, content, and location text */
@@ -54,6 +59,8 @@ ul {
 }
 .right-section li {
     font-family: var(--title-resume), var(--body-fallback);
+    margin-top: 3px; 
+    margin-bottom: 3px;
 }
 
 table {
@@ -89,7 +96,8 @@ td, th {
     }
 
     /* for dates, contact, and location text */
-    p, td, .dates, .contact{
+    /* p, td, .dates, .contact{ */
+    td, .dates, .contact {
         font-size: 12px;
     }
 
@@ -137,7 +145,8 @@ td, th {
     }
 
     /* for dates, content, and location text */
-    p, td, .dates, .location, li, .contact {
+    /* p, td, .dates, .location, li, .contact { */
+    td, .dates, .location, li, .contact {
         font-size: 14px;
     }
     

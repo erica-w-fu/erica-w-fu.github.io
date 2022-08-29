@@ -1,3 +1,12 @@
+.intro-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.intro-container p {
+    font-size: 16px;
+}
+
 .intro-img {
     height: 100%;
     width: 100%;

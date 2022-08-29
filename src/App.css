@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
 
 * {
   box-sizing: content-box;
@@ -10,6 +10,7 @@
 :root {
   /* define variables */
   --accent-light: #CBC6ED; /* #c51d2e or #ea9554 */
+  --accent: #32568A;
   --accent-dark: #612fcc;
   --white: #FFFEFE;
   --white-dark: #F8F8F8;
@@ -18,20 +19,27 @@
   --title: "Inter";
   --title-fallback: serif;
   --title-resume: "Helvetica";
-  --body: "Inter";
+  --body: "Source Sans Pro";
   --body-fallback: serif;
 }
 
 body {
   background-color: var(--white);
   margin: auto;
+  color: var(--black);
 }
 
 /* add side margins with this div */
-.body {
-  margin: 0px 75px;
+.body, .body-small {
+  padding-left: 20px;
+  padding-right: 20px;
   max-width: 1100px;
   margin: auto;
+}
+
+.body-small {
+  max-width: 700px;
+  min-width: 0;
 }
 
 #page-container {
@@ -67,7 +75,7 @@ h4 {
   font-size: 16px;
   padding-left: 0px;
   color: var(--gray);
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h5 {
@@ -84,7 +92,8 @@ h6 {
 
 p {
   font-family: var(--body), var(--body-fallback);
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 200;
 }
 
 a {
@@ -150,15 +159,30 @@ hr {
   display: inline-block;
 }
 
+
 /* two column structure */
-.row {
+.row, .row-2{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: space-between;
+}
+
+/* align items at center, used in project card view */
+.row {
   align-items: center;
   gap: 10px 50px;
-  justify-content: space-between;
+}
+
+/* align items at top, used in project detail view */
+.row-2 {
+  align-items: flex-start;
+  gap: 20px 50px;
+}
+
+.col {
+  flex: 1;
 }
 
 .column {
@@ -166,7 +190,7 @@ hr {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
-  min-width: 400px;
+  min-width: 360px;
 }
 
 .column > img {
@@ -199,7 +223,8 @@ hr {
 @media screen and (max-width: 688px) {
 
   .body {
-    margin: 0px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   h1 {
@@ -211,7 +236,7 @@ hr {
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 24px;
   }
 
   h4, h5 {
@@ -223,11 +248,19 @@ hr {
   }
 
   p, .tag {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .column, .column > img {
     min-width: 100%;
     max-width: 100%;
+  }
+
+  .col {
+    flex-basis: 25%;
+  }
+
+  .tag {
+    font-size: 10px;
   }
 }

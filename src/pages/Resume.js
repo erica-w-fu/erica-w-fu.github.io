@@ -60,46 +60,9 @@ function Resume() {
     >
       {Heading("Carnegie Mellon University", "B.S. in Information Systems")}
       <ul>
-        <li>Minor in Human-Computer Interaction, Computer Science, and Design</li>
-        <li>GPA: 3.8/4.0, Dean's List 3 semesters</li>
+        <li>Minor in Human-Computer Interaction, Design, and Computer Science</li>
+        <li>GPA: 3.8/4.0, Dean's List 4 semesters</li>
       </ul>
-    </Section>
-    <Section 
-      title="Relevant Coursework"
-      style="dates"
-    >
-       <table>
-        <tr>
-          <th>Information Systems</th>
-          <th>HCI</th>
-          <th>Computer Science</th>
-          <th>Design</th>
-        </tr>
-        <tr>
-          <td> 
-            <ul>
-              <li>Application Design and Development</li>
-              <li>Database Design and Development</li>
-              <li>Introduction to Information Systems</li>
-            </ul>
-          </td>
-          <td><ul>
-            <li>User Centered Research and Evaluation</li>
-            <li>Designing Human Centered Software</li>
-            <li>Interaction Design Overview</li>
-          </ul></td>
-          <td><ul>
-            <li>Functional Programming</li>
-            <li>Introduction to Computer Systems</li>
-            <li>Data Structures and Algorithms</li>
-          </ul></td>
-          <td><ul>
-            <li>Communication Design Fundamentals</li>
-            <li>Product Design Fundamentals</li>
-            <li>How People Work</li>
-          </ul></td>
-        </tr>
-      </table>
     </Section>
     <Section
       title="Experience"
@@ -107,30 +70,29 @@ function Resume() {
     >
     </Section>
     <Section
-      title="May 2021 - present"
+      title="May 2021 - Aug 2022"
       style="dates"
     >
       <div className="link">
-        {Heading("HCI Research Assistant", "CoEx Lab", "https://socialcybersecurity.org/", "Pittsburgh, PA")}
+        {Heading("HCI Research Assistant", "Adulting 101, CoEx and CHIMPs Lab", "https://socialcybersecurity.org/", "Pittsburgh, PA")}
         <ul>
-          <li>Redesigned and programmed an iOS app with Xcode and Swift</li>
-          <li>Researched how social influence could encourage better cybersecurity behaviors</li>
-          <li>Researched different cybersecurity recommendations to write accurate and helpful tasks</li>
-          <li>Conducted and evaluated the results of a pilot study where users participated in a 30-day adulting challenge to be implemented in the app</li>
+          <li>Researched how theory of planned behavior, embedded design, and social influence could encourage better cybersecurity behaviors</li>
+          <li>Redesigned and programmed an iOS app with Figma, Xcode, and Swift</li>
+          <li>Wrote adulting and cybersecurity tasks and study surveys</li>
+          <li>Conducted a Wizard of Oz study with 12 participants to validate our theoretical foundation</li>
         </ul>
       </div>
     </Section>
     <Section
-      title="May 2021 - present"
+      title="May 2021 - Aug 2022"
       style="dates"
     >
       <div className="link">
         {Heading("Independent Research", "Small Undergraduate Research Grant", "https://crosscountryconnections.github.io/index.html", "Pittsburgh, PA")}
         <ul>
           <li>Designed and engineered an interactive LED display that mirrored a matching display across the country; to be displayed at CMU Silicon Valley</li>
-          <li>Investigated how playful, tactile interactions would enhance remote communication</li>
-          <li>Constructed and connected the physical installations across the country with Arduinos and Raspberry Pis</li>
-          <li>Digitally modeled the intended interactions with Fusion 360, Unity, and Illustrator</li>
+          <li>Investigated how playful tactile interactions would enhance remote communication</li>
+          <li>Used Arduinos, Raspberry Pis, Fusion 360 to construct and connect the physical installations and Unity and Illustrator to digitally model the interaction</li>
         </ul>
       </div>
     </Section>
@@ -138,7 +100,7 @@ function Resume() {
       title="Jan 2019 - Jan 2020"
       style="dates"
     >
-      {Heading("Media Design Intern", "DAMO Academy", "", "Pittsburgh, PA")}
+      {Heading("Media Design Intern", "DAMO Academy", "", "San Mateo, CA")}
       <ul>
         <li>Designed and constructed an interactive wall for the DAMO lab, illustrating the history of human-computer interaction</li>
         <li>Used multimedia–Arduino, conductive paint, LED lights, speakers–to engage in multiple senses and demonstrate distinct ways humans can interact with computers</li>
@@ -167,10 +129,19 @@ function Resume() {
     >
         {Heading("President", "Design for America", "https://www.dfaxcmu.org/", "Pittsburgh, PA")}
         <ul>
+          <li>Collaborated with local community organizations and professors to identify challenging social issues and advise project teams as they develop solutions</li>
           <li>Organized and directed studio and executive meetings</li>
-          <li>Presented to 40 members the impact and process of human-centered design</li>
           <li>Collaborated with professors and local community partners to identify challenging social issues and advise members as they develop solutions</li>
-          <li>Coordinated with National DFA to share successful practices and challenges</li>
+          <li>Developed lesson content, exercises, and peer evaluation sessions on Human-Centered Design to teach 40 members</li>
+        </ul>
+    </Section>
+    <Section
+      title="Sep 2021 - present"
+      style="dates"
+    >
+        {Heading("Mentor", "Women in Information Systems", "", "Pittsburgh, PA")}
+        <ul>
+          <li>Mentored 2 students by sharing personal experiences with HCI research, student organizations, and courses</li>
         </ul>
     </Section>
     <Section
@@ -193,39 +164,7 @@ function Resume() {
         <li>Taught a new art project using color pencil every week</li>
       </ul>
     </Section>
-
-    <Section
-      title="Skills"
-      style="capitalized"
-    >
-      <table>
-        <tr>
-          <th>Development</th>
-          <th>Design</th>
-          <th>Programming</th>
-          <th>Website</th>
-        </tr>
-        <tr>
-          <td>Swift • Xcode</td>
-          <td>Figma</td>
-          <td>Java • C</td>
-          <td>JavaScript</td>
-        </tr>
-        <tr>
-          <td>React</td>
-          <td>Adobe Illustrator</td>
-          <td>Unix • Git</td>
-          <td>CSS • HTML</td>
-        </tr>
-        <tr>
-          <td>Ruby</td>
-          <td>Adobe InDesign</td>
-          <td>SQL</td>
-          <td>Wordpress</td>
-        </tr>
-      </table>
-    </Section>
-
+    
     <Section
       title="Achievements"
       style="capitalized"
@@ -248,6 +187,38 @@ function Resume() {
       style="dates"
     >
       {Heading("HackCMU", "EchoAR Category Award")}
+    </Section>
+
+    <Section
+      title="Skills"
+      style="capitalized"
+    >
+      <table>
+        <tr>
+          <th>Design</th>
+          <th>User Testing</th>
+          <th>Full-Stack</th>
+          <th>Programming</th>
+        </tr>
+        <tr>
+          <td>Figma</td>
+          <td>Contextual Inquiries </td>
+          <td>CSS • HTML • JS</td>
+          <td>C • Java</td>
+        </tr>
+        <tr>
+          <td>Adobe Illustrator</td>
+          <td>Remote testing</td>
+          <td>React</td>
+          <td>Unix • Git</td>
+        </tr>
+        <tr>
+          <td>Adobe Photoshop</td>
+          <td>Survey and analysis</td>
+          <td>Swift • Xcode</td>
+          <td>SQL</td>
+        </tr>
+      </table>
     </Section>
   </div>
   );

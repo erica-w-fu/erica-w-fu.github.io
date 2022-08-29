@@ -7,6 +7,8 @@ import { NavLink } from 'react-router-dom';
 import PopUp from '../PopUp/PopUp'
 
 import gif from '../../media/peek.gif'
+import catPeek from '../../media/peek.png'
+
 
 function ProjectCard(props) {
 
@@ -28,7 +30,7 @@ function ProjectCard(props) {
                             <img src={ projectImg(props.component) } className="card-img" alt="#{props.title} card"></img>
                         </div>
                         <div className="column">
-                            <p>{ props.title }</p>
+                            <h4>{ props.title }</h4>
                             <h1>{ props.highlight }</h1>
                             <div className="featured-tags">{ makeTags(props.tags) }</div>
                         </div>
@@ -36,7 +38,7 @@ function ProjectCard(props) {
                 : 
                     <div className="row reverse">
                         <div className="column align-right">
-                            <p>{ props.title }</p>
+                            <h4>{ props.title }</h4>
                             <h1>{ props.highlight }</h1>
                             <div className="featured-tags">{ makeTags(props.tags) }</div>
                         </div>
@@ -45,8 +47,11 @@ function ProjectCard(props) {
                         </div>
                     </div>
                 }
-                <div className="gif-container">
+                {/* <div className="gif-container">
                     <img src={gif} className="card-gif" alt="surprise" />
+                </div> */}
+                <div className="card-cat-container">
+                    <img src={catPeek} className="card-cat" alt="surprise" />
                 </div>
             </div>
             </NavLink>
@@ -87,28 +92,5 @@ function ProjectCard(props) {
         </>
     );
 }
-
-// function cardImg(id) {
-//     switch (id) {
-//         case "thirty_day_adulting":
-//             return  <img src={thirty_day_adulting} className="about-media" alt="#{id} card"></img>;
-//         case "twentyfour":
-//             return  <img src={twentyfour} className="about-media-contain" alt="#{id} card"></img>;
-//         case "sentence_mosaics":
-//             return  <img src={sentence_mosaics} className="about-media-contain" alt="#{id} card"></img>;
-//         case "dfa_website":
-//             return  <img src={dfa_website} className="about-media-top" alt="#{id} card"></img>;
-//         case "duquesne_incline":
-//             return  <img src={duquesne_incline} className="about-media-top" alt="#{id} card"></img>;
-//         case "microsite":
-//             return  <img src={microsite} className="about-media-top" alt="#{id} card"></img>;
-//         case "ccc":
-//             return  <img src={ccc} className="about-media" alt="#{id} card"></img>;
-//         case "acrylic_pour_painting_platform":
-//             return  <img src={acrylic_pour_painting_platform} className="about-media-top" alt="#{id} card"></img>;
-//         case "reducing_singleuse":
-//             return  <img src={reducing_singleuse} className="about-media" alt="#{id} card"></img>;
-//     }
-// } 
 
 export default ProjectCard;

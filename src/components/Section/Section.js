@@ -7,14 +7,12 @@ import "./Section.css"
 
 function Section(props) {
     return (
-        <div className="section-container" id={ props.id }>
-            <div className="section-left">
-                <h4>{ props.title }</h4>
-            </div>
-            <div className="section-right">
-                { props.children }
-            </div>
+        <>
+        <div className="section-container">
+            <h4 className="body-small">{ props.title }</h4>
+            { props.children }
         </div>
+        </>
     );
 }
 export default Section;
