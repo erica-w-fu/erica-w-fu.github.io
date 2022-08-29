@@ -1,17 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.1cdd451b.chunk.css",
-    "main.js": "/static/js/main.e2248811.chunk.js",
-    "main.js.map": "/static/js/main.e2248811.chunk.js.map",
+    "main.css": "/static/css/main.75d005d0.chunk.css",
+    "main.js": "/static/js/main.a0ec23a2.chunk.js",
+    "main.js.map": "/static/js/main.a0ec23a2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ab7af748.js",
     "runtime-main.js.map": "/static/js/runtime-main.ab7af748.js.map",
     "static/js/2.84b3438f.chunk.js": "/static/js/2.84b3438f.chunk.js",
     "static/js/2.84b3438f.chunk.js.map": "/static/js/2.84b3438f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.1cdd451b.chunk.css.map": "/static/css/main.1cdd451b.chunk.css.map",
+    "static/css/main.75d005d0.chunk.css.map": "/static/css/main.75d005d0.chunk.css.map",
     "static/js/2.84b3438f.chunk.js.LICENSE.txt": "/static/js/2.84b3438f.chunk.js.LICENSE.txt",
+    "static/media/AcrylicPourPlatform.397a6bb6.png": "/static/media/AcrylicPourPlatform.397a6bb6.png",
     "static/media/Adulting101.da52e8a2.png": "/static/media/Adulting101.da52e8a2.png",
     "static/media/AffinityDiagram.10ce79d5.png": "/static/media/AffinityDiagram.10ce79d5.png",
+    "static/media/CCC.5d27237d.png": "/static/media/CCC.5d27237d.png",
     "static/media/CompetitiveAnalysis.d19137e5.png": "/static/media/CompetitiveAnalysis.d19137e5.png",
     "static/media/ConceptModel.1321a7ac.png": "/static/media/ConceptModel.1321a7ac.png",
     "static/media/Crazy8s.aa6c3d7c.png": "/static/media/Crazy8s.aa6c3d7c.png",
@@ -25,7 +27,6 @@
     "static/media/ImpactCMU.4357940c.png": "/static/media/ImpactCMU.4357940c.png",
     "static/media/Insights.ce1af977.png": "/static/media/Insights.ce1af977.png",
     "static/media/PainPoints.cd6443a9.png": "/static/media/PainPoints.cd6443a9.png",
-    "static/media/PortfolioWebsite.f5563da4.png": "/static/media/PortfolioWebsite.f5563da4.png",
     "static/media/Prototype1.cf414390.png": "/static/media/Prototype1.cf414390.png",
     "static/media/Prototype2.73a1f004.png": "/static/media/Prototype2.73a1f004.png",
     "static/media/Prototype3.ecae8916.png": "/static/media/Prototype3.ecae8916.png",
@@ -37,8 +38,8 @@
     "static/media/Solution.ef3e2ed5.png": "/static/media/Solution.ef3e2ed5.png",
     "static/media/SpeedDating.06422ede.png": "/static/media/SpeedDating.06422ede.png",
     "static/media/SustainCMU.a10af822.png": "/static/media/SustainCMU.a10af822.png",
-    "static/media/TRIPPIC.1c80aff3.png": "/static/media/TRIPPIC.1c80aff3.png",
-    "static/media/ThirtyDayDemo.2258c1f4.mov": "/static/media/ThirtyDayDemo.2258c1f4.mov",
+    "static/media/TRIPPIC.fefe2dce.png": "/static/media/TRIPPIC.fefe2dce.png",
+    "static/media/ThirtyDayDemo.e7de564c.mov": "/static/media/ThirtyDayDemo.e7de564c.mov",
     "static/media/TwentyFour.795e07e3.png": "/static/media/TwentyFour.795e07e3.png",
     "static/media/TwentyFourDemo.95b58025.mp4": "/static/media/TwentyFourDemo.95b58025.mp4",
     "static/media/UserFlow.990c9fc1.png": "/static/media/UserFlow.990c9fc1.png",
@@ -47,15 +48,16 @@
     "static/media/Zeno.7d5f564b.png": "/static/media/Zeno.7d5f564b.png",
     "static/media/doodles.3c55bbce.png": "/static/media/doodles.3c55bbce.png",
     "static/media/hello.6d07421a.png": "/static/media/hello.6d07421a.png",
+    "static/media/peek.dbd2a572.png": "/static/media/peek.dbd2a572.png",
     "static/media/peek.ddbc116b.gif": "/static/media/peek.ddbc116b.gif",
     "static/media/profile.2613d6f2.png": "/static/media/profile.2613d6f2.png",
-    "static/media/resume.7d14011c.pdf": "/static/media/resume.7d14011c.pdf",
-    "static/media/welcome.a322fcf2.gif": "/static/media/welcome.a322fcf2.gif"
+    "static/media/resume.82a4d769.pdf": "/static/media/resume.82a4d769.pdf",
+    "static/media/welcome.7e156138.gif": "/static/media/welcome.7e156138.gif"
   },
   "entrypoints": [
     "static/js/runtime-main.ab7af748.js",
     "static/js/2.84b3438f.chunk.js",
-    "static/css/main.1cdd451b.chunk.css",
-    "static/js/main.e2248811.chunk.js"
+    "static/css/main.75d005d0.chunk.css",
+    "static/js/main.a0ec23a2.chunk.js"
   ]
 }
