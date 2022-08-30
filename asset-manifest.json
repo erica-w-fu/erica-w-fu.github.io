@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.75d005d0.chunk.css",
-    "main.js": "/static/js/main.b1ec2605.chunk.js",
-    "main.js.map": "/static/js/main.b1ec2605.chunk.js.map",
+    "main.css": "/static/css/main.c5c0a8e5.chunk.css",
+    "main.js": "/static/js/main.bbf211f8.chunk.js",
+    "main.js.map": "/static/js/main.bbf211f8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ab7af748.js",
     "runtime-main.js.map": "/static/js/runtime-main.ab7af748.js.map",
     "static/js/2.84b3438f.chunk.js": "/static/js/2.84b3438f.chunk.js",
     "static/js/2.84b3438f.chunk.js.map": "/static/js/2.84b3438f.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.75d005d0.chunk.css.map": "/static/css/main.75d005d0.chunk.css.map",
+    "static/css/main.c5c0a8e5.chunk.css.map": "/static/css/main.c5c0a8e5.chunk.css.map",
     "static/js/2.84b3438f.chunk.js.LICENSE.txt": "/static/js/2.84b3438f.chunk.js.LICENSE.txt",
     "static/media/AcrylicPourPlatform.397a6bb6.png": "/static/media/AcrylicPourPlatform.397a6bb6.png",
     "static/media/Adulting101.da52e8a2.png": "/static/media/Adulting101.da52e8a2.png",
@@ -57,7 +57,7 @@
   "entrypoints": [
     "static/js/runtime-main.ab7af748.js",
     "static/js/2.84b3438f.chunk.js",
-    "static/css/main.75d005d0.chunk.css",
-    "static/js/main.b1ec2605.chunk.js"
+    "static/css/main.c5c0a8e5.chunk.css",
+    "static/js/main.bbf211f8.chunk.js"
   ]
 }
