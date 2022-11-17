@@ -119,8 +119,8 @@ function Adulting() {
                 </div>
             </div>
             
-            <div className="body">
-                <br></br>
+            <div className="body-media">
+                <hr></hr>
                 <h2>View another project!</h2>
                 <br></br>
                 <Card 

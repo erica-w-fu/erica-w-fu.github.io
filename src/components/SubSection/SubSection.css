@@ -63,6 +63,7 @@ ol.numbered-list li:before {
     font-size: 16px;
     font-weight: 400;
     background-color: var(--accent-light);
+    color: var(--black);
     padding: 15px 20px;
     border-radius: 10px;
 }

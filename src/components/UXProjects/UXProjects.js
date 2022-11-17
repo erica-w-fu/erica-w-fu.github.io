@@ -10,7 +10,7 @@ function UXProjects() {
     const data = UXProjectData();
     
     return (
-      <div className="page-body">
+      <div>
         {/* <h2><b>UX design</b> <div className="unbold">projects</div></h2> */}
         <div className="ux-projects">
         {

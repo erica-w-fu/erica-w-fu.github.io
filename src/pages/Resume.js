@@ -70,6 +70,19 @@ function Resume() {
     >
     </Section>
     <Section
+      title="May 2022 - Present"
+      style="dates"
+    >
+      <div className="link">
+        {Heading("UX Designer", "Zeno, CHIMPs and DIG Lab", "https://zenoml.com/", "Pittsburgh, PA")}
+        <ul>
+          <li>Designed experiences for the first evaluation framework of machine learning through workflows and user scenarios</li>
+          <li>Created interfaces for interactive slice-based machine learning evaluation with Figma</li>
+          <li>Conducted user research to generated insights for improving the interface and generated case studies for a research paper using remote usability testing</li>
+        </ul>
+      </div>
+    </Section>
+    <Section
       title="May 2021 - Aug 2022"
       style="dates"
     >
@@ -164,7 +177,7 @@ function Resume() {
         <li>Taught a new art project using color pencil every week</li>
       </ul>
     </Section>
-    
+
     <Section
       title="Achievements"
       style="capitalized"

@@ -31,8 +31,8 @@
     color: var(--white);
     background-color: var(--black);
     border-radius: 0 10px 10px 0;
+    -webkit-appearance: none;
     box-shadow: -500px 0 var(--black);
-    padding: 0;
 }
 
 .dev-link {
@@ -43,6 +43,7 @@
 .dev-link-container:hover {
     background-color: black;
     border-radius: 0 10px 10px 0;
+    -webkit-appearance: none;
     box-shadow: -500px 0 black;
     transition: box-shadow 750ms, background-color 750ms;
 }
@@ -57,7 +58,7 @@
 }
 
 .dev-img {
-    width: 100%;
+    width: 97%;
 }
 
 /* resume page styling */
@@ -69,10 +70,3 @@
 .clear-float {
     clear: both;
 }
-
-/* video styling */
-/* .project-video {
-    margin-left: auto;
-    margin-right: auto;
-    display: block
-} */

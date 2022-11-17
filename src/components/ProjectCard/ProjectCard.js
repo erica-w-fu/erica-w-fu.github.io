@@ -47,9 +47,6 @@ function ProjectCard(props) {
                         </div>
                     </div>
                 }
-                {/* <div className="gif-container">
-                    <img src={gif} className="card-gif" alt="surprise" />
-                </div> */}
                 <div className="card-cat-container">
                     <img src={catPeek} className="card-cat" alt="surprise" />
                 </div>

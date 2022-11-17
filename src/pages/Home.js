@@ -25,10 +25,10 @@ function Home() {
           </div>
           <div className="page-body">
             <div style={{padding: "125px"}}></div>
-            <h6 className="lab-links body">UX designer at the&nbsp; 
+            <h6 className="lab-links body">UX designer and researcher at the&nbsp; 
               <a target='_blank' href='http://3.210.81.13/about_us'>CHIMPs</a>,&nbsp; 
               <a target='_blank' href='https://dig.cmu.edu/'>DIG</a>, and&nbsp; 
-              <a target='_blank' href='http://coexlab.com/'>CoEx</a> lab
+              <a target='_blank' href='http://coexlab.com/'>CoEx</a> labs
             </h6>
           </div>
         </div>

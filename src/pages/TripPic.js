@@ -105,7 +105,8 @@ function TripPic() {
                 />
             </Section>
 
-            <div className="body">
+            <div className="body-media">
+                <hr></hr>
                 <h2>View another project!</h2>
                 <br></br>
                 <Card 

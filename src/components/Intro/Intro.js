@@ -20,22 +20,22 @@ function Intro(props) {
                 <h1>{props.title}</h1>
                 <h5>{ formatText(props.summary) }</h5>
                 <div className="col">
-                    <p>Responsibilities</p>
+                    <h4>Responsibilities</h4>
                     <h5>{ formatText(props.responsibilities) }</h5>
                 </div>
                 <div className="col">
-                    <p>Tools</p>
+                    <h4>Tools</h4>
                     <h5>{ formatText(props.tools) }</h5>
                 </div>
                 {props.team === '' 
                     ? <></>
                     :   <div className="col">
-                            <p>Team</p>
+                            <h4>Team</h4>
                             <h5>{ formatText(props.team) }</h5>
                         </div>
                 }
                 <div className="col">
-                    <p>Timeline</p>
+                    <h4>Timeline</h4>
                     <h5>{ props.timeline }</h5>
                 </div>
             </div>

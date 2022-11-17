@@ -62,7 +62,7 @@ function SubSection(props) {
                 props.img === undefined 
                 ? <></>
                 : 
-                    <div className="body">
+                    <div className="body-media">
                         <br></br>
                         <img 
                             src={ props.img } 
@@ -86,7 +86,7 @@ function SubSection(props) {
                 props.quotes === undefined 
                 ? <></>
                 : 
-                    <div className="body">
+                    <div className="body-media">
                         <br></br>
                         <div className="subsection-quotes row">
                             { formatQuotes(props.quotes) }
