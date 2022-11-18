@@ -43,6 +43,14 @@ function Zeno() {
                 timeline={ item.Timeline }
             />
             <Section 
+                title="My role on the team"
+            >
+                <Sub 
+                    header="The only UX Designer in a very technical team"
+                    body="I am the only UX designer on the team of programmers for Zeno. All the UX work is done by me, and I coordinate with developers to understand their goals, occasionally inquire how they help our users, and give them clear directions on what to develop through flows or wireframes. The developers on the team are very passionate about the project and good at what they do, so it is really fun to work with them."
+                />
+            </Section>
+            <Section 
                 title="The Problem"
             >
                 <Sub 
@@ -79,7 +87,7 @@ function Zeno() {
                 />
                 <Sub
                     body="We extracted three main user needs"
-                    list="Testing models on training data is not representative of how a model will perform on data in real world use cases
+                    list="Testing models on training data is not representative of how a model will perform on data in real world use cases, instead slices are used to ensure good performance on specific types of data
                     /Many practitioners rely on external AI services, but they don't have a way to test which services are best for their use
                     /Customer service people who read feedback from end users cannot tell whether their issues are systematic or whether customers are facing noisy data, misuse of models, or other personal issues"
                 />
