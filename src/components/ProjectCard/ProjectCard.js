@@ -1,13 +1,14 @@
 import React, {useState} from 'react';
 import '../../App.css';
 import './ProjectCard.css';
-import { makeTags, projectImg, projectDemo } from '../data/Data.js'
+import { makeTags, projectImg, projectDemo, projectTitle } from '../data/Data.js'
 import { NavLink } from 'react-router-dom';
 
 import PopUp from '../PopUp/PopUp'
 
 import gif from '../../media/peek.gif'
 import catPeek from '../../media/peek.png'
+import Fade from 'react-reveal/Fade';
 
 
 function ProjectCard(props) {
@@ -22,36 +23,25 @@ function ProjectCard(props) {
         <>  
         { props.card===undefined ? 
             // UX project cards
+            <Fade bottom duration="1000">
             <NavLink to={"/" + props.component} className="card-link" onClick={scrollToTop}>
             <div className="card-container">
-                { props.index%2 === 1 ? 
-                    <div className="row">
-                        <div className="column">
-                            <img src={ projectImg(props.component) } className="card-img" alt="#{props.title} card"></img>
-                        </div>
-                        <div className="column">
-                            <h4>{ props.title }</h4>
-                            <h1>{ props.highlight }</h1>
-                            <div className="featured-tags">{ makeTags(props.tags) }</div>
-                        </div>
-                    </div> 
-                : 
-                    <div className="row reverse">
-                        <div className="column align-right">
-                            <h4>{ props.title }</h4>
-                            <h1>{ props.highlight }</h1>
-                            <div className="featured-tags">{ makeTags(props.tags) }</div>
-                        </div>
-                        <div className="column">
-                            <img src={ projectImg(props.component) } className="card-img" alt="#{props.title} card"></img>
-                        </div>
+                <div className="row reverse">
+                    <div className="column">
+                        <h4>{ props.title }</h4>
+                        <h3>{ projectTitle(props.component) }</h3>
+                        <div className="featured-tags">{ makeTags(props.tags) }</div>
                     </div>
-                }
+                    <div className="column">
+                        <img src={ projectImg(props.component) } className="card-img" alt="#{props.title} card"></img>
+                    </div>
+                </div> 
                 <div className="card-cat-container">
                     <img src={catPeek} className="card-cat" alt="surprise" />
                 </div>
             </div>
             </NavLink>
+            </Fade>
             :
             // Development project cards
             <div className="card-container-2">

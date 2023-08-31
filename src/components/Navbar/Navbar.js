@@ -21,7 +21,7 @@ function Navbar() {
 			<div className="navbar-container">
 				<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 					<NavLink to='/Resume' className='nav-links' onClick={scrollToTop}>
-						<h2>Resume</h2>
+						<h2>Résumé</h2>
 					</NavLink>
 					{/* <NavLink to='/About' className='nav-links' onClick={scrollToTop}>
 						<h2>About</h2>

@@ -98,7 +98,7 @@ function Zeno() {
                 <Sub 
                     header="Evaluating the intentions of the previous design"
                     body="When I joined the project, there were already some preliminary designs for the Exploration page. The purpose of this page was to give users the ability to create slices (subsets of data) and guide users to slices they would want to track. These slices may include poorly performing slices or use case based slices.
-                    I started by evaluating the old designs, asking the team member who made hte previous designs about their intentions for certain design decisions and potential opportunities within the current design."
+                    I started by evaluating the old designs, asking the team member who made the previous designs about their intentions for certain design decisions and potential opportunities within the current design."
                     img={ OldDesign }                
                 />
                 <Sub
@@ -200,8 +200,8 @@ function Zeno() {
             
             <div className="body-media">
                 <hr></hr>
-                <h2>View another project!</h2>
                 <br></br>
+                <h2>View another project:</h2>
                 <Card 
                     key={ next.Component }
                     component={ next.Component }

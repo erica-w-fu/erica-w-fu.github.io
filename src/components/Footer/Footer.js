@@ -12,7 +12,7 @@ function Footer() {
 	};
 
     const scrollToUX = () => {
-        window.scrollTo({top: 550, behavior: 'smooth'});
+        window.scrollTo({top: 900, behavior: 'smooth'});
     };
 
     return (
@@ -38,9 +38,18 @@ function Footer() {
                             front-end/full stack development projects.
                         </NavLink>
                     </p>
+                    <p>
+                        Check out my&nbsp; 
+                        <NavLink to='/Resume' 
+                            onClick={scrollToTop}
+                        >
+                            résumé.
+                        </NavLink>
+                    </p>
+                    
                 </div>
                 <div className='footer-right'>
-                    <p>Made with React, 2021</p>
+                    <p>Made with React and &#x2764;, 2023</p>
                     <Socials/>
                 </div>
             </div>

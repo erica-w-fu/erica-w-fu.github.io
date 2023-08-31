@@ -7,6 +7,6 @@
 }
 
 #dev-body .tag {
-    background-color: var(--accent-dark);
+    background-color: var(--gray-dark);
     color: var(--white);
 }

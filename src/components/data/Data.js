@@ -2,6 +2,7 @@ import React from "react";
 import './Data.css'; 
 import '../../App.css'
 
+import Equinix from '../../media/Cover/Equinix.png'
 import Zeno from '../../media/Cover/Zeno.png'
 import Adulting101 from '../../media/Cover/Adulting101.png'
 import SustainCMU from '../../media/Cover/SustainCMU.png'
@@ -21,7 +22,7 @@ import TwentyFourDemo from '../../media/DevDemos/TwentyFourDemo.mp4';
 
 
 
-// function to create purple tags
+// function to create tags
 function makeTags(str) {
     if (!str) return str;
 
@@ -58,11 +59,10 @@ function formatText(str) {
 // extract data from a tsv to a csv array
 const UXProjectData = () => {
 
-    const strRead = `Component	Title	Highlight	Tags	Dates	Summary	Link	LinkTitle	Responsibilities	Tools	Team	Timeline~
-    Zeno	Zeno	First machine learning evaluation framework and tool	Research,Figma,Svelte,Web Interface	May 2022 - present	Designed experiences for the first evaluation framework of machine learning and interfaces for interactive slice-based evaluation.\n \nWorking as a research assistant for the CHIMPs and DIG lab at CMU	https://zenoml.com/	Visit Website	UI/UX\nResearch\nUser Testing	Figma\nSvelte	Alex Cabrera\nDonny Bertuci	May 2022 - Present~
-    Adulting	Adulting101	iOS app to increase the adoption of cybersecurity habits	Research,Figma,Xcode • Swift,Firebase,Mobile App	May 2021 - present	Designed and developed an adulting challenge iOS application that uses embedded design and social influence principles to effectively teach and encourage cybersecurity habits.\n \nWorking as a research assistant for the CoEx and CHIMPs lab at CMU.			App Development\nUI/UX\nResearch	Xcode\nFirebase\nFigma	Isadora Krsek\nNellie Tonev\nSherry Chen	May 2021 - Aug 2022~
-    TripPic	TRIP-PIC	UX research and design for travel planning innovation	Research,Contextual Inquiries,Prototyping,Project Management	Jan 2022 - May 2022	Streamlining travel planning for young tech-savvy users by combining a visual-focused interface with social media to generate scheduled itineraries for trips.			Project Management\nContextual Inquiries\nPrototyping	Miro\nFigma	Heysu Oh\nAdvait Wadhwani	Spring 2022~
-    SustainCMU	Sustain CMU	Communication design to correct waste disposal behavior at CMU	Human-Centered Design, Communication Design, Parallel Prototyping	Jan 2022 - May 2022	Using communication design to make students aware of the waste management issues at CMU and correcting waste disposal habits.	https://www.dfaxcmu.org/sustain-cmu	Visit Project	Prototyping\nUser Testing\nCommunication Design	Figma	Kelly Wang\nJulianna Bolivar\nCatherine Liu	Spring 2022`
+    const strRead = `Component	Title	Highlight	Tags	Dates	Summary	Link	LinkTitle	Responsibilities	Tools	Team~
+    Equinix	Equinix	Streamlining network connection ordering to Cloud Service Providers for network engineers	Prototyping,Product UX Library,Analytics Research,Think-Aloud Interviews	Summer 2023	As a UX Design Intern at Equinix, I redesigned and simplified network connection ordering workflow and UI for network engineers to connect assets to Cloud Service Providers. For more efficient design and development of future flows for other providers, I created and tested a product level UX library.			UI/UX\nResearch\nUser Testing	Figma\nAmplitude Analytics\nFullStory\nUserZoom	Design System Team\nProduct Team\nEngineering Team~
+    Zeno	Zeno - DIG, CHIMPs lab	Equipping non-technical stakeholders with interactive ML evaluation tools	Web Interface,User Flow,Prototyping	May 2022 - present	As a Research Assistant at the DIG and CHIMPs labs at CMU, I designed experiences for the first evaluation framework of machine learning and interfaces for interactive slice-based evaluation. I designed user flows and data-heavy interfaces and validated the designs through group usability testing. 	https://zenoml.com/	Visit Website	UI/UX\nResearch\nUser Testing	Figma\nSvelte	Alex Cabrera\nDonny Bertucci~
+    Adulting	Adulting101 - CoEx, CHIMPs lab	Encouraging everyday users to adopt cybersecurity practices	iOS App,Wireframing,Comparative Analysis	May 2021 - Aug 2022	As a Research Assistant at the CoEx and CHIMPs labs at CMU, I designed and developed an adulting challenge iOS application that uses embedded design and social influence principles to effectively teach and encourage cybersecurity habits.			App Development\nUI/UX\nResearch	Xcode\nFirebase\nFigma	Isadora Krsek\nNellie Tonev\nSherry Chen`
   
     return csvArray(strRead, '\t');
 }
@@ -93,7 +93,9 @@ function csvArray(str, delim) {
     const newArray = rows.map( row => {
       const values = row.split(delim);
       const eachObject = headers.reduce((obj, header, i) => {
-          obj[header] = values[i].trim();
+        //   obj[header] = values[i].trim();
+          const val = values[i]
+          obj[header] = typeof val === 'string' ? val.trim() : '';
           return obj;
       }, {})
       return eachObject;
@@ -102,8 +104,23 @@ function csvArray(str, delim) {
     return newArray;
 }
 
+function projectTitle(id) {
+    switch (id) {
+        case "Equinix":
+            return <h3>Streamlining <span className="complex-medium">network connection ordering</span> to Cloud Service Providers for network engineers</h3>;
+        case "Zeno":
+            return <h3>Equipping non-technical stakeholders with interactive <span className="complex-medium">ML evaluation tools</span></h3>;
+        case "Adulting":
+            return <h3>Encouraging everyday users to adopt <span className="complex-medium">cybersecurity practices</span></h3>;
+        default:
+            return;
+    }
+}
+
 function projectImg(id) {
     switch (id) {
+        case "Equinix":
+            return Equinix;
         case "Adulting":
             return  Adulting101;
         case "Zeno":
@@ -128,6 +145,8 @@ function projectImg(id) {
             return  GPBO;
         case "ImpactCMU":
             return  ImpactCMU;
+        default: 
+            return;
     }
 }
 
@@ -137,7 +156,9 @@ function projectDemo(id) {
             return  ThirtyDayAdultingDemo;
         case "TwentyFour":
             return  TwentyFourDemo;
+        default:
+            return;
     }
 }
 
-export { makeTags, formatText, UXProjectData, DevProjectData, projectProps, projectImg, projectDemo }
+export { makeTags, formatText, UXProjectData, DevProjectData, projectProps, projectTitle, projectImg, projectDemo }

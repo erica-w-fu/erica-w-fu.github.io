@@ -3,6 +3,8 @@ import Intro from "../components/Intro/Intro.js";
 import Section from '../components/Section/Section.js';
 import Sub from '../components/SubSection/SubSection.js';
 import Card from '../components/ProjectCard/ProjectCard.js';
+import { NavLink } from 'react-router-dom';
+
 
 import { projectProps } from '../components/data/Data.js'
 
@@ -16,7 +18,10 @@ import Solution from '../media/ThirtyDayMedia/Solution.png';
 function Adulting() {
 
     const item = projectProps('Adulting');
-    const next = projectProps('TripPic');
+
+    const scrollToTop = () => {
+		window.scrollTo({top: 0, behavior: 'smooth'});
+	};
 
     return (
         <div className="body page-body">
@@ -108,7 +113,7 @@ function Adulting() {
                     >
                         <Sub 
                             header="iOS Development"
-                            body="As a UX Designer and Lead Developer for the team, I will implement all of the designs and publish the application to the Apple Store. Below is the latest video demo."
+                            body="As the main Developer for the team at the time, I implemented a lot of the design. When I took on more design roles, this experience helped me understand the needs of a developer and work more efficiently with them."
                         />
                     </Section>
                 </div>
@@ -119,17 +124,11 @@ function Adulting() {
                 </div>
             </div>
             
-            <div className="body-media">
+            <div className="body-small">
                 <hr></hr>
-                <h2>View another project!</h2>
+                <h2>That's all for the UX design projects. Check out my <NavLink to="/Developer" onClick={scrollToTop}>front-end/full-stack development projects</NavLink>!
+                </h2>
                 <br></br>
-                <Card 
-                    key={ next.Component }
-                    component={ next.Component }
-                    title={ next.Title }
-                    highlight={ next.Highlight }
-                    tags={ next.Tags }
-                />
             </div>
         </div>
     )

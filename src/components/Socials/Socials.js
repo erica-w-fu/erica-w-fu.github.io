@@ -6,6 +6,13 @@ function Socials() {
     <>
         <div className="social-media">
             <a 
+                className="social-icon-link envelope"
+                target='_blank'
+                href='mailto:efu@andrew.cmu.edu'
+            >
+                <i className="fa fa-envelope"></i>
+            </a>
+            <a 
                 className="social-icon-link linkedIn"
                 target='_blank'
                 href='https://www.linkedin.com/in/erica-fu-15b3a61b9/'

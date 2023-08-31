@@ -16,27 +16,29 @@ function Intro(props) {
     return(
         <div>
             <img src={ projectImg(projectId) } className="intro-img"></img>
-            <div className="intro-container row-2 body-small">
+            <div className="intro-container body-small">
                 <h1>{props.title}</h1>
                 <h5>{ formatText(props.summary) }</h5>
-                <div className="col">
-                    <h4>Responsibilities</h4>
-                    <h5>{ formatText(props.responsibilities) }</h5>
-                </div>
-                <div className="col">
-                    <h4>Tools</h4>
-                    <h5>{ formatText(props.tools) }</h5>
-                </div>
-                {props.team === '' 
-                    ? <></>
-                    :   <div className="col">
-                            <h4>Team</h4>
-                            <h5>{ formatText(props.team) }</h5>
-                        </div>
-                }
-                <div className="col">
-                    <h4>Timeline</h4>
-                    <h5>{ props.timeline }</h5>
+                <div className="row-2">
+                    <div className="col">
+                        <h4>Responsibilities</h4>
+                        <p>{ formatText(props.responsibilities) }</p>
+                    </div>
+                    <div className="col">
+                        <h4>Tools</h4>
+                        <p>{ formatText(props.tools) }</p>
+                    </div>
+                    {props.team === '' 
+                        ? <></>
+                        :   <div className="col">
+                                <h4>Collaborators</h4>
+                                <p>{ formatText(props.team) }</p>
+                            </div>
+                    }
+                    <div className="col">
+                        <h4>Timeline</h4>
+                        <p>{ props.dates }</p>
+                    </div>
                 </div>
             </div>
         </div>

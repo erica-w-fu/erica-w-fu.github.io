@@ -1,0 +1,77 @@
+/* font styling */
+.resume-container h1, h2, h3, h4 {
+    font-family: var(--title), var(--title-fallback);
+}
+
+.resume-container h1 {
+    font-size: 24px;
+    color: var(--black);
+}
+
+.resume-container h2 {
+    font-size: 18px;
+    color: var(--accent-medium);
+    font-weight: 600;
+}
+
+.resume-container h3 {
+    font-size: 18px;
+    color: var(--black);
+    font-weight: 600;
+}
+
+.resume-container h4 {
+    font-size: 18px;
+    color: var(--gray);
+    font-weight: 600;
+}
+
+.resume-container h5 {
+    font-size: 14px;
+    color: var(--gray);
+}
+
+.resume-container p, li {
+    color: var(--gray-dark);
+}
+
+/* space styling */
+.resume-container {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+    flex-wrap: wrap;
+}
+
+.space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 4px 16px;
+}
+
+.resume-category {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.titles {
+    align-items: top;
+    display: flex;
+    flex-direction: row;
+    gap: 0px 10px;
+    flex-wrap: wrap;
+}
+
+.resume-container ul {
+    list-style: outside;
+    padding-left: 20px;
+}

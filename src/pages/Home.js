@@ -4,15 +4,19 @@ import { NavLink } from 'react-router-dom';
 import './Pages.css';
 import Socials from '../components/Socials/Socials.js'
 import UXProjects from '../components/UXProjects/UXProjects.js'
+import SelfSummary from '../components/SelfSummary/SelfSummary.js'
+
 import gif from '../media/welcome.gif'
-import DevPreview from '../media/DevPreview.png'
+import DevPreviewTop from '../media/DevPreviewTop.png'
+import DevPreviewBottom from '../media/DevPreviewBottom.png'
 import About from '../components/About/About.js'
 import { makeTags } from '../components/data/Data.js'
+import Fade from 'react-reveal/Fade';
 
 function Home() {
 
 	const scrollToTop = () => {
-		window.scrollTo({top: 0, behavior: 'smooth'});
+		window.scrollTo({top: 0});
 	};
 
   const tags = "Website,React,HTML • CSS • JavaScript,Physical Computing,Arduino,Xcode • Swift,iOS App,Ruby on Rails,React Native,Mobile App"
@@ -25,26 +29,47 @@ function Home() {
           </div>
           <div className="page-body">
             <div style={{padding: "125px"}}></div>
-            <h6 className="lab-links body">UX designer and researcher at the&nbsp; 
-              <a target='_blank' href='http://3.210.81.13/about_us'>CHIMPs</a>,&nbsp; 
-              <a target='_blank' href='https://dig.cmu.edu/'>DIG</a>, and&nbsp; 
-              <a target='_blank' href='http://coexlab.com/'>CoEx</a> labs
-            </h6>
+            <div className="lab-links body">
+              <h6>UX designer who makes<span className="complex-large"> complex concepts</span> into simple experiences</h6>
+            </div>
           </div>
         </div>
+        
         <div className="body">
+          <div className="divider-big"></div>
+          <Fade bottom delay="1000">
+            <h3>My experience comes from a variety of institutions.</h3>
+            <br></br>
+            <SelfSummary />
+          </Fade>
+
+          <div className="divider-big"></div>
+          <hr></hr>
+          <div className="divider-big"></div>
+
+          <h3>UX Design projects</h3>
           <UXProjects />
-          <NavLink to='/Developer' className="no-underline" onClick={scrollToTop}>
-            <div className='dev-link-container'>
-              <div className='dev-link'>
-                <h2>With my background in Information Systems, I have also worked on a variety of websites, mobile applications, and physical computing projects.</h2>
-                <div className="featured-tags dev-tags">{ makeTags(tags) }</div>
+
+          <div className="divider"></div>
+          <hr></hr>
+          <div className="divider-big"></div>
+
+
+          <Fade left distance="20%">
+            <NavLink to='/Developer' className="no-underline" onClick={scrollToTop}>
+              <div className='dev-link-container'>
+                <img src={DevPreviewTop} className="dev-img" alt="Development project preview" />
+                <div className='dev-link'>
+                  <h2>With my Information Systems background, I have also developed many front-end and full stack projects.</h2>
+                  <div className="featured-tags dev-tags">{ makeTags(tags) }</div>
+                </div>
+                <img src={DevPreviewBottom} className="dev-img" alt="Development project preview" />
               </div>
-              <img src={DevPreview} className="dev-img" alt="Development project preview" />
-            </div>
-					</NavLink>
+            </NavLink>
+          </Fade>
           <div className="divider-big"></div>
           <About />
+          <div className="divider"></div>
         </div>
       </>
   );

@@ -11,10 +11,10 @@ function UXProjects() {
     
     return (
       <div>
-        {/* <h2><b>UX design</b> <div className="unbold">projects</div></h2> */}
         <div className="ux-projects">
         {
           data.map((item, index) => {
+            console.log(item.title);
             return <div>
                 <Card
                     key={ index }

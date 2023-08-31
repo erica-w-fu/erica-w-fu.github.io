@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 
-import hello from '../../media/About/hello.png'
+import about from '../../media/About/about.png'
 import doodles from '../../media/About/doodles.png'
 import profile from '../../media/About/profile.png'
 
@@ -10,16 +10,13 @@ function About() {
         <div className="body page-body" id="about-container">
             <div className="row reverse">
                 <div className="column">
-                    <img src={hello} className="about-doodle"></img>
-                    <div className="divider"></div>
+                    <img src={about} className="about-doodle"></img>
+                    <br></br>
                     <p>
-                        Erica Fu is a UI/UX designer, front-end/full stack developer, and <a href="https://www.dfaxcmu.org/" target='_blank'>student club leader</a> at Carnegie Mellon University. 
+                        I love to create. For work, I design interfaces and experiences to help others in some way. Outside of work I make <a href="https://www.instagram.com/ericacreatesss/" target='_blank'>a variety of things</a> through different mediums such as textiles, baking, and painting. My current dream is to make all of my clothes in the future.
                     </p>
                     <p>
-                        She hopes to use her skills to design and create digital products or services that help others.
-                    </p>
-                    <p>
-                        Throughout her work and play, Erica loves to create. She has made <a href="https://www.instagram.com/ericacreatesss/" target='_blank'>a variety of things</a> through different mediums such as baking, painting, textiles, scrap materials, and more. She also loves to listen to music, play guitar and piano, her cat Sesame, and anything Sanrio or Ghibli.
+                        I also love to listen to music, play guitar and piano, my cat Sesame, and anything Sanrio or Ghibli.
                     </p>
                     <img src={doodles} className="about-doodle"></img>
                 </div>

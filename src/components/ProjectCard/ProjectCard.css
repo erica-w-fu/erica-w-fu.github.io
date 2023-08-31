@@ -12,6 +12,10 @@
     margin-bottom: 50px;
 }
 
+.card-container-2 p {
+    color: var(--accent-light);
+}
+
 .card-container:hover {
     color: var(--black);
     background-color: var(--accent-light);
