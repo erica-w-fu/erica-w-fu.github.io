@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@1,5..1200,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 iframe {
   pointer-events: none;
@@ -28,11 +29,12 @@ iframe {
   --black: #221D30;
   --title: "Manrope";
   --title-fallback: serif;
-  --title-resume: "Helvetica";
   --body: "Inter";
   --body-fallback: serif;
   --complex: "Playfair";
   --complex-fallback: serif;
+  --simple: "Roboto Mono";
+  --simple-fallback: monospace;
 }
 
 body {
@@ -72,18 +74,28 @@ body {
 }
 
 #content-wrap {
-  padding-bottom: 150px;
+  padding-bottom: 300px;
 }
 
 /* customize appearance of text */
 .complex-large {
   font-family: var(--complex), var(--complex-fallback);
   font-size: 60px;
+  font-style: italic;
+  font-weight: 500;
 }
 
 .complex-medium {
   font-family: var(--complex), var(--complex-fallback);
   font-size: 34px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.simple-large {
+  font-family: var(--simple), var(--simple-fallback);
+  font-style: normal;
+  font-weight: 100;
 }
 
 h1 {
@@ -210,7 +222,7 @@ hr {
 /* align items at center, used in project card view */
 .row {
   align-items: center;
-  gap: 10px 50px;
+  gap: 10px 20px;
 }
 
 /* align items at top, used in project detail view */
@@ -219,9 +231,16 @@ hr {
   gap: 20px 50px;
 }
 
+/* wrap items two-by-two */
+.row-3 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 20px;
+}
+
 .col {
   flex: 1;
-  /* flex-basis: 25%; */
 }
 
 .column {
@@ -262,6 +281,11 @@ hr {
 }
 
 @media screen and (max-width: 688px) {
+
+  .body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   h1 {
     font-size: 24px;

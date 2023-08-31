@@ -69,7 +69,6 @@ function Home() {
           </Fade>
           <div className="divider-big"></div>
           <About />
-          <div className="divider"></div>
         </div>
       </>
   );

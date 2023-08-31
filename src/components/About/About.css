@@ -1,13 +1,15 @@
 /* about paage styling */
 .about-doodle {
     background-color: var(--white) !important;
-    min-width: 70% !important;
-    max-width: 150px;
-    margin: auto;
+    width: 300px;
 }
 
 .about-profile {
     background: none;
     max-width: 550px;
     margin: auto;
+}
+
+.about-image {
+    width: 100%;
 }
