@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a70c364.chunk.css",
-    "main.js": "/static/js/main.547c1d57.chunk.js",
-    "main.js.map": "/static/js/main.547c1d57.chunk.js.map",
+    "main.css": "/static/css/main.c75d9322.chunk.css",
+    "main.js": "/static/js/main.bc32aa97.chunk.js",
+    "main.js.map": "/static/js/main.bc32aa97.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.74a3b204.js",
     "runtime-main.js.map": "/static/js/runtime-main.74a3b204.js.map",
     "static/js/2.28a11dca.chunk.js": "/static/js/2.28a11dca.chunk.js",
     "static/js/2.28a11dca.chunk.js.map": "/static/js/2.28a11dca.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8a70c364.chunk.css.map": "/static/css/main.8a70c364.chunk.css.map",
+    "static/css/main.c75d9322.chunk.css.map": "/static/css/main.c75d9322.chunk.css.map",
     "static/js/2.28a11dca.chunk.js.LICENSE.txt": "/static/js/2.28a11dca.chunk.js.LICENSE.txt",
     "static/media/AcrylicPourPlatform.397a6bb6.png": "/static/media/AcrylicPourPlatform.397a6bb6.png",
     "static/media/Adulting101.da52e8a2.png": "/static/media/Adulting101.da52e8a2.png",
@@ -23,7 +23,7 @@
     "static/media/DevPreviewTop.0b7f20d2.png": "/static/media/DevPreviewTop.0b7f20d2.png",
     "static/media/DuquesneIncline.1093c065.png": "/static/media/DuquesneIncline.1093c065.png",
     "static/media/Equinix.2c74c98d.png": "/static/media/Equinix.2c74c98d.png",
-    "static/media/EricaFuResume.956b5f4c.pdf": "/static/media/EricaFuResume.956b5f4c.pdf",
+    "static/media/EricaFuResume.9be35f27.pdf": "/static/media/EricaFuResume.9be35f27.pdf",
     "static/media/FinalDesign.4ac8bc1c.png": "/static/media/FinalDesign.4ac8bc1c.png",
     "static/media/FinalDesign.6d6959c0.png": "/static/media/FinalDesign.6d6959c0.png",
     "static/media/FinalDesignFlow.098d3a8b.png": "/static/media/FinalDesignFlow.098d3a8b.png",
@@ -56,7 +56,6 @@
     "static/media/UserFlow.6d083b01.png": "/static/media/UserFlow.6d083b01.png",
     "static/media/Wireframes.81e6cc4d.png": "/static/media/Wireframes.81e6cc4d.png",
     "static/media/Zeno.7124d2b1.png": "/static/media/Zeno.7124d2b1.png",
-    "static/media/about.1be6163f.png": "/static/media/about.1be6163f.png",
     "static/media/doodles.3c55bbce.png": "/static/media/doodles.3c55bbce.png",
     "static/media/education.cdc42584.png": "/static/media/education.cdc42584.png",
     "static/media/equinix.5df8253c.png": "/static/media/equinix.5df8253c.png",
@@ -70,7 +69,7 @@
   "entrypoints": [
     "static/js/runtime-main.74a3b204.js",
     "static/js/2.28a11dca.chunk.js",
-    "static/css/main.8a70c364.chunk.css",
-    "static/js/main.547c1d57.chunk.js"
+    "static/css/main.c75d9322.chunk.css",
+    "static/js/main.bc32aa97.chunk.js"
   ]
 }

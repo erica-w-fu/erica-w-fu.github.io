@@ -32,7 +32,7 @@
     background-color: var(--black);
     border-radius: 0 10px 10px 0;
     -webkit-appearance: none;
-    box-shadow: calc(100vw/-3) 0 var(--black);
+    box-shadow: calc(100vw / 3 * -1) 0 var(--black);
 }
 
 .dev-link {
@@ -43,7 +43,7 @@
     background-color: var(--accent-hover);
     border-radius: 0 10px 10px 0;
     -webkit-appearance: none;
-    box-shadow: calc(100vw/-3) 0 var(--accent-hover);
+    box-shadow: calc(100vw / 3 * -1) 0 var(--accent-hover);
     transition: box-shadow 750ms, background-color 750ms;
 }
 
