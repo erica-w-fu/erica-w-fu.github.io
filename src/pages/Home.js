@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import './Pages.css';
-import Socials from '../components/Socials/Socials.js'
 import UXProjects from '../components/UXProjects/UXProjects.js'
 import SelfSummary from '../components/SelfSummary/SelfSummary.js'
 

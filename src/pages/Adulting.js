@@ -2,7 +2,6 @@ import React from "react";
 import Intro from "../components/Intro/Intro.js";
 import Section from '../components/Section/Section.js';
 import Sub from '../components/SubSection/SubSection.js';
-import Card from '../components/ProjectCard/ProjectCard.js';
 import { NavLink } from 'react-router-dom';
 
 
