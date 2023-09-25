@@ -18,8 +18,8 @@ function Adulting() {
 
     const item = projectProps('Adulting');
 
-    const scrollToTop = () => {
-		window.scrollTo({top: 0, behavior: 'smooth'});
+    const scrollToDev = () => {
+		window.scrollTo({top: 2000, behavior: 'smooth'});
 	};
 
     return (
@@ -125,7 +125,7 @@ function Adulting() {
             
             <div className="body-small">
                 <hr></hr>
-                <h2>That's all for the UX design projects. Check out my <NavLink to="/Developer" onClick={scrollToTop}>front-end/full-stack development projects</NavLink>!
+                <h2>That's all for the UX design projects. Check out the rest of my <NavLink to="/" onClick={scrollToDev}>front-end/full-stack development projects</NavLink>!
                 </h2>
                 <br></br>
             </div>

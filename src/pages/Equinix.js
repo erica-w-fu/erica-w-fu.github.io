@@ -34,7 +34,7 @@ function Equinix() {
 
             <Section
             >
-                <div className="body-small body-warning">
+                <div className="body-small separate-section">
                     <h3>This work is publicly protected under NDA restrictions</h3>
                     <br></br>
                     <a href='mailto:efu@andrew.cmu.edu'>

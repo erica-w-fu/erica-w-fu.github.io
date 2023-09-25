@@ -1,9 +1,11 @@
 .card-container {
-    padding: 25px;
+    padding: 20px 40px;
     position: relative;
     overflow: hidden;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 100px 0;
+    background: var(--white);
+    box-shadow: calc(100vw / 3 * -1) 0 var(--white);
+    border-radius: 0 10px 10px 0;
 }
 
 .card-container-2 {
@@ -19,7 +21,6 @@
 .card-container:hover {
     color: var(--black);
     background-color: var(--accent-light);
-    border-radius: 0 10px 10px 0;
     -webkit-appearance: none;
     box-shadow: calc(100vw / 3 * -1) 0 var(--accent-light);
     transition: box-shadow 750ms, background-color 750ms;

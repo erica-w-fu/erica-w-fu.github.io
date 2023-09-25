@@ -12,7 +12,7 @@ function Footer() {
 	};
 
     const scrollToUX = () => {
-        window.scrollTo({top: 900, behavior: 'smooth'});
+        window.scrollTo({top: 500, behavior: 'smooth'});
     };
 
     return (

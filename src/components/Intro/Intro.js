@@ -9,10 +9,6 @@ function Intro(props) {
 
     const projectId = props.component.toString().trim();
 
-    const scrollToUX = () => {
-        window.scrollTo({top: 550, behavior: 'smooth'});
-    };
-
     return(
         <div>
             <img src={ projectImg(projectId) } className="intro-img"></img>

@@ -9,7 +9,7 @@ function About() {
         <div className="body page-body" id="about-container">
             <div className="row reverse">
                 <div className="column">
-                    <h3>A bit about me!</h3>
+                    <h3>A bit more about me!</h3>
                     <br></br>
                     <p>
                         I love to create. For work, I design interfaces and experiences to help others in some way. Outside of work I make <a href="https://www.instagram.com/ericacreatesss/" target='_blank'>a variety of things</a> through different mediums such as textiles, baking, and painting. My current dream is to make all of my clothes in the future.

@@ -29,30 +29,16 @@ function Home() {
           <div className="page-body">
             <div style={{padding: "125px"}}></div>
             <div className="lab-links body">
-              <h6>UX designer who makes<span className="complex-large"> complex concepts</span> into simple experiences</h6>
+              <h6>UX designer who transforms<span className="complex-large"> complex concepts</span> into simple experiences</h6>
             </div>
           </div>
         </div>
         
         <div className="body">
-          <div className="divider-big"></div>
-          <Fade bottom delay="1000">
-            <h3>My experience comes from a variety of institutions.</h3>
-            <br></br>
-            <SelfSummary />
-          </Fade>
-
-          <div className="divider-big"></div>
-          <hr></hr>
-          <div className="divider-big"></div>
-
-          <h3>UX Design projects</h3>
+          {/* <h3>UX Design projects</h3> */}
           <UXProjects />
 
-          <div className="divider"></div>
-          <hr></hr>
           <div className="divider-big"></div>
-
 
           <Fade left distance="20%">
             <NavLink to='/Developer' className="no-underline" onClick={scrollToTop}>
@@ -66,7 +52,20 @@ function Home() {
               </div>
             </NavLink>
           </Fade>
+
           <div className="divider-big"></div>
+
+
+          <Fade bottom>
+            <div className="separate-section">
+            <h3>My experience comes from a variety of institutions.</h3>
+            <br></br>
+            <SelfSummary />
+            </div>
+          </Fade>
+
+          <div className="divider-big"></div>
+          
           <About />
         </div>
       </>

@@ -23,7 +23,7 @@ function ProjectCard(props) {
         <>  
         { props.card===undefined ? 
             // UX project cards
-            <Fade bottom duration="1000">
+            <Fade left distance="20%">
             <NavLink to={"/" + props.component} className="card-link" onClick={scrollToTop}>
             <div className="card-container">
                 <div className="row reverse">
