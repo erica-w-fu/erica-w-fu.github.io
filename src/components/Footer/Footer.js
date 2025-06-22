@@ -16,44 +16,11 @@ function Footer() {
     };
 
     return (
-        <div>
-        <div className='footer-background'>
-            <div className='footer-container body'>
-                <div className='footer-left'>
-                    <p>Interested in seeing more?</p>
-                    <br></br>
-                    <p>
-                        Check out my&nbsp; 
-                        <NavLink to='/' 
-                            onClick={scrollToUX}
-                        >
-                            UX design projects.
-                        </NavLink>
-                    </p>
-                    <p>
-                        Check out my&nbsp; 
-                        <NavLink to='/Developer' 
-                            onClick={scrollToTop}
-                        >
-                            front-end/full stack development projects.
-                        </NavLink>
-                    </p>
-                    <p>
-                        Check out my&nbsp; 
-                        <NavLink to='/Resume' 
-                            onClick={scrollToTop}
-                        >
-                            résumé.
-                        </NavLink>
-                    </p>
-                    
-                </div>
-                <div className='footer-right'>
-                    <p>Made with React and &#x2764;, 2023</p>
-                    <Socials/>
-                </div>
+        <div className="bordered-section" style={{flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "8px 32px"}}>
+            <p>Made with React and &#x2764;, 2025</p>
+            <div className="horizontal-flex">
+                <Socials/>
             </div>
-        </div>
         </div>
     )
 }

@@ -1,4 +1,9 @@
 import React from 'react'
+
+import CustomCursor from './components/CustomCursor/CustomCursor.js';
+
+
+
 import Navbar from './components/Navbar/Navbar.js';
 import Footer from './components/Footer/Footer.js';
 import './App.css';
@@ -18,9 +23,9 @@ function App() {
   return (
     <>
     <div id="page-container">
+
       <Router baseline="/">
-        <div id="content-wrap">
-          <Navbar />
+        <div>
           <Routes>
             <Route path = '/' element={<Home/>}/>
             <Route path = '/Developer' element={<DevProjects/>}/>
@@ -29,9 +34,9 @@ function App() {
             <Route path = '/Zeno' element={<Zeno/>}/>
             <Route path = '/Adulting' element={<Adulting/>}/>
           </Routes>
-          <Footer />
         </div>
 			</Router>  
+      <CustomCursor />
     </div>
     </>
   );

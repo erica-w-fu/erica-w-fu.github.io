@@ -1,0 +1,26 @@
+body {
+    cursor: none; /* Hide the default cursor */
+  }
+  
+.custom-cursor {
+    will-change: transform;
+    backface-visibility: hidden;
+    position: fixed;
+    mix-blend-mode: difference;
+    width: 20px;
+    height: 20px;
+    /* border: var(--black) dotted 2px; */
+    background-color: var(--white);
+    border-radius: 50%; /* Makes the cursor circular */
+    pointer-events: none; /* So it doesn't interfere with clicks */
+    z-index: 9999; /* Make sure it's always on top */
+    transform: translate(-50%, -50%); /* Centers the cursor */
+    transition: transform 0.1s ease-in-out; /* Smooth transition */
+}
+
+a:hover ~ .custom-cursor {
+    transform: translate(-50%, -50%) scale(2);
+    background-color: white;
+    mix-blend-mode: difference;
+    border: none;
+}
