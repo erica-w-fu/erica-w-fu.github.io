@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1a8a15db.css",
-    "main.js": "/static/js/main.487200c7.js",
+    "main.js": "/static/js/main.4ff284a7.js",
     "static/media/Intro.gif": "/static/media/Intro.0d0d5a4261b1e2198295.gif",
     "static/media/HeroBG.png": "/static/media/HeroBG.5d96279694896c56508d.png",
     "static/media/Background.png": "/static/media/Background.ec0d01647c7da7014274.png",
@@ -35,10 +35,10 @@
     "static/media/PlayProjects.csv": "/static/media/PlayProjects.3d1f32b50b834ecd0b43.csv",
     "index.html": "/index.html",
     "main.1a8a15db.css.map": "/static/css/main.1a8a15db.css.map",
-    "main.487200c7.js.map": "/static/js/main.487200c7.js.map"
+    "main.4ff284a7.js.map": "/static/js/main.4ff284a7.js.map"
   },
   "entrypoints": [
     "static/css/main.1a8a15db.css",
-    "static/js/main.487200c7.js"
+    "static/js/main.4ff284a7.js"
   ]
 }
