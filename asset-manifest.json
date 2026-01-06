@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c733362.css",
-    "main.js": "/static/js/main.fbb3cd74.js",
+    "main.css": "/static/css/main.4e6da172.css",
+    "main.js": "/static/js/main.b822c60b.js",
     "static/media/Intro.gif": "/static/media/Intro.0d0d5a4261b1e2198295.gif",
     "static/media/HeroBG.png": "/static/media/HeroBG.5d96279694896c56508d.png",
     "static/media/Background.png": "/static/media/Background.ec0d01647c7da7014274.png",
@@ -35,11 +35,11 @@
     "static/media/TakeawayBridge.png": "/static/media/TakeawayBridge.a8de795cf8769a589bd4.png",
     "static/media/PlayProjects.csv": "/static/media/PlayProjects.3d1f32b50b834ecd0b43.csv",
     "index.html": "/index.html",
-    "main.4c733362.css.map": "/static/css/main.4c733362.css.map",
-    "main.fbb3cd74.js.map": "/static/js/main.fbb3cd74.js.map"
+    "main.4e6da172.css.map": "/static/css/main.4e6da172.css.map",
+    "main.b822c60b.js.map": "/static/js/main.b822c60b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c733362.css",
-    "static/js/main.fbb3cd74.js"
+    "static/css/main.4e6da172.css",
+    "static/js/main.b822c60b.js"
   ]
 }
