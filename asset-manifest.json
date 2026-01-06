@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc08ab1e.css",
-    "main.js": "/static/js/main.bb21e767.js",
+    "main.css": "/static/css/main.4c733362.css",
+    "main.js": "/static/js/main.fbb3cd74.js",
     "static/media/Intro.gif": "/static/media/Intro.0d0d5a4261b1e2198295.gif",
     "static/media/HeroBG.png": "/static/media/HeroBG.5d96279694896c56508d.png",
     "static/media/Background.png": "/static/media/Background.ec0d01647c7da7014274.png",
@@ -17,6 +17,7 @@
     "static/media/WireframesOverview.png": "/static/media/WireframesOverview.1565700cdd28f497bca3.png",
     "static/media/IntroImg.png": "/static/media/IntroImg.730be66f222df7834638.png",
     "static/media/DesignSystem.png": "/static/media/DesignSystem.fee66a558816f970c1c3.png",
+    "static/media/ImpactBG.png": "/static/media/ImpactBG.85b276102003c93c8f60.png",
     "static/media/DesignSystemOverview.png": "/static/media/DesignSystemOverview.e48420b9a0c978218699.png",
     "static/media/Config.jpeg": "/static/media/Config.175a92f605c75fd020de.jpeg",
     "static/media/HandoffFiles.png": "/static/media/HandoffFiles.fd0e2d92c7f6293b3c03.png",
@@ -34,11 +35,11 @@
     "static/media/TakeawayBridge.png": "/static/media/TakeawayBridge.a8de795cf8769a589bd4.png",
     "static/media/PlayProjects.csv": "/static/media/PlayProjects.3d1f32b50b834ecd0b43.csv",
     "index.html": "/index.html",
-    "main.bc08ab1e.css.map": "/static/css/main.bc08ab1e.css.map",
-    "main.bb21e767.js.map": "/static/js/main.bb21e767.js.map"
+    "main.4c733362.css.map": "/static/css/main.4c733362.css.map",
+    "main.fbb3cd74.js.map": "/static/js/main.fbb3cd74.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc08ab1e.css",
-    "static/js/main.bb21e767.js"
+    "static/css/main.4c733362.css",
+    "static/js/main.fbb3cd74.js"
   ]
 }
