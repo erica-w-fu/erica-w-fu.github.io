@@ -1,27 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.4e6da172.css",
-    "main.js": "/static/js/main.b822c60b.js",
+    "main.css": "/static/css/main.68b115bd.css",
+    "main.js": "/static/js/main.d5bd6209.js",
     "static/media/Intro.gif": "/static/media/Intro.0d0d5a4261b1e2198295.gif",
-    "static/media/HeroBG.png": "/static/media/HeroBG.5d96279694896c56508d.png",
-    "static/media/Background.png": "/static/media/Background.ec0d01647c7da7014274.png",
+    "static/media/HeroBG.png": "/static/media/HeroBG.313efae374f398e6e758.png",
     "static/media/Profile.png": "/static/media/Profile.6d1a8d208c2d53bfbee8.png",
     "static/media/Hero.png": "/static/media/Hero.872ac6fe461ce7f89571.png",
     "static/media/Prototype.gif": "/static/media/Prototype.9ef535df5e426f4d5139.gif",
     "static/media/Intro.png": "/static/media/Intro.fac2127160b7221576ae.png",
-    "static/media/Prototype.png": "/static/media/Prototype.a74241b31ab52ec50309.png",
+    "static/media/Prototype.png": "/static/media/Prototype.3a8c330881c735d5d703.png",
+    "static/media/IntroImg.png": "/static/media/IntroImg.ca66d20fa308fa010ece.png",
     "static/media/CMUGrad.jpg": "/static/media/CMUGrad.4efb5e91d10d18c981db.jpg",
     "static/media/ZenoDesignPattern.png": "/static/media/ZenoDesignPattern.60b36b4917d678462e84.png",
     "static/media/SephoraDesignPattern.png": "/static/media/SephoraDesignPattern.32fb28d29a641af98517.png",
     "static/media/California.jpg": "/static/media/California.52beaec639f7f5afb4a9.jpg",
     "static/media/WireframesOverview.png": "/static/media/WireframesOverview.1565700cdd28f497bca3.png",
-    "static/media/IntroImg.png": "/static/media/IntroImg.730be66f222df7834638.png",
     "static/media/DesignSystem.png": "/static/media/DesignSystem.fee66a558816f970c1c3.png",
+    "static/media/HeroPaper.png": "/static/media/HeroPaper.b93f3bd826c5840cdf7f.png",
     "static/media/ImpactBG.png": "/static/media/ImpactBG.85b276102003c93c8f60.png",
     "static/media/DesignSystemOverview.png": "/static/media/DesignSystemOverview.e48420b9a0c978218699.png",
     "static/media/Config.jpeg": "/static/media/Config.175a92f605c75fd020de.jpeg",
+    "static/media/SpecialistCaseViewer.png": "/static/media/SpecialistCaseViewer.ce4cd7081213ae055058.png",
+    "static/media/EnterprisePlatformModernization.png": "/static/media/EnterprisePlatformModernization.506973222cfa22e05722.png",
+    "static/media/AIEnterpriseInsightsPlatform.png": "/static/media/AIEnterpriseInsightsPlatform.fddf929702552a5641c0.png",
     "static/media/HandoffFiles.png": "/static/media/HandoffFiles.fd0e2d92c7f6293b3c03.png",
     "static/media/ZenoBrandComponents.png": "/static/media/ZenoBrandComponents.fe695be35c5a3161a0b3.png",
+    "static/media/AIPoweredWorkflow.png": "/static/media/AIPoweredWorkflow.61aba9f8462f7c508a1f.png",
+    "static/media/HeroDesktop.png": "/static/media/HeroDesktop.1b15e67c07f60af875b6.png",
     "static/media/ThematicAnalysis.png": "/static/media/ThematicAnalysis.14e7a554fd39e5372f11.png",
     "static/media/ProductAdvocate.png": "/static/media/ProductAdvocate.a36afc0bedf034d23621.png",
     "static/media/TechAdvocate.png": "/static/media/TechAdvocate.dd388c794a80ddc2e6e9.png",
@@ -35,11 +40,11 @@
     "static/media/TakeawayBridge.png": "/static/media/TakeawayBridge.a8de795cf8769a589bd4.png",
     "static/media/PlayProjects.csv": "/static/media/PlayProjects.3d1f32b50b834ecd0b43.csv",
     "index.html": "/index.html",
-    "main.4e6da172.css.map": "/static/css/main.4e6da172.css.map",
-    "main.b822c60b.js.map": "/static/js/main.b822c60b.js.map"
+    "main.68b115bd.css.map": "/static/css/main.68b115bd.css.map",
+    "main.d5bd6209.js.map": "/static/js/main.d5bd6209.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e6da172.css",
-    "static/js/main.b822c60b.js"
+    "static/css/main.68b115bd.css",
+    "static/js/main.d5bd6209.js"
   ]
 }
