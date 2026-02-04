@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.68b115bd.css",
-    "main.js": "/static/js/main.d5bd6209.js",
+    "main.css": "/static/css/main.68700df0.css",
+    "main.js": "/static/js/main.903b8387.js",
     "static/media/Intro.gif": "/static/media/Intro.0d0d5a4261b1e2198295.gif",
     "static/media/HeroBG.png": "/static/media/HeroBG.313efae374f398e6e758.png",
     "static/media/Profile.png": "/static/media/Profile.6d1a8d208c2d53bfbee8.png",
@@ -20,12 +20,8 @@
     "static/media/ImpactBG.png": "/static/media/ImpactBG.85b276102003c93c8f60.png",
     "static/media/DesignSystemOverview.png": "/static/media/DesignSystemOverview.e48420b9a0c978218699.png",
     "static/media/Config.jpeg": "/static/media/Config.175a92f605c75fd020de.jpeg",
-    "static/media/SpecialistCaseViewer.png": "/static/media/SpecialistCaseViewer.ce4cd7081213ae055058.png",
-    "static/media/EnterprisePlatformModernization.png": "/static/media/EnterprisePlatformModernization.506973222cfa22e05722.png",
-    "static/media/AIEnterpriseInsightsPlatform.png": "/static/media/AIEnterpriseInsightsPlatform.fddf929702552a5641c0.png",
     "static/media/HandoffFiles.png": "/static/media/HandoffFiles.fd0e2d92c7f6293b3c03.png",
     "static/media/ZenoBrandComponents.png": "/static/media/ZenoBrandComponents.fe695be35c5a3161a0b3.png",
-    "static/media/AIPoweredWorkflow.png": "/static/media/AIPoweredWorkflow.61aba9f8462f7c508a1f.png",
     "static/media/HeroDesktop.png": "/static/media/HeroDesktop.1b15e67c07f60af875b6.png",
     "static/media/ThematicAnalysis.png": "/static/media/ThematicAnalysis.14e7a554fd39e5372f11.png",
     "static/media/ProductAdvocate.png": "/static/media/ProductAdvocate.a36afc0bedf034d23621.png",
@@ -33,18 +29,19 @@
     "static/media/Analytics.png": "/static/media/Analytics.2f1ab6171fce28dd6a11.png",
     "static/media/ThinkAloud.png": "/static/media/ThinkAloud.a5c1a9e410dcb6fe0f95.png",
     "static/media/Logos.png": "/static/media/Logos.df3f527bc5447bc701d2.png",
+    "static/media/EnterprisePlatformModernization.svg": "/static/media/EnterprisePlatformModernization.00895f258f61650e7394d2840f470f2a.svg",
     "static/media/ZenoBrandColors.png": "/static/media/ZenoBrandColors.7dba14e938dcb0228bf5.png",
-    "static/media/ProjectThree.png": "/static/media/ProjectThree.d8a1726facd21a9065bc.png",
-    "static/media/TakeawayElevate.png": "/static/media/TakeawayElevate.4da40c5d8c9c7955cd02.png",
+    "static/media/AIEnterpriseInsightsPlatform.svg": "/static/media/AIEnterpriseInsightsPlatform.6273567f42b902cd158fab617434d88c.svg",
+    "static/media/SpecialistCaseViewer.svg": "/static/media/SpecialistCaseViewer.27d1bd15a097a5a42da44cc8b5784cee.svg",
+    "static/media/AIPoweredWorkflow.svg": "/static/media/AIPoweredWorkflow.9af613b15bb56c5530a07f03cedf2ce4.svg",
     "static/media/ZenoBrandLogo.png": "/static/media/ZenoBrandLogo.2eb1eb9f6d69f3069f90.png",
-    "static/media/TakeawayBridge.png": "/static/media/TakeawayBridge.a8de795cf8769a589bd4.png",
     "static/media/PlayProjects.csv": "/static/media/PlayProjects.3d1f32b50b834ecd0b43.csv",
     "index.html": "/index.html",
-    "main.68b115bd.css.map": "/static/css/main.68b115bd.css.map",
-    "main.d5bd6209.js.map": "/static/js/main.d5bd6209.js.map"
+    "main.68700df0.css.map": "/static/css/main.68700df0.css.map",
+    "main.903b8387.js.map": "/static/js/main.903b8387.js.map"
   },
   "entrypoints": [
-    "static/css/main.68b115bd.css",
-    "static/js/main.d5bd6209.js"
+    "static/css/main.68700df0.css",
+    "static/js/main.903b8387.js"
   ]
 }
