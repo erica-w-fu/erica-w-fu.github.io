@@ -41,7 +41,9 @@ function About() {
                     <img src={ Profile }></img>
                 </div>
                 <div className="col-6">
+                    <div className="mobile-spacer-24"/>
                     <h1>Hi there!</h1>
+                    <div className="mobile-spacer-24"/>
                     <div className="spacer-16"/>
                     <p>I'm Erica, a UX/Product Designer who brings clarity to complex systems and workflows. I'm currently at Chase, designing AI-powered tools for servicing specialists. My experience of building scalable and AI-driven products spans across small startup-style teams to enterprise-scale platforms.</p>
                     <div className="spacer-16"/>
@@ -52,10 +54,12 @@ function About() {
                     <p>I'm currently seeking opportunities to shape impactful, real-world experiences with collaborative hybrid or in-person teams.</p>
                 </div>
             </div>
+            <div className="mobile-spacer-24"/>
             <div className="centered-col-10">
                 <div className="dotted-line"></div>
             </div>
-            {tidbits.map((t) => (
+            <div className="mobile-spacer-24"/>
+            {tidbits.map((t, index) => (
                 <div className="about-section">
                     <div className="col-2">
                         <small className="caption subdued">{t.caption}</small>
@@ -66,6 +70,9 @@ function About() {
                     <div className="col-4">
                         <img src={ t.img }></img>
                     </div>
+                    {index < tidbits.length - 1 && (
+                        <div className="mobile-spacer-24" />
+                    )}
                 </div>
             ))}
         </div>

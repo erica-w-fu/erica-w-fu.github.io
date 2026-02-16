@@ -197,6 +197,7 @@ function JPMC() {
                         <div className="col-6">{project.contributions}</div>
                         
                         <div className="col-2" style={{marginTop: "auto"}}>
+                            <div className="mobile-spacer-24"/>
                             <ProjectDetails
                                 role={parseWithLineBreaks(project.role)}
                                 collaborators={parseWithLineBreaks(project.collaborators)}

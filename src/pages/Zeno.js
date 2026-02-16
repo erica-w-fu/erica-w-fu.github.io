@@ -145,9 +145,11 @@ function Zeno() {
                         </div>
                     </div>
                 </div>
+                <div className="mobile-spacer-24"/>
                 <div className="centered-col-6">
                     <div className="dotted-line"></div>
                 </div>
+                <div className="mobile-spacer-24"/>
                 <Fade bottom>
                 <div className="centered-col-6 text-align-center">
                     <BlockSemiEmphasis

@@ -196,6 +196,9 @@ body {
   height: 64px;
 }
 
+.mobile-spacer-24 {
+  height: 0px;
+}
 
 .dotted-line {
   border-top: 1px dotted var(--black);
@@ -466,6 +469,9 @@ body {
   }
   .spacer-64 {
     height: 32px;
+  }
+  .mobile-spacer-24 {
+    height: 24px;
   }
 
   .bordered-section {

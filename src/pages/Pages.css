@@ -216,7 +216,7 @@ html, body, #root {
     /* about */
     .about-section { 
         grid-column: span 12;
-        gap: 16px 0px;
+        gap: 32px 0px;
     } 
     /* JPMC */
     .JPMC-project-container { 

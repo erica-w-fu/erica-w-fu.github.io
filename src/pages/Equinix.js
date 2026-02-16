@@ -162,9 +162,11 @@ function Equinix() {
                 <div className="col-12">
                     <img src={ WireframesOverview }></img>
                 </div>
+                <div className="mobile-spacer-24"/>
                 <div className="centered-col-6">
                     <div className="dotted-line"></div>
                 </div>
+                 <div className="mobile-spacer-24"/>
                 <div className="col-12 text-align-center">
                     <h2>Part 2: Scaling through design systems</h2>
                 </div>

@@ -66,8 +66,7 @@
   .play-project-grid.two-col {
     --card-min-width: 100%;
   }
-  .play-project-container {
-    height: 200;
-    --tall-project-card: 250px;
+  .tall-project-card > .play-project-container {
+    height: 300px;
   }
 }

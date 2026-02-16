@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {FooterCondensed} from '../components/Footer/Footer.js';
 import { NavLink } from 'react-router-dom';
-import TagManager from 'react-gtm-module'
 
 
 import '../App.css';
