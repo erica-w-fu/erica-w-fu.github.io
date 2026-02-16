@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.68700df0.css",
-    "main.js": "/static/js/main.903b8387.js",
+    "main.css": "/static/css/main.97ffdcf3.css",
+    "main.js": "/static/js/main.479ce783.js",
     "static/media/Intro.gif": "/static/media/Intro.0d0d5a4261b1e2198295.gif",
     "static/media/HeroBG.png": "/static/media/HeroBG.313efae374f398e6e758.png",
     "static/media/Profile.png": "/static/media/Profile.6d1a8d208c2d53bfbee8.png",
@@ -37,11 +37,11 @@
     "static/media/ZenoBrandLogo.png": "/static/media/ZenoBrandLogo.2eb1eb9f6d69f3069f90.png",
     "static/media/PlayProjects.csv": "/static/media/PlayProjects.3d1f32b50b834ecd0b43.csv",
     "index.html": "/index.html",
-    "main.68700df0.css.map": "/static/css/main.68700df0.css.map",
-    "main.903b8387.js.map": "/static/js/main.903b8387.js.map"
+    "main.97ffdcf3.css.map": "/static/css/main.97ffdcf3.css.map",
+    "main.479ce783.js.map": "/static/js/main.479ce783.js.map"
   },
   "entrypoints": [
-    "static/css/main.68700df0.css",
-    "static/js/main.903b8387.js"
+    "static/css/main.97ffdcf3.css",
+    "static/js/main.479ce783.js"
   ]
 }
