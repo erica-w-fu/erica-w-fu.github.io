@@ -13,4 +13,4 @@ build/
 # large media (optional, if needed)
 *.pack
 node_modules
-build/images/Play/SentenceMosaics.gif
+public/images/Play/SentenceMosaics.gif
