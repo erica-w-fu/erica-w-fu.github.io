@@ -10,6 +10,7 @@ function PlayProjectCard({title, tags, year, description, image, awards, selecte
                 src={image}
                 alt=""
                 loading="lazy"
+                decoding="async"
                 className="project-bg-img"
             />
 

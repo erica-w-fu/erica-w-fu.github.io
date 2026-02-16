@@ -4,8 +4,8 @@ import UpNext from "../UpNext/UpNext.js";
 import { Footer } from "../Footer/Footer.js";
 
 import EquinixImgHover from '../../media/Equinix/Hero.png';
-import EquinixImgHoverBG from '../../media/Equinix/HeroBG.png';
-import ZenoImgHover from '../../media/Zeno/Hero.png';
+import EquinixImgHoverBG from '../../media/Equinix/HeroBG.webp';
+import ZenoImgHover from '../../media/Zeno/Hero.webp';
 import ZenoImgHoverBG from '../../media/Zeno/HeroBG.png';
 
 export default function Layout() {

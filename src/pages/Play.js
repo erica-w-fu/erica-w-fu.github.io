@@ -113,7 +113,7 @@ function Play() {
             </div>
             <div
                 className={`play-project-grid ${
-                    selectedCategory !== 'all' ? 'two-col' : 'three-col'
+                    selectedCategory !== 'all' ? 'two-col tall-project-card' : 'three-col'
                 }`}
             >
                 {filteredProjects.map((project) => (

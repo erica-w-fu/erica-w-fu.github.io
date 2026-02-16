@@ -12,7 +12,6 @@ import PageWrapper from "./components/PageWrapper/PageWrapper.js";
 
 
 import Home from './pages/Home';
-// import Resume from './pages/Resume';
 import JPMC from './pages/JPMC';
 import Equinix from './pages/Equinix';
 import Zeno from './pages/Zeno';

@@ -3,10 +3,10 @@ import {useState} from "react";
 
 import {KeyValue} from "../components/TextBlocks/TextBlocks.js";
 
-import Profile from '../media/About/Profile.png';
-import Config from '../media/About/Config.jpeg';
-import Grad from '../media/About/CMUGrad.jpg';
-import California from '../media/About/California.jpg';
+import Profile from '../media/About/Profile.webp';
+import Config from '../media/About/Config.webp';
+import Grad from '../media/About/CMUGrad.webp';
+import California from '../media/About/California.webp';
 
 const tidbits = [
     {

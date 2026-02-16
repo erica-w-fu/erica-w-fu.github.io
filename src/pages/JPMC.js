@@ -5,7 +5,7 @@ import { Fade } from 'react-reveal';
 import {IconBullet, ProjectDetails, Block, BlockSemiEmphasis, TakeawayBlock} from "../components/TextBlocks/TextBlocks.js";
 
 import JPMCLogo from '../media/Logos/JPMorganChaseLogoHover.png';
-import JPMCBG from '../media/JPMC/HeroBG.png';
+import JPMCBG from '../media/JPMC/HeroBG.webp';
 
 import EnterprisePlatformModernization from '../media/JPMC/EnterprisePlatformModernization.svg';
 import SpecialistCaseViewer from '../media/JPMC/SpecialistCaseViewer.svg';
@@ -207,6 +207,8 @@ function JPMC() {
                         <div className="col-10">
                             <div className="JPMC-img-wrapper">
                                 <img src={ project.projectImg }
+                                    loading="lazy"
+                                    decoding="async"
                                     className="JPMC-img-project">
                                 </img>
                             </div>

@@ -9,17 +9,17 @@ import './Pages.css';
 
 import JPMorganChaseLogo from '../media/Logos/JPMorganChaseLogo.png';
 import JPMorganChaseLogoHover from '../media/Logos/JPMorganChaseLogoHover.png';
-import JPMorganChaseImgHoverBG from '../media/JPMC/HeroBG.png';
+import JPMorganChaseImgHoverBG from '../media/JPMC/HeroBG.webp';
 
 
 import EquinixLogo from '../media/Logos/EquinixLogo.png';
 import EquinixLogoHover from '../media/Logos/EquinixLogoHover.png';
 import EquinixImgHover from '../media/Equinix/Hero.png';
-import EquinixImgHoverBG from '../media/Equinix/HeroBG.png';
+import EquinixImgHoverBG from '../media/Equinix/HeroBG.webp';
 
 import ZenoLogo from '../media/Logos/ZenoLogo.png';
 import ZenoLogoHover from '../media/Logos/ZenoLogoHover.png';
-import ZenoImgHover from '../media/Zeno/Hero.png';
+import ZenoImgHover from '../media/Zeno/Hero.webp';
 import ZenoImgHoverBG from '../media/Zeno/HeroBG.png';
 
 import ProjectCard from '../components/ProjectCard/ProjectCard.js'

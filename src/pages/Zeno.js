@@ -3,12 +3,10 @@ import { Fade } from 'react-reveal';
 
 import { KeyValue, Block, BlockSemiEmphasis, BlockEmphasis, BlockImg, ProjectDetails, TakeawayBlock } from "../components/TextBlocks/TextBlocks.js";
 
-import ZenoIntro from '../media/Zeno/Intro.png';
 import ZenoHeroBG from '../media/Zeno/HeroBG.png';
 import ZenoHeroPaper from '../media/Zeno/HeroPaper.png';
 import ZenoHeroDesktop from '../media/Zeno/HeroDesktop.png';
-import ZenoIntroImg from '../media/Zeno/IntroImg.png';
-import ZenoPrototype from '../media/Zeno/Prototype.png';
+import ZenoPrototype from '../media/Zeno/Prototype.webp';
 import SephoraDesignPattern from '../media/Zeno/SephoraDesignPattern.png';
 import ZenoDesignPattern from '../media/Zeno/ZenoDesignPattern.png';
 import ZenoBrandLogo from '../media/Zeno/ZenoBrandLogo.png';
@@ -103,7 +101,7 @@ function Zeno() {
                         </div>
                     </div>
                     <div className="centered-col-8">
-                        <img src={ ZenoPrototype } style={{boxShadow: "0 0 10px black"}}></img>
+                        <img src={ ZenoPrototype } style={{filter: "drop-shadow(0 0 10px black)"}}></img>
                     </div>
                     <Fade bottom>
                     <div className="centered-col-6">
