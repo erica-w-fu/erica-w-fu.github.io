@@ -1,0 +1,16 @@
+
+# dependencies
+node_modules/
+
+# build output
+dist/
+build/
+.cache/
+
+# misc
+.DS_Store
+
+# large media (optional, if needed)
+*.pack
+node_modules
+build/images/Play/SentenceMosaics.gif

@@ -1,0 +1,21 @@
+/* Social Icons */
+.social-icon-link {
+    color:var(--black);
+    font-size: 24px;
+    /* padding: 0px; */
+}
+
+.social-media {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* width: 160px; */
+}
+
+@media screen and (max-width: 425px) {
+    .social-icon-link {
+        font-size: 20px;
+        margin: 4px 1px;
+        padding: 8px 16px;
+    }
+}

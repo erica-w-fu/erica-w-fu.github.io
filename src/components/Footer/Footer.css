@@ -1,0 +1,56 @@
+#footer-condensed-container {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  padding-left: 24px;
+}
+
+#footer-container {
+  padding: 48px;
+  max-width: none;
+}
+
+.footer-section-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  align-self: flex-start; /* ← This is the key fix */
+}
+
+.footer-content {
+  padding: 4px 8px;
+  flex: 1;
+}
+.footer-condensed-description {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  #footer-container {
+    padding: 24px;
+  }
+  #footer-condensed-container {
+    padding-left: 16px;
+  }
+}
+@media (max-width: 425px) {
+  #footer-container {
+    padding: 16px;
+  }
+  #footer-condensed-container {
+    padding: 16px;
+    padding-top: 16px;
+    padding-bottom: 0px;
+    gap: 0px;
+  }
+  .footer-condensed-description {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  .footer-condensed-socials {
+    margin: auto;
+  }
+  .footer-content{
+    margin: 0.5px 1px;
+  }
+}

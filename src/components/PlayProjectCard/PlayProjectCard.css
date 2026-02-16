@@ -1,0 +1,71 @@
+
+.play-project-container {
+  height: 300px;
+
+  --bg-url: none;
+  --tall-project-card: 420px;
+
+  color: var(--white);
+  padding: 0;
+  position: relative;           /* needed for absolute overlay */
+  overflow: hidden;             /* hide the sliding panel when off-screen */
+}
+
+.project-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-project-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg-url) center/cover no-repeat;
+  transition: transform 200ms ease;
+  z-index: 0;
+}
+
+.play-project-grid.three-col {
+  --card-min-width: 400px; /* ~33% at large screens */
+}
+.play-project-grid.two-col {
+  --card-min-width: 425px; /* ~50% at large screens */
+}
+
+/* The sliding panel */
+.play-project-desc {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;                    /* start from bottom */
+  background: var(--white);
+  color: var(--black);
+  padding: 32px 24px;
+  transform: translateY(100%);  /* hidden below the card */
+  transition: transform 280ms ease; /* smooth slide */
+  will-change: transform;
+  opacity: 0.95;
+}
+
+/* Reveal on hover or keyboard focus */
+.play-project-container:hover .play-project-desc,
+.play-project-container:focus-within .play-project-desc,
+.play-project-container.is-hovered .play-project-desc {  /* JS state class */
+  transform: translateY(0%);
+}
+
+@media (max-width: 425px) {
+  .play-project-grid.three-col {
+    --card-min-width: 100%; 
+  }
+  .play-project-grid.two-col {
+    --card-min-width: 100%;
+  }
+  .play-project-container {
+    height: 200;
+    --tall-project-card: 250px;
+  }
+}

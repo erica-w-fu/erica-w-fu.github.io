@@ -1,0 +1,691 @@
+/* after 2025 */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+
+/* before 2025 */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@1,5..1200,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+iframe {
+  pointer-events: none;
+}
+
+* {
+  box-sizing: content-box;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: none;
+}
+
+:root {
+  --white: #ffffff;
+  --white-dark: #f4f4f4;
+  --gray-light: rgb(231, 231, 228);
+  --gray: #50504E;
+  --black: #221D30;
+
+  --red: #DA3731;
+  --blue: #086AE3;
+  --chase-blue: #005EB8;
+  --purple: #cec9f2;
+
+  --title: "Instrument Sans";
+  --title-fallback: serif;
+  --body: "Instrument Sans";
+  --body-fallback: serif;
+  --caption: "IBM Plex Mono";
+  --caption-fallback: serif;
+}
+
+/* after 2025 */
+
+h1 {
+  font-family: var(--title), var(--title-fallback);
+  font-size: clamp(2rem, 1rem + 3vw, 4rem); /* 28px → 64px */
+  /* Original: 64px */
+  font-weight: 650;
+}
+
+h2 {
+  font-family: var(--title), var(--title-fallback);
+  font-size: clamp(1.75rem, 1rem + 3vw, 2.25rem); /* 28px → 36px */
+  /* Original: 36px */
+  font-weight: 700;
+}
+
+h3 {
+  font-family: var(--title), var(--title-fallback);
+  font-size: clamp(1.375rem, 0.875rem + 2vw, 1.75rem); /* 22px → 28px */
+  /* Original: 28px */
+  font-weight: 400;
+}
+
+h4 {
+  font-family: var(--body), var(--body-fallback);
+  font-size: clamp(1.125rem, 0.75rem + 1.5vw, 1.5rem); /* 18px → 24px */
+  /* Original: 24px */
+  font-weight: 400;
+}
+
+h5 {
+  font-family: var(--body), var(--body-fallback);
+  font-size: clamp(1rem, 0.625rem + 1.5vw, 1.25rem); /* 16px → 20px */
+  /* Original: 24px */
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--body), var(--body-fallback);
+  /*font-size: clamp(0.75rem, 0.5rem + 1vw, 0.875rem); /* 12px → 14px */
+
+  font-size: clamp(0.875rem, 0.625rem + 1vw, 1rem); /* 14px → 16px
+  /* Original: 16px */
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+li {
+  list-style-position: outside;
+  list-style-type: square;
+  margin-left: 16px;
+}
+
+li, small {
+  font-family: var(--body), var(--body-fallback);
+  font-size: clamp(0.75rem, 0.5rem + 1vw, 0.875rem); /* 12px → 14px */
+  /* Original: 14px */
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.caption {
+  font-family: var(--caption), var(--caption-fallback);
+  text-transform: uppercase;
+  font-size: clamp(0.625rem, 0.5rem + 0.5vw, 0.75rem); /* 10px → 12px */
+  /* Original: 12px */
+  /* opacity: 0.7; */
+  /* color: var(--gray); */
+}
+
+.caption-white {
+  color: var(--white) !important;
+  opacity: 0.6;
+  font-family: var(--caption), var(--caption-fallback);
+  text-transform: uppercase;
+  font-size: clamp(0.625rem, 0.5rem + 0.5vw, 0.75rem); /* 10px → 12px */
+  /* Original: 12px */
+}
+
+strong {
+  font-weight: 650;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.subdued {
+  color: var(--gray);
+}
+.text-red {
+  color: var(--red);
+}
+.text-blue {
+  color: var(--blue);
+}
+.text-chase-blue {
+  color: var(--chase-blue);
+}
+.text-white {
+  color: var(--white-dark);
+}
+.text-white * .caption {
+  color: var(--white-dark) !important;
+  opacity: 0.8;
+}
+.text-white * p {
+  color: var(--white-dark) !important;
+  opacity: 0.8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--white-dark);
+  margin: auto;
+  color: var(--black);
+}
+
+.spacer-4 {
+  height: 4px;
+}
+
+.spacer-8 {
+  height: 8px;
+}
+
+.spacer-16 {
+  height: 16px;
+}
+
+.spacer-24 {
+  height: 24px;
+}
+
+.spacer-32 {
+  height: 32px;
+}
+
+.spacer-64 {
+  height: 64px;
+}
+
+
+.dotted-line {
+  border-top: 1px dotted var(--black);
+  opacity: 0.5; 
+  /* max-width: 300px;
+  margin: auto; */
+}
+
+.nav-links {
+  text-decoration: none;
+  /* z-index: 1; */
+}
+
+.bordered-section {
+  display: flex;
+  /* width: 100%; */
+  flex-direction: column;
+  padding: 24px;
+  border: 0.5px var(--black) solid;
+  /* outline-offset: .5px; */
+  gap: 24px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.bordered-section > * {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-row-no-collapse > .flex-item {
+  flex: 1 !important;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: 100px
+}
+
+.quad-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* desktop */
+  gap: 24px;
+}
+
+/* backgrounds */
+.bg-white {
+  background-color: var(--white);
+  width: 100%;
+}
+
+.bg-white-dark {
+  background-color: var(--white-dark);
+  width: 100%;
+}
+
+.bg-dark {
+  background-color: var(--black);
+  width: 100%;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+  width: 100%;
+}
+.bg-chase-blue {
+  background-color: var(--chase-blue);
+  width: 100%;
+}
+
+/* grid system */
+.grid-container, .grid-container-condense {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 48px; /* or 8px if you want tighter spacing */
+  max-width: 1392px;
+  margin: 0 auto; /* center the grid */
+  padding: 128px 64px;
+  row-gap: 64px;
+}
+
+.grid-container-condense {
+  padding: 48px 64px;
+  row-gap: 48px;
+}
+
+.col-2 > img,
+.col-3 > img,
+.col-4 > img,
+.col-5 > img,
+.col-6 > img,
+.col-7 > img,
+.col-8 > img,
+.col-9 > img,
+.col-10 > img,
+.col-12 > img,
+.centered-col-3 > img,
+.centered-col-6 > img,
+.centered-col-8 > img,
+.centered-col-10 > img {
+  width: 100%;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+.col-3 {
+  grid-column: span 3;
+}
+.col-4 {
+  grid-column: span 4;
+}
+.col-5 {
+  grid-column: span 5;
+}
+.col-6 {
+  grid-column: span 6;
+}
+.col-7 {
+  grid-column: span 7;
+}
+.col-8 {
+  grid-column: span 8;
+}
+.col-9 {
+  grid-column: span 9;
+}
+.col-10 {
+  grid-column: span 10;
+}
+.col-12 {
+  grid-column: span 12;
+}
+
+
+.centered-col-6 {
+  grid-column: 4 / span 6; /* Starts at column 4, spans 6 cols */
+}
+.centered-col-8 {
+  grid-column: 3 / span 8;
+}
+.centered-col-10 {
+  grid-column: 2 / span 10;
+}
+
+.flex-row .col3,.col-6,.col-8,.col-9,.col-10,.col-12,.centered-col-6,.centered-col-8,.centered-col-10 {
+  justify-content: space-between;
+}
+
+.col-3 .flex-row,
+.col-6 .flex-row,
+.col-8 .flex-row,
+.col-9 .flex-row,
+.col-10 .flex-row,
+.col-12 .flex-row,
+.centered-col-3 .flex-row,
+.centered-col-6 .flex-row,
+.centered-col-8 .flex-row,
+.centered-col-10 .flex-row {
+  gap: 48px;
+}
+
+@media (max-width: 1028px) {
+  .grid-container, .grid-container-condense {
+    gap: 48px 16px;
+    padding: 128px 64px;
+  }
+  /* .col-2 .flex-row,
+  .col-3 .flex-row,
+  .col-6 .flex-row,
+  .col-8 .flex-row,
+  .col-9 .flex-row,
+  .col-10 .flex-row,
+  .col-12 .flex-row,
+  .centered-col-3 .flex-row,
+  .centered-col-6 .flex-row,
+  .centered-col-8 .flex-row,
+  .centered-col-10 .flex-row {
+    gap: 32px;
+  } */
+  .bordered-section {
+    padding: 16px;
+    gap: 16px;
+  }
+  .bordered-section > * {
+    gap: 16px;
+  }
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-12,
+  .centered-col-3,
+  .centered-col-6,
+  .centered-col-8,
+  .centered-col-10 {
+    grid-column: span 12;
+  }
+  .flex-item {
+    flex: 1 1 100%;
+  }
+}
+@media (max-width: 768px) {
+  .grid-container, .grid-container-condense {
+    padding: 128px 24px;
+  }
+  .quad-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* desktop */
+    gap: 24px;
+  }
+}
+@media (max-width: 425px) {
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-5,
+  .col-6,
+  .col-7,
+  .col-8,
+  .col-9,
+  .col-10,
+  .col-12,
+  .centered-col-3,
+  .centered-col-6,
+  .centered-col-8,
+  .centered-col-10 {
+    grid-column: span 12;
+  }
+  .grid-container, .grid-container-condense {
+    gap: 32px 8px;
+    padding: 96px 16px;
+  }
+
+  .flex-item {
+    flex: 1 1 100%;
+  }
+
+  .spacer-4 {
+    height: 2px;
+  }
+  .spacer-8 {
+    height: 4px;
+  }
+  .spacer-16 {
+    height: 8px;
+  }
+  .spacer-24 {
+    height: 12px;
+  }
+  .spacer-32 {
+    height: 16px;
+  }
+  .spacer-64 {
+    height: 32px;
+  }
+
+  .bordered-section {
+    padding: 16px;
+    gap: 8px;
+  }
+  .bordered-section > * {
+    gap: 8px;
+  }
+  a {
+    background-color: var(--purple) !important;
+  }
+}
+
+/* gradient backgrounds */
+.bg-img-gradient-bottom, .bg-img-gradient-hor {
+  background-size: cover;
+}
+
+.bg-img-gradient-bottom {
+  background-image:
+    linear-gradient(
+      to top,
+      rgba(34,29,48, 0.7),
+      rgba(0,0,0,0)
+    ),
+    var(--bg-image);
+}
+
+.bg-img-gradient-hor {
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(34,29,48, 0.6),
+      rgba(34,29,48, 0.4),
+      rgba(34,29,48, 0.6)
+    ),
+    var(--bg-image);
+}
+/* before 2025 */
+
+
+/* add side margins with this div */
+.body {
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.body-small {
+  max-width: 800px;
+  margin: auto;
+}
+
+.separate-section {
+  margin: auto;
+  background-color: var(--white);
+  padding: 24px 36px 24px 36px;;
+  border-radius: 10px;
+}
+
+.body-media {
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+a, li {
+  color: var(--black);
+}
+
+a, a>* {
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
+.tag, button {
+  font-family: var(--body), var(--body-fallback);
+  font-size: 12px;
+  color: var(--gray-dark);
+  background-color: var(--white-dark);
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.tag {
+  border-radius: 5px;
+  max-width: max-content;
+  display: inline-block;
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid var(--black);
+}
+
+button:hover {
+  background-color: var(--accent-light);
+}
+
+.small-btn {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  /* z-index: 9999; */
+  font-size: 18px;
+}
+
+.divider {
+  padding: 10px;
+}
+
+.divider-big {
+  padding: 40px;
+}
+
+hr {
+  margin: 25px 0;
+  border: 1px solid var(--accent-light);
+  top: 20px;
+}
+
+
+.unbold {
+  font-weight: 400;
+  display: inline-block;
+}
+
+.text-emphasize {
+  font-weight: 650;
+  text-decoration: underline;
+}
+
+/* two column structure */
+.row, .row-2{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+
+/* align items at center, used in project card view */
+.row {
+  align-items: center;
+  gap: 10px 40px;
+}
+
+/* align items at top, used in project detail view */
+.row-2 {
+  align-items: flex-start;
+  gap: 20px 50px;
+}
+
+/* wrap items two-by-two */
+.row-3 {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  gap: 20px;
+}
+
+.col {
+  flex: 1;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  min-width: 360px;
+}
+
+.column > img {
+  width: 100%; 
+  min-width: 400px;
+  height: auto; 
+  border-radius: 5px;
+}
+
+.column > * {
+  margin: 10px 0;
+}
+
+.col-big {
+  flex: 2;
+  min-width: 400px;
+}
+
+.col-small {
+  min-width: 300px;
+}
+
+/* image above text when wrapped */
+.reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.image-fade {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 50%, transparent 100%);
+}
+
+.hidden {
+  display: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 5px;
+}
